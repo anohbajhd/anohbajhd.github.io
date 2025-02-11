@@ -1,6 +1,6 @@
 +++
 date = '2025-02-12T10:00:00+05:00'
-title = "Mastering Vim: A Developer's Swiss Army Knife"
+title = 'Mastering Vim: A Developer's Swiss Army Knife'
 tags = ['vim','ubuntu', 'github']
 +++
 
