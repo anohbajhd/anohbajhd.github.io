@@ -112,23 +112,8 @@ logging.warning("This is a formatted warning message.")
 
 ## Advanced Logging Features
 
-### Using Loggers
 
-The `logging` module allows creating separate loggers for different modules:
-
-```python
-import logging
-
-# Create a custom logger
-logger = logging.getLogger("my_logger")
-
-# Set the logging level
-logger.setLevel(logging.DEBUG)
-```
-
-### Further Features: 
-
-For more control over logs, use `handlers`, and `formatters`.
+For more control over logs, the `logging` module allows creating separate loggers `handlers`, and `formatters`for different modules
 
 
 

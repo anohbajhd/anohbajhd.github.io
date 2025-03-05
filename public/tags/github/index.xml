@@ -4,10 +4,20 @@
     <title>Github on Anohba Jehad</title>
     <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on Anohba Jehad</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2025 10:00:00 +0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 12:30:00 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art of Logging In Python!</title>
+      <link>http://localhost:1313/posts/pythonlog/</link>
+      <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/pythonlog/</guid>
+      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;
+&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;
+&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;
+&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
       <link>http://localhost:1313/posts/vim/</link>
