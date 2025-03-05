@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Anohba Jehad</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Anohba Jehad</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2025 12:00:00 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title>
+      <link>http://localhost:1313/posts/hugo/</link>
+      <pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/hugo/</guid>
+      <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;
+&lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;
+&lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
