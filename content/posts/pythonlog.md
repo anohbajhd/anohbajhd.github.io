@@ -112,9 +112,7 @@ logging.warning("This is a formatted warning message.")
 
 ## Advanced Logging Features
 
-
 For more control over logs, the `logging` module allows creating separate loggers `handlers`, and `formatters`for different modules
-
 
 
 ## Best Practices for Logging
