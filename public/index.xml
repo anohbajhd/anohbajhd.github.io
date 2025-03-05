@@ -6,8 +6,28 @@
     <description>Recent content on Anohba Jehad</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 09:08:21 +0500</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2025 10:00:00 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
+      <link>http://localhost:1313/posts/vim/</link>
+      <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/vim/</guid>
+      <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
+&lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-installing-vim&#34;&gt;1. Installing Vim&lt;/h1&gt;
+&lt;p&gt;Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title>
+      <link>http://localhost:1313/posts/hugo/</link>
+      <pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/hugo/</guid>
+      <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;
+&lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;
+&lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
