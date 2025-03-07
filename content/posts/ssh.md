@@ -105,20 +105,20 @@ If you want to connect to your own system using SSH (also called loopback SSH or
 
 ### Steps: 
 
--`1.`Install SSH on Ubuntu
+- `1.`Install SSH on Ubuntu
 
--`2.`Allow SSH Through the Firewall
+- `2.`Allow SSH Through the Firewall
 
--`3.`Find the Server’s IP Address 
+- `3.`Find the Server’s IP Address 
 `Note:` In this case, you need the IP-address of your own system.
 
--`4`Connect to the Server via SSH
+- `4`Connect to the Server via SSH
 
--`5`Enter the password when prompted.
+- `5`Enter the password when prompted.
 
 ![command screenshot](/ssh/ss6.png)
 
--`7.` Disconnect from SSH
+- `7.` Disconnect from SSH
 
 To exit the SSH session, type:
 
