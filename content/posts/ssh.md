@@ -10,12 +10,12 @@ SSH (Secure Shell) is a tool used to safely connect to remote computers and serv
 
 ## Advantages of SSH
 
-- `1.`Secure Communication – Encrypts data, preventing eavesdropping and attacks.
-- `2.`Remote Access – Manage servers and systems from anywhere.
-- `3.`Key-Based Authentication – Enables password-free and more secure logins.
-- `4.`Secure File Transfers – Transfer files safely
+-  Secure Communication – Encrypts data, preventing eavesdropping and attacks.
+-  Remote Access – Manage servers and systems from anywhere.
+-  Key-Based Authentication – Enables password-free and more secure logins.
+-  Secure File Transfers – Transfer files safely
 
-- `5.`Multi-User Support – Allow multiple users to connect and manage a system securely.
+-  Multi-User Support – Allow multiple users to connect and manage a system securely.
 
 SSH makes remote access fast, safe, and hassle-free!
 
@@ -105,20 +105,20 @@ If you want to connect to your own system using SSH (also called loopback SSH or
 
 ### Steps: 
 
-- `1.`Install SSH on Ubuntu
+- Install SSH on Ubuntu
 
-- `2.`Allow SSH Through the Firewall
+- Allow SSH Through the Firewall
 
-- `3.`Find the Server’s IP Address 
+- Find the Server’s IP Address <br> 
 `Note:` In this case, you need the IP-address of your own system.
 
-- `4`Connect to the Server via SSH
+- Connect to the Server via SSH
 
-- `5`Enter the password when prompted.
+- Enter the password when prompted.
 
 ![command screenshot](/ssh/ss6.png)
 
-- `7.` Disconnect from SSH
+- Disconnect from SSH
 
 To exit the SSH session, type:
 
