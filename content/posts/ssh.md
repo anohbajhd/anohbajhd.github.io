@@ -36,12 +36,12 @@ sudo apt update && sudo apt upgrade
 First, ensure SSH is installed on both the client (your local machine) and the server (remote machine).
 
 On the server (remote machine), install the SSH server:
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss1.png)
+![command screenshot](/ssh/ss1.png)
 
 `Note: For this type of connection, both the client (local system) and the server (remote system) should be on the same network.`
 
 To check if SSH is running:
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss2.png)
+![command screenshot](/ssh/ss2.png)
 
 If it’s not running, start it with:
 
@@ -52,10 +52,10 @@ sudo systemctl start ssh
 ### 2. Allow SSH Through the Firewall
 
 If you have a firewall enabled, allow SSH connections:
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss3.png)
+![command screenshot](/ssh/ss3.png)
 
 Then, enable the firewall if it's not already active:
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss4.png)
+![command screenshot](/ssh/ss4.png)
 
 ### 3. Find the Server’s IP Address
 To connect to your server, you need its IP address. Run:
@@ -71,7 +71,7 @@ On your client machine, use this command to connect:
 
 `Note:` As it is a connection with remote system, you need to add the user name and IP-address of system with which you are building connection.
 
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss5.png)
+![command screenshot](/ssh/ss5.png)
 
 Enter the password when prompted ( remember it is the password connection. For this type of SSH you need to know to password of remote system)>
 
@@ -116,7 +116,7 @@ If you want to connect to your own system using SSH (also called loopback SSH or
 
 -`5`Enter the password when prompted.
 
-![command screenshot](/home/zenarch/colab/my-website/static/ssh/ss6.png)
+![command screenshot](/ssh/ss6.png)
 
 -`7.` Disconnect from SSH
 
