@@ -10,12 +10,12 @@ SSH (Secure Shell) is a tool used to safely connect to remote computers and serv
 
 ## Advantages of SSH
 
--`1.`Secure Communication – Encrypts data, preventing eavesdropping and attacks.
--`2`.Remote Access – Manage servers and systems from anywhere.
--`3`.Key-Based Authentication – Enables password-free and more secure logins.
--`4`.Secure File Transfers – Transfer files safely
+- `1.`Secure Communication – Encrypts data, preventing eavesdropping and attacks.
+- `2.`Remote Access – Manage servers and systems from anywhere.
+- `3.`Key-Based Authentication – Enables password-free and more secure logins.
+- `4.`Secure File Transfers – Transfer files safely
 
--`5`.Multi-User Support – Allow multiple users to connect and manage a system securely.
+- `5.`Multi-User Support – Allow multiple users to connect and manage a system securely.
 
 SSH makes remote access fast, safe, and hassle-free!
 
