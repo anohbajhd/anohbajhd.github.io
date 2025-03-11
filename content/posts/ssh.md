@@ -110,7 +110,7 @@ If you want to connect to your own system using SSH (also called loopback SSH or
 - Allow SSH Through the Firewall
 
 - Find the Server’s IP Address <br> 
-`Note:` In this case, you need the IP-address of your own system.
+- `Note:` In this case, you need the IP-address of your own system.
 
 - Connect to the Server via SSH
 
