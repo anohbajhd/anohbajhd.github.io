@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Ubuntu on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on Anohba Jehad</description>
+    <title>Ssh on Anohba Jehad</title>
+    <link>http://localhost:1313/tags/ssh/</link>
+    <description>Recent content in Ssh on Anohba Jehad</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Mar 2025 12:30:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
       <link>http://localhost:1313/posts/ssh/</link>
@@ -25,17 +25,6 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Key-Based Authentication – Enables password-free and more secure logins.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
-      <link>http://localhost:1313/posts/vim/</link>
-      <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/vim/</guid>
-      <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
-&lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;1-installing-vim&#34;&gt;1. Installing Vim&lt;/h1&gt;
-&lt;p&gt;Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
