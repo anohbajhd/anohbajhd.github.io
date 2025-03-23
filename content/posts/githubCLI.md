@@ -18,7 +18,7 @@ If you're comfortable with the command line, GitHub CLI eliminates the need to s
 
 - Improved efficiency – Manage repositories, issues, and pull requests quickly.
 
-## Installing GitHub CLI
+## 1. Installing GitHub CLI
 
 GitHub CLI supports multiple platforms, including Windows, macOS, and Linux. You can install it via package managers:
 
@@ -49,7 +49,7 @@ To verify installation:
 gh --version
 ```
 
-## Authenticating with GitHub CLI
+## 2. Authenticating with GitHub CLI
 
 Before using GitHub CLI, authenticate it with your GitHub account:
 
@@ -74,17 +74,29 @@ Verify login:
 
 ![command screenshot](/gitCLI/s3.png)
 
+You can also test your SSH connection by running the following command: 
+
+![command screenshot](/gitCLI/s4.png)
+
 ## 3. Creating a GitHub Repository from the Terminal
 
 ![command screenshot](/gitCLI/ssb.png)
 
 ### Options:
 
-- --public: Makes the repo public.
+- `--public`: Makes the repo public.
 
-- --private: Creates a private repo.
+- `--private`: Creates a private repo.
 
-- --source=.: Uses the current directory as the source for the repository.
+- `--source=.`: Uses the current directory as the source for the repository.
+
+### Clone an existing repository
+```sh
+gh repo clone username/repo-name
+```
+
+## Add the SSH Remote Manually(if needed)
+If your repository doesn’t have a remote set up yet. You need to add the SSH remote manually.
 
 ### 🔹 Step 1: Add the Remote Repository (SSH)
 If you're using SSH, add your GitHub repository as a remote with this command:
@@ -113,16 +125,16 @@ git push -u origin main
 
 Now your Git setup is complete with GitHub CLI + SSH! 🚀
 
-## 🔹 Verify Everything
+###🔹 Verify Everything
 Once the push is successful, go to your GitHub repository (github.com/zenarchh/OOP) and check if your files are there.
 
 ### If Everything Works:
 You're fully set up with Git + GitHub CLI + SSH! 🚀 From now on, you can commit and push changes without entering a password.
 
-### Clone an existing repository
-```sh
-gh repo clone username/repo-name
-```
+My pushed changes without passcode:
+![command screenshot](/gitCLI/s6.png)
+
+
 ## 4. Managing Repositories
 
 View a list of your repositories
