@@ -125,7 +125,7 @@ git push -u origin main
 
 Now your Git setup is complete with GitHub CLI + SSH! 🚀
 
-###🔹 Verify Everything
+### 🔹 Verify Everything
 Once the push is successful, go to your GitHub repository (github.com/zenarchh/OOP) and check if your files are there.
 
 ### If Everything Works:
