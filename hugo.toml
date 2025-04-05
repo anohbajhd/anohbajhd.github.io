@@ -22,7 +22,7 @@ theme = "hugo-PaperMod"
     enabled = true
     title = "Anohba Jehad"
     subtitle = "The First Thinker🔆"
-    imageUrl = "profile.png"
+    imageUrl = "profile.jpg"
     imageTitle = "Profile Picture"
     imageWidth = 200
     imageHeight = 200
@@ -40,7 +40,7 @@ theme = "hugo-PaperMod"
 
 [[params.socialIcons]]
    name = "Github"
-   url = "https://github.com/zenarch7"
+   url = "https://github.com/zenarchh"
 
 [[params.socialIcons]]
    name = "LinkedIn"
