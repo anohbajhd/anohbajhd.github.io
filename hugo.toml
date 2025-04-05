@@ -1,0 +1,57 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Anohba Jehad'
+
+theme = "hugo-PaperMod"
+
+[params]
+    dateform        = "Jan 2, 2006"
+    dateformShort   = "Jan 2"
+    dateformNum     = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04"
+    ShowToc =  true
+    ShowReadingTime = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    taglist = true
+    defaultTheme = 'dark'
+  
+
+
+[params.profileMode]
+    enabled = true
+    title = "Anohba Jehad"
+    subtitle = "The First Thinker🔆"
+    imageUrl = "profile.png"
+    imageTitle = "Profile Picture"
+    imageWidth = 200
+    imageHeight = 200
+
+
+
+[[params.profileMode.buttons]]
+    name = "About Me"
+    url = "/about"
+
+[[params.profileMode.buttons]]
+    name = "Posts"
+    url = "/posts"
+
+
+[[params.socialIcons]]
+   name = "Github"
+   url = "https://github.com/zenarch7"
+
+[[params.socialIcons]]
+   name = "LinkedIn"
+   url = "https://linkedin.com/in/anohba-jehad-b46b31348/"
+
+
+[[menu.main]]
+   name = "Archives"
+    url = "/archives"
+
+
+ [[menu.main]]
+   name = "Search"
+   url = "/search"
