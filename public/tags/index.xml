@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Anohba Jehad</title>
-    <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/</link>
+    <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/</link>
     <description>Recent content in Tags on Anohba Jehad</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://github.com/zenarchh/zenarchh.github.io.git/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gh</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/gh/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/gh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/gh/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/gh/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/git/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/git/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/git/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/github/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/github/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/github/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/linux/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/linux/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ssh/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/ssh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ssh/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ubuntu/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/ubuntu/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ubuntu/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/hugo/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/hugo/</link>
       <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/hugo/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/python/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/python/</link>
       <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/python/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/vim/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/vim/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/latex/</link>
+      <link>https://github.com/zenarchh/zenarchh.github.io.git/tags/latex/</link>
       <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/latex/</guid>
+      <guid>https://github.com/zenarchh/zenarchh.github.io.git/tags/latex/</guid>
       <description></description>
     </item>
   </channel>

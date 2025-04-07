@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/zenarchh/zenarchh.github.io.git/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=zenarchh/zenarchh.github.io.git/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Install and Configure SSH on Ubuntu | Anohba Jehad</title>
 <meta name="keywords" content="ssh, linux, ubuntu">
 <meta name="description" content="Introduction to SSH
@@ -20,16 +20,16 @@ Remote Access – Manage servers and systems from anywhere.
 
 Key-Based Authentication – Enables password-free and more secure logins.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/ssh/">
+<link rel="canonical" href="https://github.com/zenarchh/zenarchh.github.io.git/posts/ssh/">
 <link crossorigin="anonymous" href="/zenarchh/zenarchh.github.io.git/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/safari-pinned-tab.svg">
+<link rel="icon" href="https://github.com/zenarchh/zenarchh.github.io.git/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/zenarchh/zenarchh.github.io.git/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.com/zenarchh/zenarchh.github.io.git/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://github.com/zenarchh/zenarchh.github.io.git/apple-touch-icon.png">
+<link rel="mask-icon" href="https://github.com/zenarchh/zenarchh.github.io.git/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/ssh/">
+<link rel="alternate" hreflang="en" href="https://github.com/zenarchh/zenarchh.github.io.git/posts/ssh/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,7 +38,86 @@ Key-Based Authentication – Enables password-free and more secure logins.">
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://github.com/zenarchh/zenarchh.github.io.git/posts/ssh/">
+  <meta property="og:site_name" content="Anohba Jehad">
+  <meta property="og:title" content="Install and Configure SSH on Ubuntu">
+  <meta property="og:description" content="Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
+Advantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.
+Remote Access – Manage servers and systems from anywhere.
+Key-Based Authentication – Enables password-free and more secure logins.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-07T12:30:00+05:00">
+    <meta property="article:modified_time" content="2025-03-07T12:30:00+05:00">
+    <meta property="article:tag" content="Ssh">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Ubuntu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Install and Configure SSH on Ubuntu">
+<meta name="twitter:description" content="Introduction to SSH
+SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
+Advantages of SSH
+
+
+Secure Communication – Encrypts data, preventing eavesdropping and attacks.
+
+
+Remote Access – Manage servers and systems from anywhere.
+
+
+Key-Based Authentication – Enables password-free and more secure logins.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://github.com/zenarchh/zenarchh.github.io.git/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Install and Configure SSH on Ubuntu",
+      "item": "https://github.com/zenarchh/zenarchh.github.io.git/posts/ssh/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install and Configure SSH on Ubuntu",
+  "name": "Install and Configure SSH on Ubuntu",
+  "description": "Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.\nAdvantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.\nRemote Access – Manage servers and systems from anywhere.\nKey-Based Authentication – Enables password-free and more secure logins.\n",
+  "keywords": [
+    "ssh", "linux", "ubuntu"
+  ],
+  "articleBody": "Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.\nAdvantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.\nRemote Access – Manage servers and systems from anywhere.\nKey-Based Authentication – Enables password-free and more secure logins.\nSecure File Transfers – Transfer files safely\nMulti-User Support – Allow multiple users to connect and manage a system securely.\nSSH makes remote access fast, safe, and hassle-free!\nConnection With Remote System SSH (Secure Shell) allows secure remote access to a server or another computer. Here’s how you can set it up and use it on Ubuntu:\n1. Prepare Ubuntu The first thing you need to do before you start installing SSH on Ubuntu is to update all apt packages to the latest versions. To do this, use the following command:\nsudo apt update \u0026\u0026 sudo apt upgrade 2. Install SSH on Ubuntu First, ensure SSH is installed on both the client (your local machine) and the server (remote machine).\nOn the server (remote machine), install the SSH server: Note: For this type of connection, both the client (local system) and the server (remote system) should be on the same network.\nTo check if SSH is running: If it’s not running, start it with:\nsudo systemctl start ssh 2. Allow SSH Through the Firewall If you have a firewall enabled, allow SSH connections: Then, enable the firewall if it’s not already active: 3. Find the Server’s IP Address To connect to your server, you need its IP address. Run:\nip a IP is usually something like 192.168.x.x.\n4. Connect to the Server via SSH On your client machine, use this command to connect:\nNote: As it is a connection with remote system, you need to add the user name and IP-address of system with which you are building connection.\nEnter the password when prompted ( remember it is the password connection. For this type of SSH you need to know to password of remote system)\u003e\nYou have now successfully built a connection with remote system through password!\nSet Up Passwordless SSH (Optional But Recommended) If you don’t want to enter a password every time, set up SSH key authentication:\n🔹 Generate an SSH Key (Skip if you already have one) On your local machine, run:\nssh-keygen -t ed25519 -C \"SSHkey\" Press Enter for all options.\n🔹 Copy the SSH Key to the New Remote System ssh-copy-id username@remote_IP Enter the password once. After this, SSH should work without a password!\nLoopback SSH If you want to connect to your own system using SSH (also called loopback SSH or local SSH connection), follow these steps:\nSteps: Install SSH on Ubuntu\nAllow SSH Through the Firewall\nFind the Server’s IP Address Note: In this case, you need the IP-address of your own system.\nConnect to the Server via SSH\nEnter the password when prompted.\nDisconnect from SSH To exit the SSH session, type:\nexit You’ve successfully connected to your own system via SSH!\nConclusion SSH isn’t just a tool—it’s your secret tunnel into remote (or even your own) system! With a secure setup and a few tweaks, you can connect like a pro. Now go forth and SSH into greatness!🚀\n",
+  "wordCount" : "563",
+  "inLanguage": "en",
+  "datePublished": "2025-03-07T12:30:00+05:00",
+  "dateModified": "2025-03-07T12:30:00+05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/zenarchh/zenarchh.github.io.git/posts/ssh/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anohba Jehad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.com/zenarchh/zenarchh.github.io.git/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -52,7 +131,7 @@ Key-Based Authentication – Enables password-free and more secure logins.">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="https://github.com/zenarchh/zenarchh.github.io.git/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -78,12 +157,12 @@ Key-Based Authentication – Enables password-free and more secure logins.">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/archives" title="Archives">
+                <a href="https://github.com/zenarchh/zenarchh.github.io.git/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://github.com/zenarchh/zenarchh.github.io.git/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -94,7 +173,7 @@ Key-Based Authentication – Enables password-free and more secure logins.">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://github.com/zenarchh/zenarchh.github.io.git/">Home</a>&nbsp;»&nbsp;<a href="https://github.com/zenarchh/zenarchh.github.io.git/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Install and Configure SSH on Ubuntu
     </h1>
@@ -245,16 +324,16 @@ Key-Based Authentication – Enables password-free and more secure logins.">
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ssh/">Ssh</a></li>
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/linux/">Linux</a></li>
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="https://github.com/zenarchh/zenarchh.github.io.git/tags/ssh/">Ssh</a></li>
+      <li><a href="https://github.com/zenarchh/zenarchh.github.io.git/tags/linux/">Linux</a></li>
+      <li><a href="https://github.com/zenarchh/zenarchh.github.io.git/tags/ubuntu/">Ubuntu</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="https://github.com/zenarchh/zenarchh.github.io.git/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by
