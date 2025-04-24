@@ -5,11 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>My First Post | Anohba Jehad</title>
-<meta name="keywords" content="">
-<meta name="description" content="HI! This is my first post but honestly this is my 7th try!">
+<title>Don’t Trust Your Code—Test It | Anohba Jehad</title>
+<meta name="keywords" content="hugo, github, python, testing">
+<meta name="description" content="Why Testing Your Code Matters
+When we write code, we want it to work. But sometimes, it doesn’t. That’s where testing comes in.
+Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.
+
+Why Should We Test?
+Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/my-first-post/">
+<link rel="canonical" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/test/">
 <link crossorigin="anonymous" href="/zenarchh/zenarchh.github.io.git/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon-16x16.png">
@@ -18,7 +23,7 @@
 <link rel="mask-icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/my-first-post/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/test/">
 <noscript>
     <style>
         #theme-toggle,
@@ -85,20 +90,155 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      My First Post
+      Don’t Trust Your Code—Test It
     </h1>
-    <div class="post-meta"><span title='2025-02-07 09:08:21 +0500 PKT'>February 7, 2025</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2025-04-23 11:00:00 +0500 PKT'>April 23, 2025</span>&nbsp;·&nbsp;2 min
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
 
-  <div class="post-content"><p>HI! This is my first post but honestly this is my 7th try!</p>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#why-testing-your-code-matters" aria-label="Why Testing Your Code Matters">Why Testing Your Code Matters</a><ul>
+                        
+                <li>
+                    <a href="#why-should-we-test" aria-label="Why Should We Test?">Why Should We Test?</a><ul>
+                        
+                <li>
+                    <a href="#-install-pytest" aria-label="🔧 Install pytest:">🔧 Install pytest:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#a-simple-way-to-test-pytest" aria-label="A Simple Way to Test: pytest">A Simple Way to Test: pytest</a><ul>
+                        
+                <li>
+                    <a href="#you-write-a-function" aria-label="You write a function:">You write a function:</a><ul>
+                        
+                <li>
+                    <a href="#def--define-a-function" aria-label="def — Define a Function">def — Define a Function</a></li>
+                <li>
+                    <a href="#assert--check-if-something-is-true" aria-label="assert — Check if Something is True">assert — Check if Something is True</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#testing-with-pytest" aria-label="Testing with pytest">Testing with pytest</a></li>
+                <li>
+                    <a href="#why-use-pytest" aria-label="Why Use pytest?">Why Use pytest?</a></li>
+                <li>
+                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="why-testing-your-code-matters">Why Testing Your Code Matters<a hidden class="anchor" aria-hidden="true" href="#why-testing-your-code-matters">#</a></h1>
+<p>When we write code, we want it to work. But sometimes, it doesn’t. That’s where <strong>testing</strong> comes in.</p>
+<p>Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.</p>
+<hr>
+<h2 id="why-should-we-test">Why Should We Test?<a hidden class="anchor" aria-hidden="true" href="#why-should-we-test">#</a></h2>
+<p>Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.</p>
+<blockquote>
+<p>Testing is like asking your code:<br>
+<strong>“Hey, are you really doing your job?”</strong></p></blockquote>
+<hr>
+<p>Types of Testing (The Basics)</p>
+<p>Here are the basic ones you’ll encounter:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Type</strong></th>
+          <th><strong>What it Tests</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Unit Testing</strong></td>
+          <td>Small pieces of code, like functions</td>
+      </tr>
+      <tr>
+          <td><strong>Integration</strong></td>
+          <td>How different parts of code work together</td>
+      </tr>
+      <tr>
+          <td><strong>Functional</strong></td>
+          <td>Whole features from a user perspective</td>
+      </tr>
+      <tr>
+          <td><strong>Regression</strong></td>
+          <td>Makes sure old features still work after changes</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>As a beginner, we’ll mostly be doing <strong>unit testing</strong>.</p></blockquote>
+<p>Tools We Use: <code>pytest</code></p>
+<p>We&rsquo;ll use <strong><code>pytest</code></strong>, which is a powerful and easy-to-use testing tool in Python.</p>
+<h3 id="-install-pytest">🔧 Install <code>pytest</code>:<a hidden class="anchor" aria-hidden="true" href="#-install-pytest">#</a></h3>
+<p>If you don’t have it yet, run this command:</p>
+<p><img alt="command screenshot" loading="lazy" src="%5Csa1.png"></p>
+<h2 id="a-simple-way-to-test-pytest">A Simple Way to Test: <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#a-simple-way-to-test-pytest">#</a></h2>
+<p>In Python, there’s a tool called <strong>pytest</strong>. It helps you test your code easily.</p>
+<p>For example:</p>
+<p><img alt="code screenshot" loading="lazy" src="%5Csa.png"></p>
+<hr>
+<h3 id="you-write-a-function">You write a function:<a hidden class="anchor" aria-hidden="true" href="#you-write-a-function">#</a></h3>
+<h4 id="def--define-a-function"><code>def</code> — Define a Function<a hidden class="anchor" aria-hidden="true" href="#def--define-a-function">#</a></h4>
+<ul>
+<li><code>def</code> is short for <strong>define</strong>.</li>
+<li>It&rsquo;s used to <strong>create a function</strong> in Python.</li>
+</ul>
+<p><img alt="code screenshot" loading="lazy" src="%5Csb.png"></p>
+<h4 id="assert--check-if-something-is-true"><code>assert</code> — Check if Something is True<a hidden class="anchor" aria-hidden="true" href="#assert--check-if-something-is-true">#</a></h4>
+<ul>
+<li><code>assert</code> is used to check if a condition is true.</li>
+<li>If it <strong>is true</strong>, Python does nothing and continues.</li>
+<li>If it’s <strong>false</strong>, Python throws an <code>AssertionError</code>.</li>
+</ul>
+<p>This code is checking:</p>
+<ul>
+<li>Does <code>add(2, 3)</code> give <code>5</code>?</li>
+<li>Does <code>add(0, 0)</code> give <code>0</code>?</li>
+<li>And so on.</li>
+</ul>
+<hr>
+<h2 id="testing-with-pytest">Testing with <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#testing-with-pytest">#</a></h2>
+<p>Put this in a file called <code>test_add.py</code>, then run this in your terminal:</p>
+<blockquote>
+<p><em>(Insert a screenshot or terminal output image here)</em></p></blockquote>
+<p>If all is good, you’ll see a <strong>green message</strong>.<br>
+If something is wrong, <code>pytest</code> will show you <strong>what failed</strong>.</p>
+<hr>
+<h2 id="why-use-pytest">Why Use <code>pytest</code>?<a hidden class="anchor" aria-hidden="true" href="#why-use-pytest">#</a></h2>
+<ul>
+<li>It’s simple to use</li>
+<li>The code is easy to read</li>
+<li>You get clear messages when something fails</li>
+</ul>
+<hr>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Testing might feel boring at first.<br>
+But it <strong>saves you time and trouble later</strong>.</p>
+<p>Start small — test just one function.<br>
+It’s a good habit to build.</p>
+<blockquote>
+<p>Your code will thank you.<br>
+And so will your future self.</p></blockquote>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/github/">Github</a></li>
+      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/testing/">Testing</a></li>
     </ul>
   </footer>
 </article>

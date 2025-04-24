@@ -41,7 +41,7 @@ We'll use **`pytest`**, which is a powerful and easy-to-use testing tool in Pyth
 
 If you don’t have it yet, run this command:
 
-![command screenshot](\sa1.png)
+![command screenshot](/sa1.png)
 
 ## A Simple Way to Test: `pytest`
 
@@ -49,7 +49,7 @@ In Python, there’s a tool called **pytest**. It helps you test your code easil
 
 For example:
 
-![code screenshot](\sa.png)
+![code screenshot](/sa.png)
 
 ---
 
@@ -60,7 +60,7 @@ For example:
 - `def` is short for **define**.
 - It's used to **create a function** in Python.
 
-![code screenshot](\sb.png)
+![code screenshot](/sb.png)
 
 #### `assert` — Check if Something is True
 
