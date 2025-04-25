@@ -80,7 +80,7 @@ This code is checking:
 
 Put this in a file called `test_add.py`, then run this in your terminal:
 
-> *(Insert a screenshot or terminal output image here)*
+![code screenshot](/python/sb.png)
 
 If all is good, you’ll see a **green message**.  
 If something is wrong, `pytest` will show you **what failed**.
