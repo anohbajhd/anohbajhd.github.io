@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/zenarchh/zenarchh.github.io.git/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=zenarchh/zenarchh.github.io.git/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -14,16 +14,16 @@ Testing helps us check if our code is doing what we want. It tells us if somethi
 Why Should We Test?
 Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/test/">
-<link crossorigin="anonymous" href="/zenarchh/zenarchh.github.io.git/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/test/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/test/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/test/">
 <noscript>
     <style>
         #theme-toggle,
@@ -46,7 +46,7 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -72,12 +72,12 @@ Let’s say you make a function that adds two numbers. You think it works. But w
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/archives" title="Archives">
+                <a href="http://localhost:1313/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -88,7 +88,7 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Don’t Trust Your Code—Test It
     </h1>
@@ -106,7 +106,11 @@ Let’s say you make a function that adds two numbers. You think it works. But w
                     <a href="#why-testing-your-code-matters" aria-label="Why Testing Your Code Matters">Why Testing Your Code Matters</a><ul>
                         
                 <li>
-                    <a href="#why-should-we-test" aria-label="Why Should We Test?">Why Should We Test?</a><ul>
+                    <a href="#why-should-we-test" aria-label="Why Should We Test?">Why Should We Test?</a></li>
+                <li>
+                    <a href="#types-of-testing-the-basics" aria-label="Types of Testing (The Basics)">Types of Testing (The Basics)</a></li>
+                <li>
+                    <a href="#tools-we-use-pytest" aria-label="Tools We Use: pytest">Tools We Use: pytest</a><ul>
                         
                 <li>
                     <a href="#-install-pytest" aria-label="🔧 Install pytest:">🔧 Install pytest:</a></li></ul>
@@ -147,7 +151,7 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 <p>Testing is like asking your code:<br>
 <strong>“Hey, are you really doing your job?”</strong></p></blockquote>
 <hr>
-<p>Types of Testing (The Basics)</p>
+<h2 id="types-of-testing-the-basics">Types of Testing (The Basics)<a hidden class="anchor" aria-hidden="true" href="#types-of-testing-the-basics">#</a></h2>
 <p>Here are the basic ones you’ll encounter:</p>
 <table>
   <thead>
@@ -177,15 +181,15 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 </table>
 <blockquote>
 <p>As a beginner, we’ll mostly be doing <strong>unit testing</strong>.</p></blockquote>
-<p>Tools We Use: <code>pytest</code></p>
+<h2 id="tools-we-use-pytest">Tools We Use: <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#tools-we-use-pytest">#</a></h2>
 <p>We&rsquo;ll use <strong><code>pytest</code></strong>, which is a powerful and easy-to-use testing tool in Python.</p>
 <h3 id="-install-pytest">🔧 Install <code>pytest</code>:<a hidden class="anchor" aria-hidden="true" href="#-install-pytest">#</a></h3>
 <p>If you don’t have it yet, run this command:</p>
-<p><img alt="command screenshot" loading="lazy" src="%5Csa1.png"></p>
+<p><img alt="command screenshot" loading="lazy" src="/python/sa1.png"></p>
 <h2 id="a-simple-way-to-test-pytest">A Simple Way to Test: <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#a-simple-way-to-test-pytest">#</a></h2>
 <p>In Python, there’s a tool called <strong>pytest</strong>. It helps you test your code easily.</p>
 <p>For example:</p>
-<p><img alt="code screenshot" loading="lazy" src="%5Csa.png"></p>
+<p><img alt="code screenshot" loading="lazy" src="/python/sa.png"></p>
 <hr>
 <h3 id="you-write-a-function">You write a function:<a hidden class="anchor" aria-hidden="true" href="#you-write-a-function">#</a></h3>
 <h4 id="def--define-a-function"><code>def</code> — Define a Function<a hidden class="anchor" aria-hidden="true" href="#def--define-a-function">#</a></h4>
@@ -193,7 +197,7 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 <li><code>def</code> is short for <strong>define</strong>.</li>
 <li>It&rsquo;s used to <strong>create a function</strong> in Python.</li>
 </ul>
-<p><img alt="code screenshot" loading="lazy" src="%5Csb.png"></p>
+<p><img alt="code screenshot" loading="lazy" src="/python/sb.png"></p>
 <h4 id="assert--check-if-something-is-true"><code>assert</code> — Check if Something is True<a hidden class="anchor" aria-hidden="true" href="#assert--check-if-something-is-true">#</a></h4>
 <ul>
 <li><code>assert</code> is used to check if a condition is true.</li>
@@ -235,17 +239,17 @@ And so will your future self.</p></blockquote>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/github/">Github</a></li>
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/tags/testing/">Testing</a></li>
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/github/">Github</a></li>
+      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/tags/testing/">Testing</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/zenarchh/zenarchh.github.io.git/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by
