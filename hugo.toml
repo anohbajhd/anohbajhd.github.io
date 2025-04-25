@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/zenarchh/zenarchh.github.io.git'
+baseURL = 'https://zenarchh.github.io'
 languageCode = 'en-us'
 title = 'Anohba Jehad'
 
@@ -55,3 +55,11 @@ theme = "hugo-PaperMod"
  [[menu.main]]
    name = "Search"
    url = "/search"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+

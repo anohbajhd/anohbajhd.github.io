@@ -38,11 +38,6 @@ Creating your website is as simple as:
 hugo new site my-website
 ```
 ## 3. Add a Theme
-Browse [Hugo Themes](https://themes.gohugo.io/) and choose a design you like. Clone it into the themes directory:
-
-```bash
-git clone https://github.com/<theme-repo> themes/<theme-name>
-```
 ## 4. Create Content
 To add your first post, use:
 

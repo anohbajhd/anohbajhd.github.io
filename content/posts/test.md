@@ -20,7 +20,7 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 > **“Hey, are you really doing your job?”**
 
 ---
-Types of Testing (The Basics)
+## Types of Testing (The Basics)
 
 Here are the basic ones you’ll encounter:
 
@@ -33,7 +33,7 @@ Here are the basic ones you’ll encounter:
 
 > As a beginner, we’ll mostly be doing **unit testing**.
 
-Tools We Use: `pytest`
+## Tools We Use: `pytest`
 
 We'll use **`pytest`**, which is a powerful and easy-to-use testing tool in Python.
 
@@ -41,7 +41,7 @@ We'll use **`pytest`**, which is a powerful and easy-to-use testing tool in Pyth
 
 If you don’t have it yet, run this command:
 
-![command screenshot](/sa1.png)
+![command screenshot](/python/sa1.png)
 
 ## A Simple Way to Test: `pytest`
 
@@ -49,7 +49,7 @@ In Python, there’s a tool called **pytest**. It helps you test your code easil
 
 For example:
 
-![code screenshot](/sa.png)
+![code screenshot](/python/sa.png)
 
 ---
 
@@ -60,7 +60,7 @@ For example:
 - `def` is short for **define**.
 - It's used to **create a function** in Python.
 
-![code screenshot](/sb.png)
+![code screenshot](/python/sb.png)
 
 #### `assert` — Check if Something is True
 
