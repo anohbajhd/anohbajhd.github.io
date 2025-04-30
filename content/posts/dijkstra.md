@@ -1,11 +1,8 @@
 +++
 date = '2025-04-01T12:30:00+05:00'
-title = 'Dijkstra's Algorithm: Your GPS for the World of Graphs'
-tags = ['dijkstra', 'algorithm', 'ubuntu', 'linux']
+title = "Dijkstra's Algorithm: Your GPS for the World of Graphs"
+tags = ['dijkstra', 'algorithm', 'ubuntu', 'graphs']
 +++
-
-
-
 
 
 # Introduction
