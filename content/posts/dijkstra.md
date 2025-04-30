@@ -76,11 +76,7 @@ Dijkstra’s Algorithm solves the single-source shortest path problem in a graph
 
 Given the following weighted graph:
 
-A ---3--- B  
-|         |  
-1         2  
-|         |  
-C ---4--- D
+<pre> ``` A ---3--- B | | 1 2 | | C ---4--- D ``` </pre>
 
 
 **Starting from A:**
