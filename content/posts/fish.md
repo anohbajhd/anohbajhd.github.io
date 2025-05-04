@@ -30,13 +30,15 @@ Fish has evolved as a great tool for developers and sysadmins who want a shell t
 - Learning curve for users transitioning from Bash, especially for scripting.
 - Community is smaller than Bash or Zsh, meaning fewer plugins and tutorials.
 
-##  My Terminal Glows – Thanks, Fish!
+##  Terminal Lit. Credit: Fish
 
 ![command screenshot](/fish/s.png)
+### What it means overall:
+
 ```css
 ~ main +3 !12 ?95 ❯
 ```
-### What it means overall:
+
 You're inside a Git repository, on the main branch, with:
 
 - 3 staged
