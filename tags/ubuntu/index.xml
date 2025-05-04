@@ -6,12 +6,21 @@
     <description>Recent content in Ubuntu on Anohba Jehad</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Apr 2025 12:30:00 +0500</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell Shocked? Try Fish!</title>
+      <link>http://localhost:1313/posts/fish/</link>
+      <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/fish/</guid>
+      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;
+&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
       <link>http://localhost:1313/posts/dijkstra/</link>
-      <pubDate>Tue, 01 Apr 2025 12:30:00 +0500</pubDate>
+      <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/dijkstra/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
