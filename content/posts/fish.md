@@ -30,6 +30,25 @@ Fish has evolved as a great tool for developers and sysadmins who want a shell t
 - Learning curve for users transitioning from Bash, especially for scripting.
 - Community is smaller than Bash or Zsh, meaning fewer plugins and tutorials.
 
+##  My Terminal Glows – Thanks, Fish!
+
+![command screenshot](/fish/s.png)
+```css
+~ main +3 !12 ?95 ❯
+```
+### What it means overall:
+You're inside a Git repository, on the main branch, with:
+
+- 3 staged
+
+- 12 unstaged
+
+- 95 untracked changes
+
+That's a busy Git workspace! 😅
+
+#### Here's how you can set your own Fish:-
+
 ## Setting Up Fish on Ubuntu
 
 Getting started with Fish Shell is straightforward, and the setup process on Ubuntu is simple:

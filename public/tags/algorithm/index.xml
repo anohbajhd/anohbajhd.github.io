@@ -6,12 +6,12 @@
     <description>Recent content in Algorithm on Anohba Jehad</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Apr 2025 12:30:00 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
       <link>http://localhost:1313/posts/dijkstra/</link>
-      <pubDate>Tue, 01 Apr 2025 12:30:00 +0500</pubDate>
+      <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/dijkstra/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
