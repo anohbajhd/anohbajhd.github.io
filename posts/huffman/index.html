@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=36033&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Huffman Coding: The Art of Compression | Anohba Jehad</title>
+<meta name="keywords" content="huffman, algorithm, ubuntu, greedy, coding">
+<meta name="description" content="In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in Huffman Coding — a beautifully simple yet powerful algorithm used for lossless data compression. It&rsquo;s been a cornerstone since it was introduced.
+
+What Is Huffman Coding?
+Huffman Coding is a greedy algorithm used to compress data without losing any information. The idea is simple:
+Assign shorter codes to more frequent characters and longer codes to less frequent ones.
+Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:36033/posts/huffman/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:36033/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:36033/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:36033/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:36033/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:36033/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:36033/posts/huffman/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:36033/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:36033/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:36033/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:36033/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:36033/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Huffman Coding: The Art of Compression
+    </h1>
+    <div class="post-meta"><span title='2025-05-06 00:46:56 +0500 PKT'>May 6, 2025</span>&nbsp;·&nbsp;5 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul><ul>
+                <li>
+                    <a href="#what-is-huffman-coding" aria-label="What Is Huffman Coding?">What Is Huffman Coding?</a></li></ul>
+                    
+                <li>
+                    <a href="#terminologies" aria-label="Terminologies">Terminologies</a><ul>
+                        
+                <li>
+                    <a href="#how-it-works-step-by-step" aria-label="How It Works (Step-by-Step)">How It Works (Step-by-Step)</a></li>
+                <li>
+                    <a href="#example" aria-label="Example">Example</a><ul>
+                        
+                <li>
+                    <a href="#step-1-frequency-count" aria-label="Step 1: Frequency Count">Step 1: Frequency Count</a></li>
+                <li>
+                    <a href="#step-2-build-a-min-heap" aria-label="Step 2: Build a Min Heap">Step 2: Build a Min Heap</a></li>
+                <li>
+                    <a href="#step-3-create-the-huffman-tree" aria-label="Step 3: Create the Huffman Tree">Step 3: Create the Huffman Tree</a></li>
+                <li>
+                    <a href="#step-4-assign-binary-codes" aria-label="Step 4: Assign Binary Codes">Step 4: Assign Binary Codes</a></li>
+                <li>
+                    <a href="#step-5-encode-the-original-string" aria-label="Step 5: Encode the Original String">Step 5: Encode the Original String</a></li>
+                <li>
+                    <a href="#final-binary-string" aria-label="Final Binary String:">Final Binary String:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#where-is-huffman-coding-used" aria-label="Where Is Huffman Coding Used?">Where Is Huffman Coding Used?</a></li>
+                <li>
+                    <a href="#advantages" aria-label="Advantages">Advantages</a></li>
+                <li>
+                    <a href="#disadvantages" aria-label="Disadvantages">Disadvantages</a></li>
+                <li>
+                    <a href="#when-not-to-use-huffman-coding" aria-label="When Not to Use Huffman Coding">When Not to Use Huffman Coding</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in <em>Huffman Coding</em> — a beautifully simple yet powerful algorithm used for <strong>lossless data compression</strong>. It&rsquo;s been a cornerstone since it was introduced.</p>
+<hr>
+<h2 id="what-is-huffman-coding">What Is Huffman Coding?<a hidden class="anchor" aria-hidden="true" href="#what-is-huffman-coding">#</a></h2>
+<p>Huffman Coding is a <strong>greedy algorithm</strong> used to compress data without losing any information. The idea is simple:<br>
+<strong>Assign shorter codes to more frequent characters and longer codes to less frequent ones.</strong>
+Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.</p>
+<p>It’s like using nicknames. Instead of saying &ldquo;Jonathanathan&rdquo; every time, you just say &ldquo;Jon&rdquo;. Saves time. Saves space. No information lost. That&rsquo;s the Huffman vibe.</p>
+<p>It uses a <strong>binary tree structure</strong> to build optimal prefix codes (no code is a prefix of another), ensuring efficient encoding and decoding.</p>
+<hr>
+<h1 id="terminologies">Terminologies<a hidden class="anchor" aria-hidden="true" href="#terminologies">#</a></h1>
+<table>
+  <thead>
+      <tr>
+          <th>Term</th>
+          <th>What It Means</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Character Frequency</strong></td>
+          <td>How many times a character appers in the text.</td>
+      </tr>
+      <tr>
+          <td><strong>Leaf Node</strong></td>
+          <td>A tree piece that holds a character. It has no children.</td>
+      </tr>
+      <tr>
+          <td><strong>Internal Node</strong></td>
+          <td>A tree piece that connects other nodes. It doesn&rsquo;t hold a character.</td>
+      </tr>
+      <tr>
+          <td><strong>Root Node</strong></td>
+          <td>The top part of the tree that connects everything.</td>
+      </tr>
+      <tr>
+          <td><strong>Min Heap</strong></td>
+          <td>A list that always gives the smallest number first.</td>
+      </tr>
+      <tr>
+          <td><strong>Binary Code Assignment</strong></td>
+          <td>Left turn = 0, right turn = 1. Used to make codes from the tree.</td>
+      </tr>
+      <tr>
+          <td><strong>Prefix-Free Code</strong></td>
+          <td>No code starts the same as another, so there&rsquo;s no confusion when reading.</td>
+      </tr>
+      <tr>
+          <td><strong>Compression</strong></td>
+          <td>Making data smaller so it takes up less space.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="how-it-works-step-by-step">How It Works (Step-by-Step)<a hidden class="anchor" aria-hidden="true" href="#how-it-works-step-by-step">#</a></h2>
+<ol>
+<li>
+<p><strong>Calculate Frequencies</strong><br>
+Count how many times each character appears in the input data.</p>
+</li>
+<li>
+<p><strong>Build a Priority Queue</strong><br>
+Each character becomes a leaf node with its frequency as weight.</p>
+</li>
+<li>
+<p><strong>Build the Huffman Tree</strong><br>
+Repeatedly:</p>
+<ul>
+<li>Take two lowest-frequency nodes,</li>
+<li>Combine them into a new node with the sum of their frequencies,</li>
+<li>Insert the new node back into the queue.
+Continue until only one node (the root) is left.</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Binary Codes</strong><br>
+Traverse the tree:</p>
+<ul>
+<li>Go left ➡️ append <code>0</code></li>
+<li>Go right ➡️ append <code>1</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="example">Example<a hidden class="anchor" aria-hidden="true" href="#example">#</a></h2>
+<p>Let’s take a simple string:</p>
+<pre tabindex="0"><code>&#34;beep boop beer&#34;
+</code></pre><p>We’ll walk through how Huffman compresses this.</p>
+<h3 id="step-1-frequency-count">Step 1: Frequency Count<a hidden class="anchor" aria-hidden="true" href="#step-1-frequency-count">#</a></h3>
+<p>We start by counting the frequency of each character in the string &ldquo;beep boop beer&rdquo;:</p>
+<ul>
+<li><code>b</code>: 3</li>
+<li><code>e</code>: 4</li>
+<li><code>o</code>: 2</li>
+<li><code>p</code>: 2</li>
+<li><code>r</code>: 1</li>
+<li>(space): 2</li>
+</ul>
+<p>These frequencies help us decide which characters should get short or long codes.</p>
+<h3 id="step-2-build-a-min-heap">Step 2: Build a Min Heap<a hidden class="anchor" aria-hidden="true" href="#step-2-build-a-min-heap">#</a></h3>
+<p>Next, we create a <strong>Min Heap</strong> (priority queue) from the characters and their frequencies:</p>
+<p>[ r:1, o:2, p:2, (space):2, b:3, e:4 ]</p>
+<p>We repeatedly take out the two lowest frequency nodes, combine them, and put the result back into the heap. This process eventually forms our <strong>Huffman Tree</strong>.</p>
+<h3 id="step-3-create-the-huffman-tree">Step 3: Create the Huffman Tree<a hidden class="anchor" aria-hidden="true" href="#step-3-create-the-huffman-tree">#</a></h3>
+<p>Keep merging the two smallest nodes until only one node (the <strong>root</strong>) remains. Let’s say we get this structure:</p>
+<p><img alt="Structure screenshot" loading="lazy" src="/huffman/s1.png"></p>
+<h3 id="step-4-assign-binary-codes">Step 4: Assign Binary Codes<a hidden class="anchor" aria-hidden="true" href="#step-4-assign-binary-codes">#</a></h3>
+<p>Now, we traverse the tree and assign binary codes. The rule is:</p>
+<ul>
+<li>Left = <code>0</code></li>
+<li>Right = <code>1</code></li>
+</ul>
+<p>From the tree, we get the following codes:</p>
+<ul>
+<li><code>e → 10</code></li>
+<li><code>b → 11</code></li>
+<li><code>(space) → 000</code></li>
+<li><code>p → 001</code></li>
+<li><code>r → 1000</code></li>
+<li><code>o → 1001</code></li>
+</ul>
+<p>(Note: The exact codes may vary depending on how the tree was built, but they will always be <strong>prefix-free</strong>.)</p>
+<h3 id="step-5-encode-the-original-string">Step 5: Encode the Original String<a hidden class="anchor" aria-hidden="true" href="#step-5-encode-the-original-string">#</a></h3>
+<p>Let’s encode the original string <strong>&ldquo;beep boop beer&rdquo;</strong> using the Huffman codes:</p>
+<p>Original:<br>
+b e e p b o o p b e e r</p>
+<p>Using the codes:<br>
+b → 11
+e → 10
+p → 001
+(space) → 000
+o → 1001
+r → 1000</p>
+<p>So, we get the following binary string:
+11 10 10 001 11 1001 1001 001 11 10 10 1000</p>
+<h3 id="final-binary-string">Final Binary String:<a hidden class="anchor" aria-hidden="true" href="#final-binary-string">#</a></h3>
+<p>111010001111001100100010010110101000</p>
+<p>This is much smaller than using <strong>8-bit ASCII</strong> per character.</p>
+<hr>
+<h2 id="where-is-huffman-coding-used">Where Is Huffman Coding Used?<a hidden class="anchor" aria-hidden="true" href="#where-is-huffman-coding-used">#</a></h2>
+<p>Huffman coding is used extensively in:</p>
+<ul>
+<li><strong>File Compression</strong>: Formats like <code>.zip</code>, <code>.gz</code></li>
+<li><strong>Image Compression</strong>: JPEG (in entropy encoding stage)</li>
+<li><strong>Video Compression</strong>: MPEG, H.264 codecs</li>
+<li><strong>Text Compression</strong>: Unix <code>compress</code>, PDF text compression</li>
+<li><strong>Data transmission</strong>: When minimizing bandwidth is critical</li>
+</ul>
+<hr>
+<h2 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h2>
+<p><strong>Lossless Compression</strong> — No data is lost during encoding.<br>
+<strong>Optimal for symbol-by-symbol encoding</strong> — Based on frequency.<br>
+<strong>Fast and Simple</strong> — Efficient in both compression and decompression.<br>
+<strong>Prefix-free codes</strong> — No ambiguity during decoding.</p>
+<hr>
+<h2 id="disadvantages">Disadvantages<a hidden class="anchor" aria-hidden="true" href="#disadvantages">#</a></h2>
+<p><strong>Requires Frequency Table</strong> — Needs to be stored/sent along with compressed data.<br>
+<strong>Not Always Best</strong> — For small data sets or near-uniform frequencies, it might not compress well.<br>
+<strong>Static</strong> — Doesn’t adapt to changing data unless used in a dynamic/adaptive version.<br>
+<strong>Tree Overhead</strong> — Storing the tree adds some overhead for very small inputs.</p>
+<hr>
+<h2 id="when-not-to-use-huffman-coding">When <em>Not</em> to Use Huffman Coding<a hidden class="anchor" aria-hidden="true" href="#when-not-to-use-huffman-coding">#</a></h2>
+<ul>
+<li>If you&rsquo;re compressing <strong>already compressed files</strong> (like <code>.mp4</code>, <code>.png</code>)</li>
+<li>When your data has <strong>very little redundancy</strong></li>
+<li>If you&rsquo;re aiming for <strong>real-time compression</strong> with fast, adaptive techniques (like Arithmetic or LZ-based compression)</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Huffman Coding remains one of the most elegant examples of how theory meets practicality. It teaches us the value of <strong>frequency</strong>, <strong>greedy algorithms</strong>, and <strong>efficient data structures</strong> — all wrapped in a sweet little binary tree.</p>
+<p>Whether you’re building your own compression tool, diving into how JPEG works, or just brushing up for a comp-sci interview, Huffman Coding is a must-know classic.</p>
+<blockquote>
+<p>“The art of programming is the art of organizing complexity.” — Edsger Dijkstra</p></blockquote>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:36033/tags/huffman/">Huffman</a></li>
+      <li><a href="http://localhost:36033/tags/algorithm/">Algorithm</a></li>
+      <li><a href="http://localhost:36033/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="http://localhost:36033/tags/greedy/">Greedy</a></li>
+      <li><a href="http://localhost:36033/tags/coding/">Coding</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:36033/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
