@@ -1,5 +1,5 @@
 +++
-date = '2025-05-04T12:15:56+05:00'
+date = '2025-05-08T12:15:56+05:00'
 title = "Oh My Zsh!"
 tags = ['zsh', 'oh-my-zsh', 'ubuntu', 'shell']
 +++
