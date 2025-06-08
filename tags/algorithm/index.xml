@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Algorithm on Anohba Jehad</title>
-    <link>http://localhost:36033/tags/algorithm/</link>
+    <link>http://localhost:1313/tags/algorithm/</link>
     <description>Recent content in Algorithm on Anohba Jehad</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2025 00:46:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:36033/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Huffman Coding: The Art of Compression</title>
-      <link>http://localhost:36033/posts/huffman/</link>
+      <link>http://localhost:1313/posts/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:36033/posts/huffman/</guid>
+      <guid>http://localhost:1313/posts/huffman/</guid>
       <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;
@@ -22,9 +22,9 @@ Ever tried zipping a file to save space? That magic trick behind the scenes? Tha
     </item>
     <item>
       <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
-      <link>http://localhost:36033/posts/dijkstra/</link>
+      <link>http://localhost:1313/posts/dijkstra/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:36033/posts/dijkstra/</guid>
+      <guid>http://localhost:1313/posts/dijkstra/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
 &lt;hr&gt;
