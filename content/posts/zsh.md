@@ -136,7 +136,7 @@ alias zshconfig='nano ~/.zshrc'
 alias ..='cd ..'
 alias ...='cd ../..'
 ```
-You just created shortcuts for your future self. 💫
+You just created shortcuts for your future self. 
 
 ## Pro Tips (But Still Beginner Friendly)
 - Fonts Matter: Install Nerd Fonts for icons and smooth glyphs.
@@ -157,7 +157,7 @@ So don’t settle for default. Upgrade. Customize.
 
 Here’s a quick summary of everything you need to get Zsh looking and working beautifully:
 
-| 🪄 Step             | 💻 Command                                                                 |
+|    Step             |    Command                                                                 |
 |---------------------|----------------------------------------------------------------------------|
 | Install Zsh         | `sudo apt install zsh`                                                     |
 | Set as default shell| `chsh -s $(which zsh)`                                                     |
