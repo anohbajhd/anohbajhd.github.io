@@ -53,7 +53,7 @@ and then:
 Install it with one command:
 ![command screenshot](/zsh/s3.png)
 
-![command screenshot](/zsh/s3.png)
+![command screenshot](/zsh/s4.png)
 
 You’ll now have access to:
 

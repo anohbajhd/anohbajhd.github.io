@@ -6,12 +6,12 @@
     <description>Recent content in Zsh on Anohba Jehad</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 12:15:56 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oh My Zsh!</title>
       <link>http://localhost:1313/posts/zsh/</link>
-      <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
+      <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/zsh/</guid>
       <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
 If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
