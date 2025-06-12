@@ -6,8 +6,18 @@
     <description>Recent content in Ubuntu on Anohba Jehad</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 May 2025 00:46:56 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oh My Zsh!</title>
+      <link>http://localhost:1313/posts/zsh/</link>
+      <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/zsh/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
+If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Huffman Coding: The Art of Compression</title>
       <link>http://localhost:1313/posts/huffman/</link>
@@ -19,16 +29,6 @@
 &lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;
 &lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;
 Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Oh My Zsh!</title>
-      <link>http://localhost:1313/posts/zsh/</link>
-      <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/zsh/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
-If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shell Shocked? Try Fish!</title>
