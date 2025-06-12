@@ -72,7 +72,7 @@ Open your .zshrc file:
 ```bash
 nano ~/.zshrc
 ```
-![command screenshot](/zsh/s3.png)
+![command screenshot](/zsh/s5.png)
 
 - Note: I'm using robbyrussell theme as it is. If you want to change it, follow the below guidelines:
 
