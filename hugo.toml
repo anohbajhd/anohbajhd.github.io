@@ -1,4 +1,4 @@
-baseURL = 'https://zenarchh.github.io'
+baseURL = 'https://AnohbaJhd.github.io'
 languageCode = 'en-us'
 title = 'Anohba Jehad'
 
@@ -22,7 +22,7 @@ theme = "hugo-PaperMod"
     enabled = true
     title = "Anohba Jehad"
     subtitle = "The First Thinker🔆"
-    imageUrl = "profile.jpg"
+    imageUrl = "pf.jpeg"
     imageTitle = "Profile Picture"
     imageWidth = 200
     imageHeight = 200
@@ -40,7 +40,7 @@ theme = "hugo-PaperMod"
 
 [[params.socialIcons]]
    name = "Github"
-   url = "https://github.com/zenarchh"
+   url = "https://github.com/AnohbaJhd"
 
 [[params.socialIcons]]
    name = "LinkedIn"
