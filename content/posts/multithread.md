@@ -47,13 +47,13 @@ Each thread has:
 - Its own **stack** (for storing variables and function calls)
 - Access to the **shared heap memory** (common data area)
 
-The system’s thread scheduler decides how and when threads run, sometimes switching between them rapidly — this is called **context switching**.
+The system’s thread scheduler decides how and when threads run, sometimes switching between them rapidly, this is called **context switching**.
 
 ---
 
 ## Where Do We Use Multithreading?
 
--  **Games**: Audio, rendering, physics — all handled by separate threads.
+-  **Games**: Audio, rendering, physics, all handled by separate threads.
 -  **Web servers**: Manage thousands of user requests at once.
 -  **Image editors**: Apply filters to different image parts in parallel.
 -  **Downloaders**: Download file segments simultaneously.
@@ -80,6 +80,8 @@ thread.start()
 
 - `.join()` tells the main program to wait until the thread is done.
 
+---
+
 ## Best Practices
 
 -  Keep threads short-lived and task-specific
@@ -99,6 +101,8 @@ Multithreading brings speed, but also complexity:
 - Starvation: One thread never gets a turn.
 - Hard to Debug: Bugs can appear only in specific timings or conditions.
 
+---
+
 ## Tips for Writing Thread-Safe Code
 - Use mutexes/locks to protect shared resources.
 - Prefer immutable objects where possible.
@@ -108,7 +112,9 @@ Multithreading brings speed, but also complexity:
 - ExecutorService (Java)
 
 - std::async (C++)
-NOTE: I haven't Explored this part though these are the possible solutions I found on Google.
+`NOTE:` I haven't Explored this part though these are the possible solutions I found on Google.
+
+---
 
 ## Summary
 Multithreading in Python is a powerful tool, especially when working with I/O-bound operations. While the GIL (Global Interpreter Lock) limits its use for CPU-intensive work, multithreading is still a go-to choice for network calls, UI responsiveness, and parallel I/O.
