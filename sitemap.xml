@@ -2,123 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://AnohbaJhd.github.io/</loc>
+    <loc>http://localhost:1313/tags/beginner/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/concurrency/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/multithread/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multithreading/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/programming/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-28T23:45:00+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/zsh/</loc>
     <lastmod>2025-05-08T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/zsh/</loc>
+    <loc>http://localhost:1313/tags/oh-my-zsh/</loc>
     <lastmod>2025-05-08T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/oh-my-zsh/</loc>
+    <loc>http://localhost:1313/tags/shell/</loc>
     <lastmod>2025-05-08T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/</loc>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
     <lastmod>2025-05-08T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/shell/</loc>
+    <loc>http://localhost:1313/tags/zsh/</loc>
     <lastmod>2025-05-08T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/</loc>
-    <lastmod>2025-05-08T12:15:56+05:00</lastmod>
-  </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/ubuntu/</loc>
-    <lastmod>2025-05-08T12:15:56+05:00</lastmod>
-  </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/zsh/</loc>
-    <lastmod>2025-05-08T12:15:56+05:00</lastmod>
-  </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/algorithm/</loc>
+    <loc>http://localhost:1313/tags/algorithm/</loc>
     <lastmod>2025-05-06T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/coding/</loc>
+    <loc>http://localhost:1313/tags/coding/</loc>
     <lastmod>2025-05-06T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/greedy/</loc>
+    <loc>http://localhost:1313/tags/greedy/</loc>
     <lastmod>2025-05-06T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/huffman/</loc>
+    <loc>http://localhost:1313/tags/huffman/</loc>
     <lastmod>2025-05-06T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/huffman/</loc>
+    <loc>http://localhost:1313/posts/huffman/</loc>
     <lastmod>2025-05-06T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/fish/</loc>
+    <loc>http://localhost:1313/tags/fish/</loc>
     <lastmod>2025-05-04T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/fish/</loc>
+    <loc>http://localhost:1313/posts/fish/</loc>
     <lastmod>2025-05-04T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/tide/</loc>
+    <loc>http://localhost:1313/tags/tide/</loc>
     <lastmod>2025-05-04T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/dijkstra/</loc>
+    <loc>http://localhost:1313/tags/dijkstra/</loc>
     <lastmod>2025-05-01T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/dijkstra/</loc>
+    <loc>http://localhost:1313/posts/dijkstra/</loc>
     <lastmod>2025-05-01T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/graphs/</loc>
+    <loc>http://localhost:1313/tags/graphs/</loc>
     <lastmod>2025-05-01T00:46:56+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/test/</loc>
+    <loc>http://localhost:1313/posts/test/</loc>
     <lastmod>2025-04-23T11:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2025-04-23T11:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-04-23T11:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2025-04-23T11:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/testing/</loc>
+    <loc>http://localhost:1313/tags/testing/</loc>
     <lastmod>2025-04-23T11:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/gh/</loc>
+    <loc>http://localhost:1313/tags/gh/</loc>
     <lastmod>2025-03-23T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2025-03-23T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2025-03-23T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/githubcli/</loc>
+    <loc>http://localhost:1313/posts/githubcli/</loc>
     <lastmod>2025-03-23T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/ssh/</loc>
+    <loc>http://localhost:1313/tags/ssh/</loc>
     <lastmod>2025-03-23T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/ssh/</loc>
+    <loc>http://localhost:1313/posts/ssh/</loc>
     <lastmod>2025-03-07T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/pythonlog/</loc>
+    <loc>http://localhost:1313/posts/pythonlog/</loc>
     <lastmod>2025-03-05T12:30:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/vim/</loc>
+    <loc>http://localhost:1313/posts/vim/</loc>
     <lastmod>2025-02-12T10:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/vim/</loc>
+    <loc>http://localhost:1313/tags/vim/</loc>
     <lastmod>2025-02-12T10:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/hugo/</loc>
+    <loc>http://localhost:1313/posts/hugo/</loc>
     <lastmod>2025-02-07T12:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-02-07T09:08:21+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/tags/latex/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
     <lastmod>2025-01-12T10:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/posts/latex/</loc>
+    <loc>http://localhost:1313/posts/latex/</loc>
     <lastmod>2025-01-12T10:00:00+05:00</lastmod>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://AnohbaJhd.github.io/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
