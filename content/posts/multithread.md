@@ -1,7 +1,7 @@
 ---
 
-date: 2025-06-28T23:45:00+05:00
-title: "Mastering Multithreading in Programming"
+date: 2025-05-10T23:45:00+05:00
+title: "Threaded Realities: Beyond the Loop"
 description: "A beginner-friendly guide to understanding and implementing multithreading effectively."
 author: "Anohba Jehad (zenarchh)"
 tags: [multithreading, concurrency, programming, beginner]
@@ -62,7 +62,7 @@ The system’s thread scheduler decides how and when threads run, sometimes swit
 
 ## Writing Threads in Different Languages
 
-### 🐍 Python
+###  Python
 
 ```python
 import threading
@@ -74,11 +74,11 @@ thread = threading.Thread(target=task)
 thread.start()
 ```
 #### What’s Happening Here?
-- **threading.Thread()** creates a thread object.
+- `threading.Thread()` creates a thread object.
 
-- **.start()** begins execution in a new thread.
+- `.start()` begins execution in a new thread.
 
-- **.join()** tells the main program to wait until the thread is done.
+- `.join()` tells the main program to wait until the thread is done.
 
 ## Best Practices
 
