@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Oh-My-Zsh on Anohba Jehad</title>
-    <link>http://localhost:38677/tags/oh-my-zsh/</link>
+    <link>http://localhost:41113/tags/oh-my-zsh/</link>
     <description>Recent content in Oh-My-Zsh on Anohba Jehad</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 May 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:38677/tags/oh-my-zsh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:41113/tags/oh-my-zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oh My Zsh!</title>
-      <link>http://localhost:38677/posts/zsh/</link>
+      <link>http://localhost:41113/posts/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:38677/posts/zsh/</guid>
+      <guid>http://localhost:41113/posts/zsh/</guid>
       <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
 If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;

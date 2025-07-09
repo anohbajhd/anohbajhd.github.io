@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ssh on Anohba Jehad</title>
-    <link>http://localhost:38677/tags/ssh/</link>
+    <link>http://localhost:41113/tags/ssh/</link>
     <description>Recent content in Ssh on Anohba Jehad</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:38677/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:41113/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
-      <link>http://localhost:38677/posts/githubcli/</link>
+      <link>http://localhost:41113/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:38677/posts/githubcli/</guid>
+      <guid>http://localhost:41113/posts/githubcli/</guid>
       <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;
 &lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
-      <link>http://localhost:38677/posts/ssh/</link>
+      <link>http://localhost:41113/posts/ssh/</link>
       <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:38677/posts/ssh/</guid>
+      <guid>http://localhost:41113/posts/ssh/</guid>
       <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;
 &lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;
 &lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;
