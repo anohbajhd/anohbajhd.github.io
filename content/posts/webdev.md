@@ -1,7 +1,7 @@
 +++
 date = '2025-07-08T12:15:56+05:00'
 title = "The Architecture of the Modern Web"
-description: "Web Development Simplified: Frontend and Backend Explained"
+description = "Web Development Simplified: Frontend and Backend Explained"
 tags = ['webdevelopment', 'frontend', 'backend', 'ubuntu']
 +++
 
