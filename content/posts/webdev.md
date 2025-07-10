@@ -6,15 +6,15 @@ tags = ['webdevelopment', 'frontend', 'backend', 'ubuntu']
 +++
 
 
-Web development is all about building digital experiences—from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.
+Web development is all about building digital experiences; from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.
 
-In this blog, we’ll walk you through the core building blocks of each side. This isn’t a tutorial—it’s a clarity-first breakdown of each element so you can understand what it does, and why it's important.
+In this blog, we’ll walk through the core building blocks of each side. This isn’t a tutorial, it’s a clarity-first breakdown of each element so you can understand what it does, and why it's important.
 
 ## Frontend: What Users See and Interact With
 The frontend is the part of a website or web application that users directly experience. It includes everything from layout and buttons to animations and form interactions.
 
 ### HTML – The Structure
-HTML (HyperText Markup Language) forms the basic structure of every web page. It organizes content using tags—like paragraphs, headings, links, and images—so the browser knows what to display and where.
+HTML (HyperText Markup Language) forms the basic structure of every web page. It organizes content using tags; like paragraphs, headings, links, and images, so the browser knows what to display and where.
 
 ### CSS – The Style
 CSS (Cascading Style Sheets) adds styling to HTML. It controls how things look—colors, spacing, fonts, responsiveness, and more. Without CSS, all websites would look like plain black-and-white documents.
