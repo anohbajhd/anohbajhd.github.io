@@ -1,166 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Anohba Jehad</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Meet Jenkins: A Guide to Automation</title>
-      <link>http://localhost:1313/posts/jenkins/</link>
-      <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/jenkins/</guid>
-      <description>&lt;hr&gt;
-&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;
-&lt;p&gt;In simple terms:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;Jenkins is a server.
-It’s a program you install on a machine (your own computer, a VPS, or cloud) that:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Architecture of the Modern Web</title>
-      <link>http://localhost:1313/posts/webdev/</link>
-      <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/webdev/</guid>
-      <description>Web Development Simplified: Frontend and Backend Explained</description>
-    </item>
-    <item>
-      <title>Threaded Realities: Beyond the Loop</title>
-      <link>http://localhost:1313/posts/multithread/</link>
-      <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/multithread/</guid>
-      <description>A beginner-friendly guide to understanding and implementing multithreading effectively.</description>
-    </item>
-    <item>
-      <title>Oh My Zsh!</title>
-      <link>http://localhost:1313/posts/zsh/</link>
-      <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/zsh/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
-If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Huffman Coding: The Art of Compression</title>
-      <link>http://localhost:1313/posts/huffman/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/huffman/</guid>
-      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;
-&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;
-&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;
-Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Shell Shocked? Try Fish!</title>
-      <link>http://localhost:1313/posts/fish/</link>
-      <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/fish/</guid>
-      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;
-&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
-      <link>http://localhost:1313/posts/dijkstra/</link>
-      <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/dijkstra/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-dijkstras-algorithm&#34;&gt;What Is Dijkstra’s Algorithm?&lt;/h2&gt;
-&lt;p&gt;Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong&gt;non-negative edge weights&lt;/strong&gt;. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Don’t Trust Your Code—Test It</title>
-      <link>http://localhost:1313/posts/test/</link>
-      <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;
-&lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;
-&lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;why-should-we-test&#34;&gt;Why Should We Test?&lt;/h2&gt;
-&lt;p&gt;Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
-      <link>http://localhost:1313/posts/githubcli/</link>
-      <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;
-&lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;
-&lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Install and Configure SSH on Ubuntu</title>
-      <link>http://localhost:1313/posts/ssh/</link>
-      <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/ssh/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;
-&lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;
-&lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Secure Communication – Encrypts data, preventing eavesdropping and attacks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Remote Access – Manage servers and systems from anywhere.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Key-Based Authentication – Enables password-free and more secure logins.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Art of Logging In Python!</title>
-      <link>http://localhost:1313/posts/pythonlog/</link>
-      <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/pythonlog/</guid>
-      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;
-&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;
-&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;
-&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
-      <link>http://localhost:1313/posts/vim/</link>
-      <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/vim/</guid>
-      <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
-&lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;1-installing-vim&#34;&gt;1. Installing Vim&lt;/h1&gt;
-&lt;p&gt;Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title>
-      <link>http://localhost:1313/posts/hugo/</link>
-      <pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/hugo/</guid>
-      <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;
-&lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;
-&lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Fri, 07 Feb 2025 09:08:21 +0500</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;HI! This is my first post but honestly this is my 7th try!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title>
-      <link>http://localhost:1313/posts/latex/</link>
-      <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/latex/</guid>
-      <description>&lt;p&gt;Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p&gt;
-&lt;p&gt;But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Anohba Jehad</title><link>https://anohbahjd.github.io/posts/</link><description>Recent content in Posts on Anohba Jehad</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate><atom:link href="https://anohbahjd.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Meet Jenkins: A Guide to Automation</title><link>https://anohbahjd.github.io/posts/jenkins/</link><pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/jenkins/</guid><description>&lt;hr>
+&lt;h2 id="what-is-jenkins">What is Jenkins?&lt;/h2>
+&lt;p>&lt;strong>Jenkins&lt;/strong> is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong>Continuous Integration (CI)&lt;/strong> and &lt;strong>Continuous Delivery (CD)&lt;/strong> possible.&lt;/p>
+&lt;p>In simple terms:&lt;/p>
+&lt;blockquote>
+&lt;p>Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p>&lt;/blockquote>
+&lt;p>Jenkins is a server.
+It’s a program you install on a machine (your own computer, a VPS, or cloud) that:&lt;/p></description></item><item><title>The Architecture of the Modern Web</title><link>https://anohbahjd.github.io/posts/webdev/</link><pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/webdev/</guid><description>Web Development Simplified: Frontend and Backend Explained</description></item><item><title>Threaded Realities: Beyond the Loop</title><link>https://anohbahjd.github.io/posts/multithread/</link><pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/multithread/</guid><description>A beginner-friendly guide to understanding and implementing multithreading effectively.</description></item><item><title>Oh My Zsh!</title><link>https://anohbahjd.github.io/posts/zsh/</link><pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/zsh/</guid><description>&lt;p>&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
+If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p>
+&lt;h2 id="what-is-zsh">What is Zsh?&lt;/h2>
+&lt;p>&lt;strong>Zsh (Z Shell)&lt;/strong> is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p></description></item><item><title>Huffman Coding: The Art of Compression</title><link>https://anohbahjd.github.io/posts/huffman/</link><pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/huffman/</guid><description>&lt;p>In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em>Huffman Coding&lt;/em> — a beautifully simple yet powerful algorithm used for &lt;strong>lossless data compression&lt;/strong>. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-is-huffman-coding">What Is Huffman Coding?&lt;/h2>
+&lt;p>Huffman Coding is a &lt;strong>greedy algorithm&lt;/strong> used to compress data without losing any information. The idea is simple:&lt;br>
+&lt;strong>Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong>
+Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p></description></item><item><title>Shell Shocked? Try Fish!</title><link>https://anohbahjd.github.io/posts/fish/</link><pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/fish/</guid><description>&lt;p>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p>
+&lt;h2 id="what-is-fish-shell">What is Fish Shell?&lt;/h2>
+&lt;p>Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p></description></item><item><title>Dijkstra's Algorithm: Your GPS for the World of Graphs</title><link>https://anohbahjd.github.io/posts/dijkstra/</link><pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/dijkstra/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-is-dijkstras-algorithm">What Is Dijkstra’s Algorithm?&lt;/h2>
+&lt;p>Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong>non-negative edge weights&lt;/strong>. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p></description></item><item><title>Don’t Trust Your Code—Test It</title><link>https://anohbahjd.github.io/posts/test/</link><pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/test/</guid><description>&lt;h1 id="why-testing-your-code-matters">Why Testing Your Code Matters&lt;/h1>
+&lt;p>When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong>testing&lt;/strong> comes in.&lt;/p>
+&lt;p>Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p>
+&lt;hr>
+&lt;h2 id="why-should-we-test">Why Should We Test?&lt;/h2>
+&lt;p>Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p></description></item><item><title>Master GitHub: A Beginner’s Guide to GitHub CLI</title><link>https://anohbahjd.github.io/posts/githubcli/</link><pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/githubcli/</guid><description>&lt;p>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p>
+&lt;h2 id="why-use-github-cli">Why Use GitHub CLI?&lt;/h2>
+&lt;p>If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p></description></item><item><title>Install and Configure SSH on Ubuntu</title><link>https://anohbahjd.github.io/posts/ssh/</link><pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/ssh/</guid><description>&lt;h2 id="introduction-to-ssh">Introduction to SSH&lt;/h2>
+&lt;p>SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p>
+&lt;h2 id="advantages-of-ssh">Advantages of SSH&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Secure Communication – Encrypts data, preventing eavesdropping and attacks.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remote Access – Manage servers and systems from anywhere.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Key-Based Authentication – Enables password-free and more secure logins.&lt;/p></description></item><item><title>The Art of Logging In Python!</title><link>https://anohbahjd.github.io/posts/pythonlog/</link><pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/pythonlog/</guid><description>&lt;p>Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p>
+&lt;p>Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p>
+&lt;h2 id="why-use-logging">Why Use Logging?&lt;/h2>
+&lt;p>Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p></description></item><item><title>Mastering Vim: A Developer`s Swiss Army Knife</title><link>https://anohbahjd.github.io/posts/vim/</link><pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/vim/</guid><description>&lt;p>Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p>
+&lt;p>This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p>
+&lt;hr>
+&lt;h1 id="1-installing-vim">1. Installing Vim&lt;/h1>
+&lt;p>Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p></description></item><item><title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title><link>https://anohbahjd.github.io/posts/hugo/</link><pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/hugo/</guid><description>&lt;p>When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p>
+&lt;h2 id="why-hugo-is-a-game-changer">Why Hugo is a Game-Changer&lt;/h2>
+&lt;p>If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p></description></item><item><title>My First Post</title><link>https://anohbahjd.github.io/posts/my-first-post/</link><pubDate>Fri, 07 Feb 2025 09:08:21 +0500</pubDate><guid>https://anohbahjd.github.io/posts/my-first-post/</guid><description>&lt;p>HI! This is my first post but honestly this is my 7th try!&lt;/p></description></item><item><title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title><link>https://anohbahjd.github.io/posts/latex/</link><pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/latex/</guid><description>&lt;p>Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p>
+&lt;p>But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p></description></item></channel></rss>

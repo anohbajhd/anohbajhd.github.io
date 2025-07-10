@@ -1,26 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Pipeline on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/pipeline/</link>
-    <description>Recent content in Pipeline on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pipeline/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Meet Jenkins: A Guide to Automation</title>
-      <link>http://localhost:1313/posts/jenkins/</link>
-      <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/jenkins/</guid>
-      <description>&lt;hr&gt;
-&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;
-&lt;p&gt;In simple terms:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;Jenkins is a server.
-It’s a program you install on a machine (your own computer, a VPS, or cloud) that:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pipeline on Anohba Jehad</title><link>https://anohbahjd.github.io/tags/pipeline/</link><description>Recent content in Pipeline on Anohba Jehad</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate><atom:link href="https://anohbahjd.github.io/tags/pipeline/index.xml" rel="self" type="application/rss+xml"/><item><title>Meet Jenkins: A Guide to Automation</title><link>https://anohbahjd.github.io/posts/jenkins/</link><pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/jenkins/</guid><description>&lt;hr>
+&lt;h2 id="what-is-jenkins">What is Jenkins?&lt;/h2>
+&lt;p>&lt;strong>Jenkins&lt;/strong> is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong>Continuous Integration (CI)&lt;/strong> and &lt;strong>Continuous Delivery (CD)&lt;/strong> possible.&lt;/p>
+&lt;p>In simple terms:&lt;/p>
+&lt;blockquote>
+&lt;p>Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p>&lt;/blockquote>
+&lt;p>Jenkins is a server.
+It’s a program you install on a machine (your own computer, a VPS, or cloud) that:&lt;/p></description></item></channel></rss>
