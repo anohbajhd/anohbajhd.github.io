@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zsh on Anohba Jehad</title><link>https://anohbahjd.github.io/tags/zsh/</link><description>Recent content in Zsh on Anohba Jehad</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Thu, 08 May 2025 12:15:56 +0500</lastBuildDate><atom:link href="https://anohbahjd.github.io/tags/zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>Oh My Zsh!</title><link>https://anohbahjd.github.io/posts/zsh/</link><pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/zsh/</guid><description>&lt;p>&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
-If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p>
-&lt;h2 id="what-is-zsh">What is Zsh?&lt;/h2>
-&lt;p>&lt;strong>Zsh (Z Shell)&lt;/strong> is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zsh on Anohba Jehad</title>
+    <link>http://localhost:1313/tags/zsh/</link>
+    <description>Recent content in Zsh on Anohba Jehad</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 May 2025 12:15:56 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oh My Zsh!</title>
+      <link>http://localhost:1313/posts/zsh/</link>
+      <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/zsh/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
+If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

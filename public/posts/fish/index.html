@@ -1,17 +1,371 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Shell Shocked? Try Fish! | Anohba Jehad</title><meta name=keywords content="fish,tide,ubuntu,shell"><meta name=description content="When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Shell Shocked? Try Fish! | Anohba Jehad</title>
+<meta name="keywords" content="fish, tide, ubuntu, shell">
+<meta name="description" content="When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
 What is Fish Shell?
-Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems."><meta name=author content><link rel=canonical href=https://anohbahjd.github.io/posts/fish/><link crossorigin=anonymous href=/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css integrity="sha256-j+ECM6cGvIfy4Is8+XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as=style><link rel=icon href=https://anohbahjd.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://anohbahjd.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://anohbahjd.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://anohbahjd.github.io/apple-touch-icon.png><link rel=mask-icon href=https://anohbahjd.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://anohbahjd.github.io/posts/fish/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:url" content="https://anohbahjd.github.io/posts/fish/"><meta property="og:site_name" content="Anohba Jehad"><meta property="og:title" content="Shell Shocked? Try Fish!"><meta property="og:description" content="When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
-What is Fish Shell? Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-05-04T12:15:56+05:00"><meta property="article:modified_time" content="2025-05-04T12:15:56+05:00"><meta property="article:tag" content="Fish"><meta property="article:tag" content="Tide"><meta property="article:tag" content="Ubuntu"><meta property="article:tag" content="Shell"><meta name=twitter:card content="summary"><meta name=twitter:title content="Shell Shocked? Try Fish!"><meta name=twitter:description content="When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
-What is Fish Shell?
-Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://anohbahjd.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Shell Shocked? Try Fish!","item":"https://anohbahjd.github.io/posts/fish/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Shell Shocked? Try Fish!","name":"Shell Shocked? Try Fish!","description":"When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.\nWhat is Fish Shell? Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.\n","keywords":["fish","tide","ubuntu","shell"],"articleBody":"When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.\nWhat is Fish Shell? Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.\nFish has evolved as a great tool for developers and sysadmins who want a shell that works out-of-the-box with minimal configuration while still providing powerful features for daily use.\nUnique Features of Fish Shell Autosuggestions based on command history, shown inline as you type. Syntax highlighting for commands and arguments — errors are visible instantly. Built-in web-based configuration tool via fish_config. User-friendly scripting syntax — no need for extra quoting or export. Smart tab completions for commands, options, files, and directories. Multi-line editing makes writing long commands easier and clearer. No external plugins required for basic features — works great out of the box. Disadvantages of Fish Shell Not compatible with traditional Bash scripts — different syntax. Some third-party tools and scripts assume Bash or Zsh, which can cause issues. Not pre-installed or set as default in most systems — requires manual setup. Learning curve for users transitioning from Bash, especially for scripting. Community is smaller than Bash or Zsh, meaning fewer plugins and tutorials. Terminal Lit. Credit: Fish What it means overall: ~ main +3 !12 ?95 ❯ You’re inside a Git repository, on the main branch, with:\n3 staged\n12 unstaged\n95 untracked changes\nThat’s a busy Git workspace! 😅\nHere’s how you can set your own Fish:- Setting Up Fish on Ubuntu Getting started with Fish Shell is straightforward, and the setup process on Ubuntu is simple:\nInstall Fish: Open a terminal and run the following command to install Fish from the default Ubuntu repositories:\nsudo apt update Set Fish as Your Default Shell: To set Fish as your default shell, run:\nYou’ll need to log out and log back in for the change to take effect.\nTo Test It Now: You can either:\n…and then reopen your terminal.\nOr just type:\n…to switch to Fish in the current session right away.\nInstall Fisher (Plugin Manager for Fish): Fish has its own plugin manager called Fisher. To install it, run:\nStep 3: Install Tide Prompt (Optional but Awesome) Once Fisher is installed, install Tide (a beautiful and customizable prompt):\nThen run the configuration wizard:\ntide configure …and set the theme according to your flavor and taste.\nUse the Web-Based Configuration Tool: You can also configure Fish through a web interface by running:\nfish_config This will open a browser window with interactive options for customizing Fish.\nNote: Tide v5 requires Fish 3.6 or newer version, you might see errors like:\n$(…) is not supported. In fish, please use ‘(…)’ string length: Unknown option “-V” set: Unknown option “-f” Here’s how to fix it: Upgrade Fish to the latest version Add the official Fish repository:\nsudo apt update Upgrade Fish:\nCheck the version:\nConclusion Fish Shell is a modern, powerful, and user-friendly shell designed to improve your terminal experience. Its intelligent features like autosuggestions, syntax highlighting, and a web-based configuration tool make it a top choice for developers, sysadmins, and anyone who spends significant time in the terminal.\nWhile Fish has some drawbacks, such as compatibility with Bash scripts and software, its overall features make it a standout in the world of Unix-like shells. If you’re looking for a new shell to explore or need a more efficient terminal experience, Fish is definitely worth considering.\n","wordCount":"630","inLanguage":"en","datePublished":"2025-05-04T12:15:56+05:00","dateModified":"2025-05-04T12:15:56+05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anohbahjd.github.io/posts/fish/"},"publisher":{"@type":"Organization","name":"Anohba Jehad","logo":{"@type":"ImageObject","url":"https://anohbahjd.github.io/favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://anohbahjd.github.io/ accesskey=h title="Anohba Jehad (Alt + H)">Anohba Jehad</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://anohbahjd.github.io/archives title=Archives><span>Archives</span></a></li><li><a href=https://anohbahjd.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://anohbahjd.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://anohbahjd.github.io/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Shell Shocked? Try Fish!</h1><div class=post-meta><span title='2025-05-04 12:15:56 +0500 PKT'>May 4, 2025</span>&nbsp;·&nbsp;3 min</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#what-is-fish-shell aria-label="What is Fish Shell?">What is Fish Shell?</a></li><li><a href=#unique-features-of-fish-shell aria-label="Unique Features of Fish Shell">Unique Features of Fish Shell</a></li><li><a href=#disadvantages-of-fish-shell aria-label="Disadvantages of Fish Shell">Disadvantages of Fish Shell</a></li><li><a href=#terminal-lit-credit-fish aria-label="Terminal Lit. Credit: Fish">Terminal Lit. Credit: Fish</a><ul><li><a href=#what-it-means-overall aria-label="What it means overall:">What it means overall:</a><ul><li><a href=#heres-how-you-can-set-your-own-fish- aria-label="Here&rsquo;s how you can set your own Fish:-">Here&rsquo;s how you can set your own Fish:-</a></li></ul></li></ul></li><li><a href=#setting-up-fish-on-ubuntu aria-label="Setting Up Fish on Ubuntu">Setting Up Fish on Ubuntu</a><ul><li><a href=#install-fish aria-label="Install Fish:">Install Fish:</a></li><li><a href=#set-fish-as-your-default-shell aria-label="Set Fish as Your Default Shell:">Set Fish as Your Default Shell:</a></li><li><a href=#to-test-it-now aria-label="To Test It Now:">To Test It Now:</a></li></ul></li><li><a href=#install-fisher-plugin-manager-for-fish aria-label="Install Fisher (Plugin Manager for Fish):">Install Fisher (Plugin Manager for Fish):</a></li><li><a href=#step-3-install-tide-prompt-optional-but-awesome aria-label="Step 3: Install Tide Prompt (Optional but Awesome)">Step 3: Install Tide Prompt (Optional but Awesome)</a><ul><li><a href=#use-the-web-based-configuration-tool aria-label="Use the Web-Based Configuration Tool:">Use the Web-Based Configuration Tool:</a></li><li><a href=#heres-how-to-fix-it aria-label="Here&rsquo;s how to fix it:">Here&rsquo;s how to fix it:</a><ul><li><a href=#upgrade-fish-to-the-latest-version aria-label="Upgrade Fish to the latest version">Upgrade Fish to the latest version</a></li></ul></li></ul></li><li><a href=#conclusion aria-label=Conclusion>Conclusion</a></li></ul></div></details></div><div class=post-content><p>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.</p><h2 id=what-is-fish-shell>What is Fish Shell?<a hidden class=anchor aria-hidden=true href=#what-is-fish-shell>#</a></h2><p>Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.</p><p>Fish has evolved as a great tool for developers and sysadmins who want a shell that works out-of-the-box with minimal configuration while still providing powerful features for daily use.</p><h2 id=unique-features-of-fish-shell>Unique Features of Fish Shell<a hidden class=anchor aria-hidden=true href=#unique-features-of-fish-shell>#</a></h2><ul><li>Autosuggestions based on command history, shown inline as you type.</li><li>Syntax highlighting for commands and arguments — errors are visible instantly.</li><li>Built-in web-based configuration tool via <code>fish_config</code>.</li><li>User-friendly scripting syntax — no need for extra quoting or export.</li><li>Smart tab completions for commands, options, files, and directories.</li><li>Multi-line editing makes writing long commands easier and clearer.</li><li>No external plugins required for basic features — works great out of the box.</li></ul><h2 id=disadvantages-of-fish-shell>Disadvantages of Fish Shell<a hidden class=anchor aria-hidden=true href=#disadvantages-of-fish-shell>#</a></h2><ul><li>Not compatible with traditional Bash scripts — different syntax.</li><li>Some third-party tools and scripts assume Bash or Zsh, which can cause issues.</li><li>Not pre-installed or set as default in most systems — requires manual setup.</li><li>Learning curve for users transitioning from Bash, especially for scripting.</li><li>Community is smaller than Bash or Zsh, meaning fewer plugins and tutorials.</li></ul><h2 id=terminal-lit-credit-fish>Terminal Lit. Credit: Fish<a hidden class=anchor aria-hidden=true href=#terminal-lit-credit-fish>#</a></h2><p><img alt="command screenshot" loading=lazy src=/fish/s.png></p><h3 id=what-it-means-overall>What it means overall:<a hidden class=anchor aria-hidden=true href=#what-it-means-overall>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#f92672>~</span> <span style=color:#f92672>main</span> <span style=color:#f92672>+</span><span style=color:#f92672>3</span> <span style=color:#f92672>!</span><span style=color:#f92672>12</span> <span style=color:#f92672>?</span><span style=color:#f92672>95</span> <span style=color:#960050;background-color:#1e0010>❯</span>
-</span></span></code></pre></div><p>You&rsquo;re inside a Git repository, on the main branch, with:</p><ul><li><p>3 staged</p></li><li><p>12 unstaged</p></li><li><p>95 untracked changes</p></li></ul><p>That&rsquo;s a busy Git workspace! 😅</p><h4 id=heres-how-you-can-set-your-own-fish->Here&rsquo;s how you can set your own Fish:-<a hidden class=anchor aria-hidden=true href=#heres-how-you-can-set-your-own-fish->#</a></h4><h2 id=setting-up-fish-on-ubuntu>Setting Up Fish on Ubuntu<a hidden class=anchor aria-hidden=true href=#setting-up-fish-on-ubuntu>#</a></h2><p>Getting started with Fish Shell is straightforward, and the setup process on Ubuntu is simple:</p><h3 id=install-fish>Install Fish:<a hidden class=anchor aria-hidden=true href=#install-fish>#</a></h3><p>Open a terminal and run the following command to install Fish from the default Ubuntu repositories:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt update
-</span></span></code></pre></div><p><img alt="command screenshot" loading=lazy src=/fish/s1.png></p><h3 id=set-fish-as-your-default-shell>Set Fish as Your Default Shell:<a hidden class=anchor aria-hidden=true href=#set-fish-as-your-default-shell>#</a></h3><p>To set Fish as your default shell, run:</p><p><img alt="command screenshot" loading=lazy src=/fish/s2.png></p><p>You’ll need to log out and log back in for the change to take effect.</p><h3 id=to-test-it-now>To Test It Now:<a hidden class=anchor aria-hidden=true href=#to-test-it-now>#</a></h3><p>You can either:</p><p><img alt="command screenshot" loading=lazy src=/fish/s4.png></p><p>&mldr;and then reopen your terminal.</p><p>Or just type:</p><p><img alt="command screenshot" loading=lazy src=/fish/s3.png></p><p>&mldr;to switch to Fish in the current session right away.</p><h2 id=install-fisher-plugin-manager-for-fish>Install Fisher (Plugin Manager for Fish):<a hidden class=anchor aria-hidden=true href=#install-fisher-plugin-manager-for-fish>#</a></h2><p>Fish has its own plugin manager called Fisher. To install it, run:</p><p><img alt="command screenshot" loading=lazy src=/fish/s5.png></p><h2 id=step-3-install-tide-prompt-optional-but-awesome>Step 3: Install Tide Prompt (Optional but Awesome)<a hidden class=anchor aria-hidden=true href=#step-3-install-tide-prompt-optional-but-awesome>#</a></h2><p>Once Fisher is installed, install Tide (a beautiful and customizable prompt):</p><p><img alt="command screenshot" loading=lazy src=/fish/s6.png></p><p>Then run the configuration wizard:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>tide configure
-</span></span></code></pre></div><p>&mldr;and set the theme according to your flavor and taste.</p><h3 id=use-the-web-based-configuration-tool>Use the Web-Based Configuration Tool:<a hidden class=anchor aria-hidden=true href=#use-the-web-based-configuration-tool>#</a></h3><p>You can also configure Fish through a web interface by running:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>fish_config
-</span></span></code></pre></div><p>This will open a browser window with interactive options for customizing Fish.</p><p><code>Note:</code> Tide v5 requires Fish 3.6 or newer version, you might see errors like:</p><ul><li>$(&mldr;) is not supported. In fish, please use &lsquo;(&mldr;)&rsquo;</li><li>string length: Unknown option “-V”</li><li>set: Unknown option “-f”</li></ul><h3 id=heres-how-to-fix-it>Here&rsquo;s how to fix it:<a hidden class=anchor aria-hidden=true href=#heres-how-to-fix-it>#</a></h3><h4 id=upgrade-fish-to-the-latest-version>Upgrade Fish to the latest version<a hidden class=anchor aria-hidden=true href=#upgrade-fish-to-the-latest-version>#</a></h4><p>Add the official Fish repository:</p><p><img alt="command screenshot" loading=lazy src=/fish/sb.png></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt update
-</span></span></code></pre></div><p>Upgrade Fish:</p><p><img alt="command screenshot" loading=lazy src=/fish/s1.png></p><p>Check the version:</p><p><img alt="command screenshot" loading=lazy src=/fish/sc.png></p><h2 id=conclusion>Conclusion<a hidden class=anchor aria-hidden=true href=#conclusion>#</a></h2><p>Fish Shell is a modern, powerful, and user-friendly shell designed to improve your terminal experience. Its intelligent features like autosuggestions, syntax highlighting, and a web-based configuration tool make it a top choice for developers, sysadmins, and anyone who spends significant time in the terminal.</p><p>While Fish has some drawbacks, such as compatibility with Bash scripts and software, its overall features make it a standout in the world of Unix-like shells. If you’re looking for a new shell to explore or need a more efficient terminal experience, Fish is definitely worth considering.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://anohbahjd.github.io/tags/fish/>Fish</a></li><li><a href=https://anohbahjd.github.io/tags/tide/>Tide</a></li><li><a href=https://anohbahjd.github.io/tags/ubuntu/>Ubuntu</a></li><li><a href=https://anohbahjd.github.io/tags/shell/>Shell</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://anohbahjd.github.io/>Anohba Jehad</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
+Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/fish/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/fish/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Shell Shocked? Try Fish!
+    </h1>
+    <div class="post-meta"><span title='2025-05-04 12:15:56 +0500 PKT'>May 4, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-fish-shell" aria-label="What is Fish Shell?">What is Fish Shell?</a></li>
+                <li>
+                    <a href="#unique-features-of-fish-shell" aria-label="Unique Features of Fish Shell">Unique Features of Fish Shell</a></li>
+                <li>
+                    <a href="#disadvantages-of-fish-shell" aria-label="Disadvantages of Fish Shell">Disadvantages of Fish Shell</a></li>
+                <li>
+                    <a href="#terminal-lit-credit-fish" aria-label="Terminal Lit. Credit: Fish">Terminal Lit. Credit: Fish</a><ul>
+                        
+                <li>
+                    <a href="#what-it-means-overall" aria-label="What it means overall:">What it means overall:</a><ul>
+                        
+                <li>
+                    <a href="#heres-how-you-can-set-your-own-fish-" aria-label="Here&rsquo;s how you can set your own Fish:-">Here&rsquo;s how you can set your own Fish:-</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#setting-up-fish-on-ubuntu" aria-label="Setting Up Fish on Ubuntu">Setting Up Fish on Ubuntu</a><ul>
+                        
+                <li>
+                    <a href="#install-fish" aria-label="Install Fish:">Install Fish:</a></li>
+                <li>
+                    <a href="#set-fish-as-your-default-shell" aria-label="Set Fish as Your Default Shell:">Set Fish as Your Default Shell:</a></li>
+                <li>
+                    <a href="#to-test-it-now" aria-label="To Test It Now:">To Test It Now:</a></li></ul>
+                </li>
+                <li>
+                    <a href="#install-fisher-plugin-manager-for-fish" aria-label="Install Fisher (Plugin Manager for Fish):">Install Fisher (Plugin Manager for Fish):</a></li>
+                <li>
+                    <a href="#step-3-install-tide-prompt-optional-but-awesome" aria-label="Step 3: Install Tide Prompt (Optional but Awesome)">Step 3: Install Tide Prompt (Optional but Awesome)</a><ul>
+                        
+                <li>
+                    <a href="#use-the-web-based-configuration-tool" aria-label="Use the Web-Based Configuration Tool:">Use the Web-Based Configuration Tool:</a></li>
+                <li>
+                    <a href="#heres-how-to-fix-it" aria-label="Here&rsquo;s how to fix it:">Here&rsquo;s how to fix it:</a><ul>
+                        
+                <li>
+                    <a href="#upgrade-fish-to-the-latest-version" aria-label="Upgrade Fish to the latest version">Upgrade Fish to the latest version</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.</p>
+<h2 id="what-is-fish-shell">What is Fish Shell?<a hidden class="anchor" aria-hidden="true" href="#what-is-fish-shell">#</a></h2>
+<p>Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.</p>
+<p>Fish has evolved as a great tool for developers and sysadmins who want a shell that works out-of-the-box with minimal configuration while still providing powerful features for daily use.</p>
+<h2 id="unique-features-of-fish-shell">Unique Features of Fish Shell<a hidden class="anchor" aria-hidden="true" href="#unique-features-of-fish-shell">#</a></h2>
+<ul>
+<li>Autosuggestions based on command history, shown inline as you type.</li>
+<li>Syntax highlighting for commands and arguments — errors are visible instantly.</li>
+<li>Built-in web-based configuration tool via <code>fish_config</code>.</li>
+<li>User-friendly scripting syntax — no need for extra quoting or export.</li>
+<li>Smart tab completions for commands, options, files, and directories.</li>
+<li>Multi-line editing makes writing long commands easier and clearer.</li>
+<li>No external plugins required for basic features — works great out of the box.</li>
+</ul>
+<h2 id="disadvantages-of-fish-shell">Disadvantages of Fish Shell<a hidden class="anchor" aria-hidden="true" href="#disadvantages-of-fish-shell">#</a></h2>
+<ul>
+<li>Not compatible with traditional Bash scripts — different syntax.</li>
+<li>Some third-party tools and scripts assume Bash or Zsh, which can cause issues.</li>
+<li>Not pre-installed or set as default in most systems — requires manual setup.</li>
+<li>Learning curve for users transitioning from Bash, especially for scripting.</li>
+<li>Community is smaller than Bash or Zsh, meaning fewer plugins and tutorials.</li>
+</ul>
+<h2 id="terminal-lit-credit-fish">Terminal Lit. Credit: Fish<a hidden class="anchor" aria-hidden="true" href="#terminal-lit-credit-fish">#</a></h2>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s.png"></p>
+<h3 id="what-it-means-overall">What it means overall:<a hidden class="anchor" aria-hidden="true" href="#what-it-means-overall">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">~</span> <span style="color:#f92672">main</span> <span style="color:#f92672">+</span><span style="color:#f92672">3</span> <span style="color:#f92672">!</span><span style="color:#f92672">12</span> <span style="color:#f92672">?</span><span style="color:#f92672">95</span> <span style="color:#960050;background-color:#1e0010">❯</span>
+</span></span></code></pre></div><p>You&rsquo;re inside a Git repository, on the main branch, with:</p>
+<ul>
+<li>
+<p>3 staged</p>
+</li>
+<li>
+<p>12 unstaged</p>
+</li>
+<li>
+<p>95 untracked changes</p>
+</li>
+</ul>
+<p>That&rsquo;s a busy Git workspace! 😅</p>
+<h4 id="heres-how-you-can-set-your-own-fish-">Here&rsquo;s how you can set your own Fish:-<a hidden class="anchor" aria-hidden="true" href="#heres-how-you-can-set-your-own-fish-">#</a></h4>
+<h2 id="setting-up-fish-on-ubuntu">Setting Up Fish on Ubuntu<a hidden class="anchor" aria-hidden="true" href="#setting-up-fish-on-ubuntu">#</a></h2>
+<p>Getting started with Fish Shell is straightforward, and the setup process on Ubuntu is simple:</p>
+<h3 id="install-fish">Install Fish:<a hidden class="anchor" aria-hidden="true" href="#install-fish">#</a></h3>
+<p>Open a terminal and run the following command to install Fish from the default Ubuntu repositories:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div><p><img alt="command screenshot" loading="lazy" src="/fish/s1.png"></p>
+<h3 id="set-fish-as-your-default-shell">Set Fish as Your Default Shell:<a hidden class="anchor" aria-hidden="true" href="#set-fish-as-your-default-shell">#</a></h3>
+<p>To set Fish as your default shell, run:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s2.png"></p>
+<p>You’ll need to log out and log back in for the change to take effect.</p>
+<h3 id="to-test-it-now">To Test It Now:<a hidden class="anchor" aria-hidden="true" href="#to-test-it-now">#</a></h3>
+<p>You can either:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s4.png"></p>
+<p>&hellip;and then reopen your terminal.</p>
+<p>Or just type:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s3.png"></p>
+<p>&hellip;to switch to Fish in the current session right away.</p>
+<h2 id="install-fisher-plugin-manager-for-fish">Install Fisher (Plugin Manager for Fish):<a hidden class="anchor" aria-hidden="true" href="#install-fisher-plugin-manager-for-fish">#</a></h2>
+<p>Fish has its own plugin manager called Fisher. To install it, run:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s5.png"></p>
+<h2 id="step-3-install-tide-prompt-optional-but-awesome">Step 3: Install Tide Prompt (Optional but Awesome)<a hidden class="anchor" aria-hidden="true" href="#step-3-install-tide-prompt-optional-but-awesome">#</a></h2>
+<p>Once Fisher is installed, install Tide (a beautiful and customizable prompt):</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s6.png"></p>
+<p>Then run the configuration wizard:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tide configure
+</span></span></code></pre></div><p>&hellip;and set the theme according to your flavor and taste.</p>
+<h3 id="use-the-web-based-configuration-tool">Use the Web-Based Configuration Tool:<a hidden class="anchor" aria-hidden="true" href="#use-the-web-based-configuration-tool">#</a></h3>
+<p>You can also configure Fish through a web interface by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>fish_config
+</span></span></code></pre></div><p>This will open a browser window with interactive options for customizing Fish.</p>
+<p><code>Note:</code> Tide v5 requires Fish 3.6 or newer version, you might see errors like:</p>
+<ul>
+<li>$(&hellip;) is not supported. In fish, please use &lsquo;(&hellip;)&rsquo;</li>
+<li>string length: Unknown option “-V”</li>
+<li>set: Unknown option “-f”</li>
+</ul>
+<h3 id="heres-how-to-fix-it">Here&rsquo;s how to fix it:<a hidden class="anchor" aria-hidden="true" href="#heres-how-to-fix-it">#</a></h3>
+<h4 id="upgrade-fish-to-the-latest-version">Upgrade Fish to the latest version<a hidden class="anchor" aria-hidden="true" href="#upgrade-fish-to-the-latest-version">#</a></h4>
+<p>Add the official Fish repository:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/sb.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div><p>Upgrade Fish:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/s1.png"></p>
+<p>Check the version:</p>
+<p><img alt="command screenshot" loading="lazy" src="/fish/sc.png"></p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Fish Shell is a modern, powerful, and user-friendly shell designed to improve your terminal experience. Its intelligent features like autosuggestions, syntax highlighting, and a web-based configuration tool make it a top choice for developers, sysadmins, and anyone who spends significant time in the terminal.</p>
+<p>While Fish has some drawbacks, such as compatibility with Bash scripts and software, its overall features make it a standout in the world of Unix-like shells. If you’re looking for a new shell to explore or need a more efficient terminal experience, Fish is definitely worth considering.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/fish/">Fish</a></li>
+      <li><a href="http://localhost:1313/tags/tide/">Tide</a></li>
+      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="http://localhost:1313/tags/shell/">Shell</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

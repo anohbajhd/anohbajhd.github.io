@@ -1,2 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Latex on Anohba Jehad</title><link>https://anohbahjd.github.io/tags/latex/</link><description>Recent content in Latex on Anohba Jehad</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Sun, 12 Jan 2025 10:00:00 +0500</lastBuildDate><atom:link href="https://anohbahjd.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title><link>https://anohbahjd.github.io/posts/latex/</link><pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate><guid>https://anohbahjd.github.io/posts/latex/</guid><description>&lt;p>Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p>
-&lt;p>But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Latex on Anohba Jehad</title>
+    <link>http://localhost:1313/tags/latex/</link>
+    <description>Recent content in Latex on Anohba Jehad</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jan 2025 10:00:00 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title>
+      <link>http://localhost:1313/posts/latex/</link>
+      <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/latex/</guid>
+      <description>&lt;p&gt;Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p&gt;
+&lt;p&gt;But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

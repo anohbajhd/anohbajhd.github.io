@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dijkstra on Anohba Jehad</title><link>https://anohbahjd.github.io/tags/dijkstra/</link><description>Recent content in Dijkstra on Anohba Jehad</description><generator>Hugo -- 0.148.0</generator><language>en-us</language><lastBuildDate>Thu, 01 May 2025 00:46:56 +0500</lastBuildDate><atom:link href="https://anohbahjd.github.io/tags/dijkstra/index.xml" rel="self" type="application/rss+xml"/><item><title>Dijkstra's Algorithm: Your GPS for the World of Graphs</title><link>https://anohbahjd.github.io/posts/dijkstra/</link><pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate><guid>https://anohbahjd.github.io/posts/dijkstra/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
-&lt;p>Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p>
-&lt;hr>
-&lt;h2 id="what-is-dijkstras-algorithm">What Is Dijkstra’s Algorithm?&lt;/h2>
-&lt;p>Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong>non-negative edge weights&lt;/strong>. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dijkstra on Anohba Jehad</title>
+    <link>http://localhost:1313/tags/dijkstra/</link>
+    <description>Recent content in Dijkstra on Anohba Jehad</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 May 2025 00:46:56 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dijkstra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
+      <link>http://localhost:1313/posts/dijkstra/</link>
+      <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/dijkstra/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-dijkstras-algorithm&#34;&gt;What Is Dijkstra’s Algorithm?&lt;/h2&gt;
+&lt;p&gt;Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong&gt;non-negative edge weights&lt;/strong&gt;. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

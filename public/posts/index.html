@@ -1,35 +1,316 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | Anohba Jehad</title><meta name=keywords content><meta name=description content="Posts - Anohba Jehad"><meta name=author content><link rel=canonical href=https://anohbahjd.github.io/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css integrity="sha256-j+ECM6cGvIfy4Is8+XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as=style><link rel=icon href=https://anohbahjd.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://anohbahjd.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://anohbahjd.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://anohbahjd.github.io/apple-touch-icon.png><link rel=mask-icon href=https://anohbahjd.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://anohbahjd.github.io/posts/index.xml><link rel=alternate hreflang=en href=https://anohbahjd.github.io/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:url" content="https://anohbahjd.github.io/posts/"><meta property="og:site_name" content="Anohba Jehad"><meta property="og:title" content="Posts"><meta property="og:locale" content="en-us"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://anohbahjd.github.io/posts/"}]}</script></head><body class="list dark" id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://anohbahjd.github.io/ accesskey=h title="Anohba Jehad (Alt + H)">Anohba Jehad</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://anohbahjd.github.io/archives title=Archives><span>Archives</span></a></li><li><a href=https://anohbahjd.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://anohbahjd.github.io/>Home</a></div><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Meet Jenkins: A Guide to Automation</h2></header><div class=entry-content><p>What is Jenkins? Jenkins is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making Continuous Integration (CI) and Continuous Delivery (CD) possible.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Posts | Anohba Jehad</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - Anohba Jehad">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+  <h1>
+    Posts
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Meet Jenkins: A Guide to Automation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> What is Jenkins? Jenkins is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making Continuous Integration (CI) and Continuous Delivery (CD) possible.
 In simple terms:
 Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.
 Jenkins is a server. It’s a program you install on a machine (your own computer, a VPS, or cloud) that:
-...</p></div><footer class=entry-footer><span title='2025-07-08 12:15:56 +0500 PKT'>July 8, 2025</span>&nbsp;·&nbsp;3 min</footer><a class=entry-link aria-label="post link to Meet Jenkins: A Guide to Automation" href=https://anohbahjd.github.io/posts/jenkins/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>The Architecture of the Modern Web</h2></header><div class=entry-content><p>Web development is all about building digital experiences; from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-08 12:15:56 +0500 PKT'>July 8, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Meet Jenkins: A Guide to Automation" href="http://localhost:1313/posts/jenkins/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Architecture of the Modern Web
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Web development is all about building digital experiences; from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.
 In this blog, we’ll walk through the core building blocks of each side. This isn’t a tutorial, it’s a clarity-first breakdown of each element so you can understand what it does, and why it’s important.
 Frontend: What Users See and Interact With The frontend is the part of a website or web application that users directly experience. It includes everything from layout and buttons to animations and form interactions.
-...</p></div><footer class=entry-footer><span title='2025-07-05 12:15:56 +0500 PKT'>July 5, 2025</span>&nbsp;·&nbsp;4 min</footer><a class=entry-link aria-label="post link to The Architecture of the Modern Web" href=https://anohbahjd.github.io/posts/webdev/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Threaded Realities: Beyond the Loop</h2></header><div class=entry-content><p>“Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.”
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-05 12:15:56 +0500 PKT'>July 5, 2025</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to The Architecture of the Modern Web" href="http://localhost:1313/posts/webdev/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Threaded Realities: Beyond the Loop
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> “Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.”
 What is Multithreading? Imagine your program is a big task. Wouldn’t it be more efficient if multiple parts of it could run at the same time instead of waiting for one to finish before the next begins? That’s exactly what multithreading allows.
 Multithreading is a technique where a single process can perform multiple tasks concurrently using threads. Think of threads as lightweight mini-programs that live inside a main program, sharing the same memory and resources.
-...</p></div><footer class=entry-footer><span title='2025-05-10 23:45:00 +0500 PKT'>May 10, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Anohba Jehad (zenarchh)</footer><a class=entry-link aria-label="post link to Threaded Realities: Beyond the Loop" href=https://anohbahjd.github.io/posts/multithread/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Oh My Zsh!</h2></header><div class=entry-content><p>“Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.” If you’re someone who spends time in the terminal—whether you’re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It’s your workspace, your command center, your vibe.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-10 23:45:00 +0500 PKT'>May 10, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Anohba Jehad (zenarchh)</footer>
+  <a class="entry-link" aria-label="post link to Threaded Realities: Beyond the Loop" href="http://localhost:1313/posts/multithread/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Oh My Zsh!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.” If you’re someone who spends time in the terminal—whether you’re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It’s your workspace, your command center, your vibe.
 What is Zsh? Zsh (Z Shell) is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.
-...</p></div><footer class=entry-footer><span title='2025-05-08 12:15:56 +0500 PKT'>May 8, 2025</span>&nbsp;·&nbsp;3 min</footer><a class=entry-link aria-label="post link to Oh My Zsh!" href=https://anohbahjd.github.io/posts/zsh/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Huffman Coding: The Art of Compression</h2></header><div class=entry-content><p>In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in Huffman Coding — a beautifully simple yet powerful algorithm used for lossless data compression. It’s been a cornerstone since it was introduced.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-08 12:15:56 +0500 PKT'>May 8, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Oh My Zsh!" href="http://localhost:1313/posts/zsh/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Huffman Coding: The Art of Compression
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in Huffman Coding — a beautifully simple yet powerful algorithm used for lossless data compression. It’s been a cornerstone since it was introduced.
 What Is Huffman Coding? Huffman Coding is a greedy algorithm used to compress data without losing any information. The idea is simple:
 Assign shorter codes to more frequent characters and longer codes to less frequent ones. Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.
-...</p></div><footer class=entry-footer><span title='2025-05-06 00:46:56 +0500 PKT'>May 6, 2025</span>&nbsp;·&nbsp;5 min</footer><a class=entry-link aria-label="post link to Huffman Coding: The Art of Compression" href=https://anohbahjd.github.io/posts/huffman/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Shell Shocked? Try Fish!</h2></header><div class=entry-content><p>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-06 00:46:56 +0500 PKT'>May 6, 2025</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to Huffman Coding: The Art of Compression" href="http://localhost:1313/posts/huffman/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Shell Shocked? Try Fish!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.
 What is Fish Shell? Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.
-...</p></div><footer class=entry-footer><span title='2025-05-04 12:15:56 +0500 PKT'>May 4, 2025</span>&nbsp;·&nbsp;3 min</footer><a class=entry-link aria-label="post link to Shell Shocked? Try Fish!" href=https://anohbahjd.github.io/posts/fish/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Dijkstra's Algorithm: Your GPS for the World of Graphs</h2></header><div class=entry-content><p>Introduction Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-04 12:15:56 +0500 PKT'>May 4, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Shell Shocked? Try Fish!" href="http://localhost:1313/posts/fish/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.
 What Is Dijkstra’s Algorithm? Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with non-negative edge weights. It finds the shortest path from a starting node (source) to every other node in the graph.
-...</p></div><footer class=entry-footer><span title='2025-05-01 00:46:56 +0500 PKT'>May 1, 2025</span>&nbsp;·&nbsp;4 min</footer><a class=entry-link aria-label="post link to Dijkstra's Algorithm: Your GPS for the World of Graphs" href=https://anohbahjd.github.io/posts/dijkstra/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Don’t Trust Your Code—Test It</h2></header><div class=entry-content><p>Why Testing Your Code Matters When we write code, we want it to work. But sometimes, it doesn’t. That’s where testing comes in.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-01 00:46:56 +0500 PKT'>May 1, 2025</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs" href="http://localhost:1313/posts/dijkstra/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Don’t Trust Your Code—Test It
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Why Testing Your Code Matters When we write code, we want it to work. But sometimes, it doesn’t. That’s where testing comes in.
 Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.
 Why Should We Test? Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.
-...</p></div><footer class=entry-footer><span title='2025-04-23 11:00:00 +0500 PKT'>April 23, 2025</span>&nbsp;·&nbsp;2 min</footer><a class=entry-link aria-label="post link to Don’t Trust Your Code—Test It" href=https://anohbahjd.github.io/posts/test/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Master GitHub: A Beginner’s Guide to GitHub CLI</h2></header><div class=entry-content><p>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-23 11:00:00 +0500 PKT'>April 23, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Don’t Trust Your Code—Test It" href="http://localhost:1313/posts/test/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Master GitHub: A Beginner’s Guide to GitHub CLI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.
 Why Use GitHub CLI? If you’re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:
-...</p></div><footer class=entry-footer><span title='2025-03-23 12:30:00 +0500 PKT'>March 23, 2025</span>&nbsp;·&nbsp;3 min</footer><a class=entry-link aria-label="post link to Master GitHub: A Beginner’s Guide to GitHub CLI" href=https://anohbahjd.github.io/posts/githubcli/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Install and Configure SSH on Ubuntu</h2></header><div class=entry-content><p>Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-23 12:30:00 +0500 PKT'>March 23, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Master GitHub: A Beginner’s Guide to GitHub CLI" href="http://localhost:1313/posts/githubcli/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Install and Configure SSH on Ubuntu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
 Advantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.
 Remote Access – Manage servers and systems from anywhere.
 Key-Based Authentication – Enables password-free and more secure logins.
-...</p></div><footer class=entry-footer><span title='2025-03-07 12:30:00 +0500 PKT'>March 7, 2025</span>&nbsp;·&nbsp;3 min</footer><a class=entry-link aria-label="post link to Install and Configure SSH on Ubuntu" href=https://anohbahjd.github.io/posts/ssh/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://anohbahjd.github.io/posts/page/2/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://anohbahjd.github.io/>Anohba Jehad</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-07 12:30:00 +0500 PKT'>March 7, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to Install and Configure SSH on Ubuntu" href="http://localhost:1313/posts/ssh/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
