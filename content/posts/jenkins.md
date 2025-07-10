@@ -1,5 +1,5 @@
 +++
-date = '2025-07-10T12:15:56+05:00'
+date = '2025-07-08T12:15:56+05:00'
 title = "Meet Jenkins: A Guide to Automation"
 tags = ['jenkin', 'plugins', 'pipeline', 'shell']
 +++
@@ -48,23 +48,32 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
 
 ### Step 1: Install Java
 ![command screenshot](/jenkins/s1.png)
+
+Then run:
 ![command screenshot](/jenkins/s2.png)
 
-### Step 2: Add Jenkins Repository
+Check the Java version:
 ![command screenshot](/jenkins/s3.png)
+
+### Step 2: Add Jenkins Repository
+![command screenshot](/jenkins/s4.png)
 
 
 ### Step 3: Install Jenkins
-![command screenshot](/jenkins/s4.png)
+![command screenshot](/jenkins/s7.png)
 
 ### Step 4: Start and Enable Jenkins
-![command screenshot](/jenkins/s5.png)
+![command screenshot](/jenkins/s8.png)
+![command screenshot](/jenkins/s9.png)
+
+Then check the status if its active
+
 
 ### Step 5: Open Jenkins in Browser
 Visit: http://localhost:8080
 To unlock Jenkins, run:
 
-![command screenshot](/jenkins/s6.png)
+![command screenshot](/jenkins/s10.png)
 
 Paste the password in your browser when prompted.
 

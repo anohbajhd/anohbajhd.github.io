@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Anohba Jehad</title>
-    <link>http://localhost:41113/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Anohba Jehad</description>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 May 2025 23:45:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:41113/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginner</title>
-      <link>http://localhost:41113/tags/beginner/</link>
+      <link>http://localhost:1313/tags/beginner/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/beginner/</guid>
+      <guid>http://localhost:1313/tags/beginner/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>http://localhost:41113/tags/concurrency/</link>
+      <link>http://localhost:1313/tags/concurrency/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/concurrency/</guid>
+      <guid>http://localhost:1313/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Multithreading</title>
-      <link>http://localhost:41113/tags/multithreading/</link>
+      <link>http://localhost:1313/tags/multithreading/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/multithreading/</guid>
+      <guid>http://localhost:1313/tags/multithreading/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:41113/tags/programming/</link>
+      <link>http://localhost:1313/tags/programming/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/programming/</guid>
+      <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Oh-My-Zsh</title>
-      <link>http://localhost:41113/tags/oh-my-zsh/</link>
+      <link>http://localhost:1313/tags/oh-my-zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/oh-my-zsh/</guid>
+      <guid>http://localhost:1313/tags/oh-my-zsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>http://localhost:41113/tags/shell/</link>
+      <link>http://localhost:1313/tags/shell/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/shell/</guid>
+      <guid>http://localhost:1313/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:41113/tags/ubuntu/</link>
+      <link>http://localhost:1313/tags/ubuntu/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/ubuntu/</guid>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Zsh</title>
-      <link>http://localhost:41113/tags/zsh/</link>
+      <link>http://localhost:1313/tags/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/zsh/</guid>
+      <guid>http://localhost:1313/tags/zsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>http://localhost:41113/tags/algorithm/</link>
+      <link>http://localhost:1313/tags/algorithm/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/algorithm/</guid>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Coding</title>
-      <link>http://localhost:41113/tags/coding/</link>
+      <link>http://localhost:1313/tags/coding/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/coding/</guid>
+      <guid>http://localhost:1313/tags/coding/</guid>
       <description></description>
     </item>
     <item>
       <title>Greedy</title>
-      <link>http://localhost:41113/tags/greedy/</link>
+      <link>http://localhost:1313/tags/greedy/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/greedy/</guid>
+      <guid>http://localhost:1313/tags/greedy/</guid>
       <description></description>
     </item>
     <item>
       <title>Huffman</title>
-      <link>http://localhost:41113/tags/huffman/</link>
+      <link>http://localhost:1313/tags/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/huffman/</guid>
+      <guid>http://localhost:1313/tags/huffman/</guid>
       <description></description>
     </item>
     <item>
       <title>Fish</title>
-      <link>http://localhost:41113/tags/fish/</link>
+      <link>http://localhost:1313/tags/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/fish/</guid>
+      <guid>http://localhost:1313/tags/fish/</guid>
       <description></description>
     </item>
     <item>
       <title>Tide</title>
-      <link>http://localhost:41113/tags/tide/</link>
+      <link>http://localhost:1313/tags/tide/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/tide/</guid>
+      <guid>http://localhost:1313/tags/tide/</guid>
       <description></description>
     </item>
     <item>
       <title>Dijkstra</title>
-      <link>http://localhost:41113/tags/dijkstra/</link>
+      <link>http://localhost:1313/tags/dijkstra/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/dijkstra/</guid>
+      <guid>http://localhost:1313/tags/dijkstra/</guid>
       <description></description>
     </item>
     <item>
       <title>Graphs</title>
-      <link>http://localhost:41113/tags/graphs/</link>
+      <link>http://localhost:1313/tags/graphs/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:41113/tags/graphs/</guid>
+      <guid>http://localhost:1313/tags/graphs/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:41113/tags/github/</link>
+      <link>http://localhost:1313/tags/github/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/github/</guid>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:41113/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:41113/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:41113/tags/testing/</link>
+      <link>http://localhost:1313/tags/testing/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/testing/</guid>
+      <guid>http://localhost:1313/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Gh</title>
-      <link>http://localhost:41113/tags/gh/</link>
+      <link>http://localhost:1313/tags/gh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/gh/</guid>
+      <guid>http://localhost:1313/tags/gh/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:41113/tags/git/</link>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:41113/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>http://localhost:41113/tags/ssh/</link>
+      <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/ssh/</guid>
+      <guid>http://localhost:1313/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:41113/tags/vim/</link>
+      <link>http://localhost:1313/tags/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/vim/</guid>
+      <guid>http://localhost:1313/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:41113/tags/latex/</link>
+      <link>http://localhost:1313/tags/latex/</link>
       <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:41113/tags/latex/</guid>
+      <guid>http://localhost:1313/tags/latex/</guid>
       <description></description>
     </item>
   </channel>

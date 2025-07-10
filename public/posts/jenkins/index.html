@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Meet Jenkins: A Guide to Automation | Anohba Jehad</title>
+<meta name="keywords" content="jenkin, plugins, pipeline, shell">
+<meta name="description" content="
+What is Jenkins?
+Jenkins is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making Continuous Integration (CI) and Continuous Delivery (CD) possible.
+In simple terms:
+
+Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.
+Jenkins is a server.
+It’s a program you install on a machine (your own computer, a VPS, or cloud) that:">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/jenkins/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/jenkins/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Meet Jenkins: A Guide to Automation
+    </h1>
+    <div class="post-meta"><span title='2025-07-08 12:15:56 +0500 PKT'>July 8, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-jenkins" aria-label="What is Jenkins?">What is Jenkins?</a></li>
+                <li>
+                    <a href="#why-use-jenkins" aria-label="Why Use Jenkins?">Why Use Jenkins?</a></li>
+                <li>
+                    <a href="#key-concepts-to-know" aria-label="Key Concepts to Know">Key Concepts to Know</a></li>
+                <li>
+                    <a href="#how-to-install-jenkins-on-ubuntu-beginner-friendly" aria-label="How to Install Jenkins on Ubuntu (Beginner-Friendly)">How to Install Jenkins on Ubuntu (Beginner-Friendly)</a><ul>
+                        
+                <li>
+                    <a href="#step-1-install-java" aria-label="Step 1: Install Java">Step 1: Install Java</a></li>
+                <li>
+                    <a href="#step-2-add-jenkins-repository" aria-label="Step 2: Add Jenkins Repository">Step 2: Add Jenkins Repository</a></li>
+                <li>
+                    <a href="#step-3-install-jenkins" aria-label="Step 3: Install Jenkins">Step 3: Install Jenkins</a></li>
+                <li>
+                    <a href="#step-4-start-and-enable-jenkins" aria-label="Step 4: Start and Enable Jenkins">Step 4: Start and Enable Jenkins</a></li>
+                <li>
+                    <a href="#step-5-open-jenkins-in-browser" aria-label="Step 5: Open Jenkins in Browser">Step 5: Open Jenkins in Browser</a></li></ul>
+                </li>
+                <li>
+                    <a href="#setting-up-your-first-job-freestyle-project" aria-label="Setting Up Your First Job (Freestyle Project)">Setting Up Your First Job (Freestyle Project)</a></li>
+                <li>
+                    <a href="#jenkins-pipeline-scripted-automation" aria-label="Jenkins Pipeline (Scripted Automation)">Jenkins Pipeline (Scripted Automation)</a></li>
+                <li>
+                    <a href="#useful-plugins-to-explore" aria-label="Useful Plugins to Explore">Useful Plugins to Explore</a></li>
+                <li>
+                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><hr>
+<h2 id="what-is-jenkins">What is Jenkins?<a hidden class="anchor" aria-hidden="true" href="#what-is-jenkins">#</a></h2>
+<p><strong>Jenkins</strong> is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making <strong>Continuous Integration (CI)</strong> and <strong>Continuous Delivery (CD)</strong> possible.</p>
+<p>In simple terms:</p>
+<blockquote>
+<p>Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.</p></blockquote>
+<p>Jenkins is a server.
+It’s a program you install on a machine (your own computer, a VPS, or cloud) that:</p>
+<ul>
+<li>• Runs 24/7.</li>
+<li>• Waits for code changes (like GitHub push).</li>
+<li>• Does tasks you define (build, test, deploy).</li>
+<li>• Reports the results.</li>
+</ul>
+<hr>
+<h2 id="why-use-jenkins">Why Use Jenkins?<a hidden class="anchor" aria-hidden="true" href="#why-use-jenkins">#</a></h2>
+<ul>
+<li>Automate repetitive tasks like testing and deploying.</li>
+<li>Supports a wide range of plugins and tools.</li>
+<li>Saves time in large teams and projects.</li>
+<li>Detects bugs early by testing code regularly.</li>
+<li>Web-based interface for managing jobs easily.</li>
+</ul>
+<hr>
+<h2 id="key-concepts-to-know">Key Concepts to Know<a hidden class="anchor" aria-hidden="true" href="#key-concepts-to-know">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Term</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Job / Project</strong></td>
+          <td>A task that Jenkins runs (e.g., build, test).</td>
+      </tr>
+      <tr>
+          <td><strong>Build</strong></td>
+          <td>The process of compiling code, running scripts, etc.</td>
+      </tr>
+      <tr>
+          <td><strong>Pipeline</strong></td>
+          <td>A set of steps that automate the process from build to deployment.</td>
+      </tr>
+      <tr>
+          <td><strong>Node / Agent</strong></td>
+          <td>A machine that runs Jenkins jobs (can be remote).</td>
+      </tr>
+      <tr>
+          <td><strong>Plugin</strong></td>
+          <td>Extension that adds new features to Jenkins.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="how-to-install-jenkins-on-ubuntu-beginner-friendly">How to Install Jenkins on Ubuntu (Beginner-Friendly)<a hidden class="anchor" aria-hidden="true" href="#how-to-install-jenkins-on-ubuntu-beginner-friendly">#</a></h2>
+<h3 id="step-1-install-java">Step 1: Install Java<a hidden class="anchor" aria-hidden="true" href="#step-1-install-java">#</a></h3>
+<p><img alt="command screenshot" loading="lazy" src="/jenkins/s1.png"></p>
+<p>Then run:
+<img alt="command screenshot" loading="lazy" src="/jenkins/s2.png"></p>
+<p>Check the Java version:
+<img alt="command screenshot" loading="lazy" src="/jenkins/s3.png"></p>
+<h3 id="step-2-add-jenkins-repository">Step 2: Add Jenkins Repository<a hidden class="anchor" aria-hidden="true" href="#step-2-add-jenkins-repository">#</a></h3>
+<p><img alt="command screenshot" loading="lazy" src="/jenkins/s4.png"></p>
+<h3 id="step-3-install-jenkins">Step 3: Install Jenkins<a hidden class="anchor" aria-hidden="true" href="#step-3-install-jenkins">#</a></h3>
+<p><img alt="command screenshot" loading="lazy" src="/jenkins/s7.png"></p>
+<h3 id="step-4-start-and-enable-jenkins">Step 4: Start and Enable Jenkins<a hidden class="anchor" aria-hidden="true" href="#step-4-start-and-enable-jenkins">#</a></h3>
+<p><img alt="command screenshot" loading="lazy" src="/jenkins/s8.png">
+<img alt="command screenshot" loading="lazy" src="/jenkins/s9.png"></p>
+<p>Then check the status if its active</p>
+<h3 id="step-5-open-jenkins-in-browser">Step 5: Open Jenkins in Browser<a hidden class="anchor" aria-hidden="true" href="#step-5-open-jenkins-in-browser">#</a></h3>
+<p>Visit: http://localhost:8080
+To unlock Jenkins, run:</p>
+<p><img alt="command screenshot" loading="lazy" src="/jenkins/s10.png"></p>
+<p>Paste the password in your browser when prompted.</p>
+<h2 id="setting-up-your-first-job-freestyle-project">Setting Up Your First Job (Freestyle Project)<a hidden class="anchor" aria-hidden="true" href="#setting-up-your-first-job-freestyle-project">#</a></h2>
+<ol>
+<li>
+<p>Go to <code>Dashboard &gt; New Item</code></p>
+</li>
+<li>
+<p>Choose <code>Freestyle project</code> and give it a name</p>
+</li>
+<li>
+<p>In <code>Build Steps</code>, choose:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><code>Execute shell</code> for Linux commands</p>
+</li>
+<li>
+<p>Or <code>Execute Windows batch command</code> for Windows</p>
+</li>
+</ul>
+<ol start="4">
+<li>Add your script like:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello from Jenkins!&#34;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Click Save, then Build Now</li>
+</ol>
+<p>Jenkins will run your job and show you output in the Console Output.</p>
+<hr>
+<h2 id="jenkins-pipeline-scripted-automation">Jenkins Pipeline (Scripted Automation)<a hidden class="anchor" aria-hidden="true" href="#jenkins-pipeline-scripted-automation">#</a></h2>
+<p>Create a new <strong>Pipeline</strong> job and use the following example script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>pipeline <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    agent any
+</span></span><span style="display:flex;"><span>    stages <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        stage<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Build&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            steps <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                echo <span style="color:#e6db74">&#39;Building the project...&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        stage<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Test&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            steps <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                echo <span style="color:#e6db74">&#39;Running tests...&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        stage<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Deploy&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            steps <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                echo <span style="color:#e6db74">&#39;Deploying the project...&#39;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="useful-plugins-to-explore">Useful Plugins to Explore<a hidden class="anchor" aria-hidden="true" href="#useful-plugins-to-explore">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Plugin</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Git Plugin</strong></td>
+          <td>Integrate with Git repositories</td>
+      </tr>
+      <tr>
+          <td><strong>GitHub Integration</strong></td>
+          <td>Trigger builds from GitHub pushes</td>
+      </tr>
+      <tr>
+          <td><strong>Pipeline Plugin</strong></td>
+          <td>Use <code>Jenkinsfile</code> for automation workflows</td>
+      </tr>
+      <tr>
+          <td><strong>Email Extension</strong></td>
+          <td>Send notifications based on build status</td>
+      </tr>
+      <tr>
+          <td><strong>Docker Plugin</strong></td>
+          <td>Build and run Docker containers via Jenkins</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Jenkins is like your project manager robot — it does the boring and repetitive tasks so you can focus on writing code.</p>
+<p>Once you&rsquo;re comfortable with the basics, you can explore advanced topics like:</p>
+<ul>
+<li>
+<p>Shared libraries</p>
+</li>
+<li>
+<p>Blue Ocean UI</p>
+</li>
+<li>
+<p>Deploying with Docker, Kubernetes, or AWS</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/jenkin/">Jenkin</a></li>
+      <li><a href="http://localhost:1313/tags/plugins/">Plugins</a></li>
+      <li><a href="http://localhost:1313/tags/pipeline/">Pipeline</a></li>
+      <li><a href="http://localhost:1313/tags/shell/">Shell</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
