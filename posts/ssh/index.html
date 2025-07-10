@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Install and Configure SSH on Ubuntu | Anohba Jehad</title>
-<meta name="keywords" content="ssh, linux, ubuntu">
-<meta name="description" content="Introduction to SSH
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Install and Configure SSH on Ubuntu | Anohba Jehad</title><meta name=keywords content="ssh,linux,ubuntu"><meta name=description content="Introduction to SSH
 SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
 Advantages of SSH
 
@@ -18,357 +9,34 @@ Secure Communication – Encrypts data, preventing eavesdropping and attacks.
 Remote Access – Manage servers and systems from anywhere.
 
 
-Key-Based Authentication – Enables password-free and more secure logins.">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/ssh/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ssh/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
-</head>
-
-<body class=" dark" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Install and Configure SSH on Ubuntu
-    </h1>
-    <div class="post-meta"><span title='2025-03-07 12:30:00 +0500 PKT'>March 7, 2025</span>&nbsp;·&nbsp;3 min
-
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#introduction-to-ssh" aria-label="Introduction to SSH">Introduction to SSH</a></li>
-                <li>
-                    <a href="#advantages-of-ssh" aria-label="Advantages of SSH">Advantages of SSH</a></li>
-                <li>
-                    <a href="#connection-with-remote-system" aria-label="Connection With Remote System">Connection With Remote System</a><ul>
-                        
-                <li>
-                    <a href="#1-prepare-ubuntu" aria-label="1. Prepare Ubuntu">1. Prepare Ubuntu</a></li>
-                <li>
-                    <a href="#2-install-ssh-on-ubuntu" aria-label="2. Install SSH on Ubuntu">2. Install SSH on Ubuntu</a></li>
-                <li>
-                    <a href="#2-allow-ssh-through-the-firewall" aria-label="2. Allow SSH Through the Firewall">2. Allow SSH Through the Firewall</a></li>
-                <li>
-                    <a href="#3-find-the-servers-ip-address" aria-label="3. Find the Server’s IP Address">3. Find the Server’s IP Address</a></li>
-                <li>
-                    <a href="#4-connect-to-the-server-via-ssh" aria-label="4. Connect to the Server via SSH">4. Connect to the Server via SSH</a></li></ul>
-                </li>
-                <li>
-                    <a href="#set-up-passwordless-ssh-optional-but-recommended" aria-label="Set Up Passwordless SSH (Optional But Recommended)">Set Up Passwordless SSH (Optional But Recommended)</a><ul>
-                        
-                <li>
-                    <a href="#-generate-an-ssh-key-skip-if-you-already-have-one" aria-label="🔹 Generate an SSH Key (Skip if you already have one)">🔹 Generate an SSH Key (Skip if you already have one)</a></li>
-                <li>
-                    <a href="#-copy-the-ssh-key-to-the-new-remote-system" aria-label="🔹 Copy the SSH Key to the New Remote System">🔹 Copy the SSH Key to the New Remote System</a></li></ul>
-                </li>
-                <li>
-                    <a href="#loopback-ssh" aria-label="Loopback SSH">Loopback SSH</a><ul>
-                        
-                <li>
-                    <a href="#steps" aria-label="Steps:">Steps:</a></li></ul>
-                </li>
-                <li>
-                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><h2 id="introduction-to-ssh">Introduction to SSH<a hidden class="anchor" aria-hidden="true" href="#introduction-to-ssh">#</a></h2>
-<p>SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.</p>
-<h2 id="advantages-of-ssh">Advantages of SSH<a hidden class="anchor" aria-hidden="true" href="#advantages-of-ssh">#</a></h2>
-<ul>
-<li>
-<p>Secure Communication – Encrypts data, preventing eavesdropping and attacks.</p>
-</li>
-<li>
-<p>Remote Access – Manage servers and systems from anywhere.</p>
-</li>
-<li>
-<p>Key-Based Authentication – Enables password-free and more secure logins.</p>
-</li>
-<li>
-<p>Secure File Transfers – Transfer files safely</p>
-</li>
-<li>
-<p>Multi-User Support – Allow multiple users to connect and manage a system securely.</p>
-</li>
-</ul>
-<p>SSH makes remote access fast, safe, and hassle-free!</p>
-<h2 id="connection-with-remote-system">Connection With Remote System<a hidden class="anchor" aria-hidden="true" href="#connection-with-remote-system">#</a></h2>
-<p>SSH (Secure Shell) allows secure remote access to a server or another computer. Here’s how you can set it up and use it on Ubuntu:</p>
-<h3 id="1-prepare-ubuntu">1. Prepare Ubuntu<a hidden class="anchor" aria-hidden="true" href="#1-prepare-ubuntu">#</a></h3>
-<p>The first thing you need to do before you start installing SSH on Ubuntu is to update all apt packages to the latest versions. To do this, use the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
-</span></span></code></pre></div><h3 id="2-install-ssh-on-ubuntu">2. Install SSH on Ubuntu<a hidden class="anchor" aria-hidden="true" href="#2-install-ssh-on-ubuntu">#</a></h3>
-<p>First, ensure SSH is installed on both the client (your local machine) and the server (remote machine).</p>
-<p>On the server (remote machine), install the SSH server:
-<img alt="command screenshot" loading="lazy" src="/ssh/ss1.png"></p>
-<p><code>Note: For this type of connection, both the client (local system) and the server (remote system) should be on the same network.</code></p>
-<p>To check if SSH is running:
-<img alt="command screenshot" loading="lazy" src="/ssh/ss2.png"></p>
-<p>If it’s not running, start it with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl start ssh
-</span></span></code></pre></div><h3 id="2-allow-ssh-through-the-firewall">2. Allow SSH Through the Firewall<a hidden class="anchor" aria-hidden="true" href="#2-allow-ssh-through-the-firewall">#</a></h3>
-<p>If you have a firewall enabled, allow SSH connections:
-<img alt="command screenshot" loading="lazy" src="/ssh/ss3.png"></p>
-<p>Then, enable the firewall if it&rsquo;s not already active:
-<img alt="command screenshot" loading="lazy" src="/ssh/ss4.png"></p>
-<h3 id="3-find-the-servers-ip-address">3. Find the Server’s IP Address<a hidden class="anchor" aria-hidden="true" href="#3-find-the-servers-ip-address">#</a></h3>
-<p>To connect to your server, you need its IP address. Run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ip a
-</span></span></code></pre></div><p>IP is usually something like 192.168.x.x.</p>
-<h3 id="4-connect-to-the-server-via-ssh">4. Connect to the Server via SSH<a hidden class="anchor" aria-hidden="true" href="#4-connect-to-the-server-via-ssh">#</a></h3>
-<p>On your client machine, use this command to connect:</p>
-<p><code>Note:</code> As it is a connection with remote system, you need to add the user name and IP-address of system with which you are building connection.</p>
-<p><img alt="command screenshot" loading="lazy" src="/ssh/ss5.png"></p>
-<p>Enter the password when prompted ( remember it is the password connection. For this type of SSH you need to know to password of remote system)&gt;</p>
-<p>You have now successfully built a connection with remote system through password!</p>
-<h2 id="set-up-passwordless-ssh-optional-but-recommended">Set Up Passwordless SSH (Optional But Recommended)<a hidden class="anchor" aria-hidden="true" href="#set-up-passwordless-ssh-optional-but-recommended">#</a></h2>
-<p>If you don’t want to enter a password every time, set up SSH key authentication:</p>
-<h3 id="-generate-an-ssh-key-skip-if-you-already-have-one">🔹 Generate an SSH Key (Skip if you already have one)<a hidden class="anchor" aria-hidden="true" href="#-generate-an-ssh-key-skip-if-you-already-have-one">#</a></h3>
-<p>On your local machine, run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh-keygen -t ed25519 -C <span style="color:#e6db74">&#34;SSHkey&#34;</span>
-</span></span></code></pre></div><p>Press Enter for all options.</p>
-<h3 id="-copy-the-ssh-key-to-the-new-remote-system">🔹 Copy the SSH Key to the New Remote System<a hidden class="anchor" aria-hidden="true" href="#-copy-the-ssh-key-to-the-new-remote-system">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh-copy-id username@remote_IP
-</span></span></code></pre></div><p>Enter the password once. After this, SSH should work without a password!</p>
-<h2 id="loopback-ssh">Loopback SSH<a hidden class="anchor" aria-hidden="true" href="#loopback-ssh">#</a></h2>
-<p>If you want to connect to your own system using SSH (also called loopback SSH or local SSH connection), follow these steps:</p>
-<h3 id="steps">Steps:<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h3>
-<ul>
-<li>
-<p>Install SSH on Ubuntu</p>
-</li>
-<li>
-<p>Allow SSH Through the Firewall</p>
-</li>
-<li>
-<p>Find the Server’s IP Address <br></p>
-</li>
-<li>
-<p><code>Note:</code> In this case, you need the IP-address of your own system.</p>
-</li>
-<li>
-<p>Connect to the Server via SSH</p>
-</li>
-<li>
-<p>Enter the password when prompted.</p>
-</li>
-</ul>
-<p><img alt="command screenshot" loading="lazy" src="/ssh/ss6.png"></p>
-<ul>
-<li>Disconnect from SSH</li>
-</ul>
-<p>To exit the SSH session, type:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>exit
-</span></span></code></pre></div><p>You’ve successfully connected to your own system via SSH!</p>
-<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
-<p>SSH isn’t just a tool—it’s your secret tunnel into remote (or even your own) system! With a secure setup and a few tweaks, you can connect like a pro. Now go forth and SSH into greatness!🚀</p>
+Key-Based Authentication – Enables password-free and more secure logins."><meta name=author content><link rel=canonical href=https://anohbahjd.github.io/posts/ssh/><link crossorigin=anonymous href=/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css integrity="sha256-j+ECM6cGvIfy4Is8+XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as=style><link rel=icon href=https://anohbahjd.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://anohbahjd.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://anohbahjd.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://anohbahjd.github.io/apple-touch-icon.png><link rel=mask-icon href=https://anohbahjd.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://anohbahjd.github.io/posts/ssh/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta property="og:url" content="https://anohbahjd.github.io/posts/ssh/"><meta property="og:site_name" content="Anohba Jehad"><meta property="og:title" content="Install and Configure SSH on Ubuntu"><meta property="og:description" content="Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
+Advantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.
+Remote Access – Manage servers and systems from anywhere.
+Key-Based Authentication – Enables password-free and more secure logins."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-03-07T12:30:00+05:00"><meta property="article:modified_time" content="2025-03-07T12:30:00+05:00"><meta property="article:tag" content="Ssh"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Ubuntu"><meta name=twitter:card content="summary"><meta name=twitter:title content="Install and Configure SSH on Ubuntu"><meta name=twitter:description content="Introduction to SSH
+SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.
+Advantages of SSH
 
 
-  </div>
+Secure Communication – Encrypts data, preventing eavesdropping and attacks.
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ssh/">Ssh</a></li>
-      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
-      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
+Remote Access – Manage servers and systems from anywhere.
 
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
-</body>
-
-</html>
+Key-Based Authentication – Enables password-free and more secure logins."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://anohbahjd.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Install and Configure SSH on Ubuntu","item":"https://anohbahjd.github.io/posts/ssh/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Install and Configure SSH on Ubuntu","name":"Install and Configure SSH on Ubuntu","description":"Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.\nAdvantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.\nRemote Access – Manage servers and systems from anywhere.\nKey-Based Authentication – Enables password-free and more secure logins.\n","keywords":["ssh","linux","ubuntu"],"articleBody":"Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.\nAdvantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.\nRemote Access – Manage servers and systems from anywhere.\nKey-Based Authentication – Enables password-free and more secure logins.\nSecure File Transfers – Transfer files safely\nMulti-User Support – Allow multiple users to connect and manage a system securely.\nSSH makes remote access fast, safe, and hassle-free!\nConnection With Remote System SSH (Secure Shell) allows secure remote access to a server or another computer. Here’s how you can set it up and use it on Ubuntu:\n1. Prepare Ubuntu The first thing you need to do before you start installing SSH on Ubuntu is to update all apt packages to the latest versions. To do this, use the following command:\nsudo apt update \u0026\u0026 sudo apt upgrade 2. Install SSH on Ubuntu First, ensure SSH is installed on both the client (your local machine) and the server (remote machine).\nOn the server (remote machine), install the SSH server: Note: For this type of connection, both the client (local system) and the server (remote system) should be on the same network.\nTo check if SSH is running: If it’s not running, start it with:\nsudo systemctl start ssh 2. Allow SSH Through the Firewall If you have a firewall enabled, allow SSH connections: Then, enable the firewall if it’s not already active: 3. Find the Server’s IP Address To connect to your server, you need its IP address. Run:\nip a IP is usually something like 192.168.x.x.\n4. Connect to the Server via SSH On your client machine, use this command to connect:\nNote: As it is a connection with remote system, you need to add the user name and IP-address of system with which you are building connection.\nEnter the password when prompted ( remember it is the password connection. For this type of SSH you need to know to password of remote system)\u003e\nYou have now successfully built a connection with remote system through password!\nSet Up Passwordless SSH (Optional But Recommended) If you don’t want to enter a password every time, set up SSH key authentication:\n🔹 Generate an SSH Key (Skip if you already have one) On your local machine, run:\nssh-keygen -t ed25519 -C \"SSHkey\" Press Enter for all options.\n🔹 Copy the SSH Key to the New Remote System ssh-copy-id username@remote_IP Enter the password once. After this, SSH should work without a password!\nLoopback SSH If you want to connect to your own system using SSH (also called loopback SSH or local SSH connection), follow these steps:\nSteps: Install SSH on Ubuntu\nAllow SSH Through the Firewall\nFind the Server’s IP Address Note: In this case, you need the IP-address of your own system.\nConnect to the Server via SSH\nEnter the password when prompted.\nDisconnect from SSH To exit the SSH session, type:\nexit You’ve successfully connected to your own system via SSH!\nConclusion SSH isn’t just a tool—it’s your secret tunnel into remote (or even your own) system! With a secure setup and a few tweaks, you can connect like a pro. Now go forth and SSH into greatness!🚀\n","wordCount":"563","inLanguage":"en","datePublished":"2025-03-07T12:30:00+05:00","dateModified":"2025-03-07T12:30:00+05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anohbahjd.github.io/posts/ssh/"},"publisher":{"@type":"Organization","name":"Anohba Jehad","logo":{"@type":"ImageObject","url":"https://anohbahjd.github.io/favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://anohbahjd.github.io/ accesskey=h title="Anohba Jehad (Alt + H)">Anohba Jehad</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://anohbahjd.github.io/archives title=Archives><span>Archives</span></a></li><li><a href=https://anohbahjd.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://anohbahjd.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://anohbahjd.github.io/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Install and Configure SSH on Ubuntu</h1><div class=post-meta><span title='2025-03-07 12:30:00 +0500 PKT'>March 7, 2025</span>&nbsp;·&nbsp;3 min</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#introduction-to-ssh aria-label="Introduction to SSH">Introduction to SSH</a></li><li><a href=#advantages-of-ssh aria-label="Advantages of SSH">Advantages of SSH</a></li><li><a href=#connection-with-remote-system aria-label="Connection With Remote System">Connection With Remote System</a><ul><li><a href=#1-prepare-ubuntu aria-label="1. Prepare Ubuntu">1. Prepare Ubuntu</a></li><li><a href=#2-install-ssh-on-ubuntu aria-label="2. Install SSH on Ubuntu">2. Install SSH on Ubuntu</a></li><li><a href=#2-allow-ssh-through-the-firewall aria-label="2. Allow SSH Through the Firewall">2. Allow SSH Through the Firewall</a></li><li><a href=#3-find-the-servers-ip-address aria-label="3. Find the Server’s IP Address">3. Find the Server’s IP Address</a></li><li><a href=#4-connect-to-the-server-via-ssh aria-label="4. Connect to the Server via SSH">4. Connect to the Server via SSH</a></li></ul></li><li><a href=#set-up-passwordless-ssh-optional-but-recommended aria-label="Set Up Passwordless SSH (Optional But Recommended)">Set Up Passwordless SSH (Optional But Recommended)</a><ul><li><a href=#-generate-an-ssh-key-skip-if-you-already-have-one aria-label="🔹 Generate an SSH Key (Skip if you already have one)">🔹 Generate an SSH Key (Skip if you already have one)</a></li><li><a href=#-copy-the-ssh-key-to-the-new-remote-system aria-label="🔹 Copy the SSH Key to the New Remote System">🔹 Copy the SSH Key to the New Remote System</a></li></ul></li><li><a href=#loopback-ssh aria-label="Loopback SSH">Loopback SSH</a><ul><li><a href=#steps aria-label=Steps:>Steps:</a></li></ul></li><li><a href=#conclusion aria-label=Conclusion>Conclusion</a></li></ul></div></details></div><div class=post-content><h2 id=introduction-to-ssh>Introduction to SSH<a hidden class=anchor aria-hidden=true href=#introduction-to-ssh>#</a></h2><p>SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.</p><h2 id=advantages-of-ssh>Advantages of SSH<a hidden class=anchor aria-hidden=true href=#advantages-of-ssh>#</a></h2><ul><li><p>Secure Communication – Encrypts data, preventing eavesdropping and attacks.</p></li><li><p>Remote Access – Manage servers and systems from anywhere.</p></li><li><p>Key-Based Authentication – Enables password-free and more secure logins.</p></li><li><p>Secure File Transfers – Transfer files safely</p></li><li><p>Multi-User Support – Allow multiple users to connect and manage a system securely.</p></li></ul><p>SSH makes remote access fast, safe, and hassle-free!</p><h2 id=connection-with-remote-system>Connection With Remote System<a hidden class=anchor aria-hidden=true href=#connection-with-remote-system>#</a></h2><p>SSH (Secure Shell) allows secure remote access to a server or another computer. Here’s how you can set it up and use it on Ubuntu:</p><h3 id=1-prepare-ubuntu>1. Prepare Ubuntu<a hidden class=anchor aria-hidden=true href=#1-prepare-ubuntu>#</a></h3><p>The first thing you need to do before you start installing SSH on Ubuntu is to update all apt packages to the latest versions. To do this, use the following command:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo apt update <span style=color:#f92672>&amp;&amp;</span> sudo apt upgrade
+</span></span></code></pre></div><h3 id=2-install-ssh-on-ubuntu>2. Install SSH on Ubuntu<a hidden class=anchor aria-hidden=true href=#2-install-ssh-on-ubuntu>#</a></h3><p>First, ensure SSH is installed on both the client (your local machine) and the server (remote machine).</p><p>On the server (remote machine), install the SSH server:
+<img alt="command screenshot" loading=lazy src=/ssh/ss1.png></p><p><code>Note: For this type of connection, both the client (local system) and the server (remote system) should be on the same network.</code></p><p>To check if SSH is running:
+<img alt="command screenshot" loading=lazy src=/ssh/ss2.png></p><p>If it’s not running, start it with:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo systemctl start ssh
+</span></span></code></pre></div><h3 id=2-allow-ssh-through-the-firewall>2. Allow SSH Through the Firewall<a hidden class=anchor aria-hidden=true href=#2-allow-ssh-through-the-firewall>#</a></h3><p>If you have a firewall enabled, allow SSH connections:
+<img alt="command screenshot" loading=lazy src=/ssh/ss3.png></p><p>Then, enable the firewall if it&rsquo;s not already active:
+<img alt="command screenshot" loading=lazy src=/ssh/ss4.png></p><h3 id=3-find-the-servers-ip-address>3. Find the Server’s IP Address<a hidden class=anchor aria-hidden=true href=#3-find-the-servers-ip-address>#</a></h3><p>To connect to your server, you need its IP address. Run:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ip a
+</span></span></code></pre></div><p>IP is usually something like 192.168.x.x.</p><h3 id=4-connect-to-the-server-via-ssh>4. Connect to the Server via SSH<a hidden class=anchor aria-hidden=true href=#4-connect-to-the-server-via-ssh>#</a></h3><p>On your client machine, use this command to connect:</p><p><code>Note:</code> As it is a connection with remote system, you need to add the user name and IP-address of system with which you are building connection.</p><p><img alt="command screenshot" loading=lazy src=/ssh/ss5.png></p><p>Enter the password when prompted ( remember it is the password connection. For this type of SSH you need to know to password of remote system)></p><p>You have now successfully built a connection with remote system through password!</p><h2 id=set-up-passwordless-ssh-optional-but-recommended>Set Up Passwordless SSH (Optional But Recommended)<a hidden class=anchor aria-hidden=true href=#set-up-passwordless-ssh-optional-but-recommended>#</a></h2><p>If you don’t want to enter a password every time, set up SSH key authentication:</p><h3 id=-generate-an-ssh-key-skip-if-you-already-have-one>🔹 Generate an SSH Key (Skip if you already have one)<a hidden class=anchor aria-hidden=true href=#-generate-an-ssh-key-skip-if-you-already-have-one>#</a></h3><p>On your local machine, run:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ssh-keygen -t ed25519 -C <span style=color:#e6db74>&#34;SSHkey&#34;</span>
+</span></span></code></pre></div><p>Press Enter for all options.</p><h3 id=-copy-the-ssh-key-to-the-new-remote-system>🔹 Copy the SSH Key to the New Remote System<a hidden class=anchor aria-hidden=true href=#-copy-the-ssh-key-to-the-new-remote-system>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ssh-copy-id username@remote_IP
+</span></span></code></pre></div><p>Enter the password once. After this, SSH should work without a password!</p><h2 id=loopback-ssh>Loopback SSH<a hidden class=anchor aria-hidden=true href=#loopback-ssh>#</a></h2><p>If you want to connect to your own system using SSH (also called loopback SSH or local SSH connection), follow these steps:</p><h3 id=steps>Steps:<a hidden class=anchor aria-hidden=true href=#steps>#</a></h3><ul><li><p>Install SSH on Ubuntu</p></li><li><p>Allow SSH Through the Firewall</p></li><li><p>Find the Server’s IP Address<br></p></li><li><p><code>Note:</code> In this case, you need the IP-address of your own system.</p></li><li><p>Connect to the Server via SSH</p></li><li><p>Enter the password when prompted.</p></li></ul><p><img alt="command screenshot" loading=lazy src=/ssh/ss6.png></p><ul><li>Disconnect from SSH</li></ul><p>To exit the SSH session, type:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>exit
+</span></span></code></pre></div><p>You’ve successfully connected to your own system via SSH!</p><h2 id=conclusion>Conclusion<a hidden class=anchor aria-hidden=true href=#conclusion>#</a></h2><p>SSH isn’t just a tool—it’s your secret tunnel into remote (or even your own) system! With a secure setup and a few tweaks, you can connect like a pro. Now go forth and SSH into greatness!🚀</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://anohbahjd.github.io/tags/ssh/>Ssh</a></li><li><a href=https://anohbahjd.github.io/tags/linux/>Linux</a></li><li><a href=https://anohbahjd.github.io/tags/ubuntu/>Ubuntu</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://anohbahjd.github.io/>Anohba Jehad</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
