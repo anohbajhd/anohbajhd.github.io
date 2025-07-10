@@ -66,16 +66,22 @@ Check the Java version:
 ![command screenshot](/jenkins/s8.png)
 ![command screenshot](/jenkins/s9.png)
 
-Then check the status if its active
+Then check the status if its active:
+ ![command screenshot](/jenkins/s10.png)
 
 
 ### Step 5: Open Jenkins in Browser
 Visit: http://localhost:8080
+
 To unlock Jenkins, run:
 
-![command screenshot](/jenkins/s10.png)
+![command screenshot](/jenkins/s13.png)
 
 Paste the password in your browser when prompted.
+
+Proceed with the steps required and
+it will get you to the main Jenkins page:
+![command screenshot](/jenkins/s18.png)
 
 
 ## Setting Up Your First Job (Freestyle Project)
