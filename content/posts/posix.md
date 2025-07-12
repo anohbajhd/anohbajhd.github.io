@@ -1,10 +1,10 @@
-
-date: 2025-05-13T23:45:00+05:00
-title: "Behind the Prompt"
-description: "A Friendly Guide to the POSIX Shell Power"
-author: "Anohba Jehad (zenarchh)"
-tags: [multithreading, concurrency, programming, beginner]
----
++++
+date = 2025-05-13T23:45:00+05:00
+title = 'Behind the Prompt'
+description = 'A Friendly Guide to the POSIX Shell Power'
+author = 'Anohba Jehad (zenarchh)'
+tags = ['shell', 'POSIX shell', 'programming']
++++
 
 If you've ever used a Linux terminal or written a script to automate tasks on a Unix-like system, you've already brushed up against the world of **shell scripting**. But there's one term that often floats around with little explanation, the **POSIX shell**. What is it, and why does it matter?
 
@@ -50,7 +50,7 @@ Popular shells like `bash`, `dash`, `ksh`, and `zsh` all **can act as POSIX-comp
 |-------------------|-------------------------------------------------------------------------|
 |   Portability     | Your scripts will run on any POSIX-compliant system.                    |
 |   Simplicity      | POSIX scripts are typically cleaner and less complex.                   |
-| ⚡ Speed           | Some POSIX shells (like `dash`) are very fast, making them ideal for boot scripts. |
+|   Speed           | Some POSIX shells (like `dash`) are very fast, making them ideal for boot scripts. |
 |   Interoperability | Ideal for system scripts, Dockerfiles, and CI/CD pipelines.              |
 
 ---

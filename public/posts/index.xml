@@ -4,7 +4,7 @@
     <title>Posts on Anohba Jehad</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.0</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -28,6 +28,13 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/webdev/</guid>
       <description>Web Development Simplified: Frontend and Backend Explained</description>
+    </item>
+    <item>
+      <title>Behind the Prompt</title>
+      <link>http://localhost:1313/posts/posix/</link>
+      <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/posix/</guid>
+      <description>A Friendly Guide to the POSIX Shell Power</description>
     </item>
     <item>
       <title>Threaded Realities: Beyond the Loop</title>
