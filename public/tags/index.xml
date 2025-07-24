@@ -6,13 +6,34 @@
     <description>Recent content in Tags on Anohba Jehad</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD</title>
       <link>http://localhost:1313/tags/ci/cd/</link>
-      <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
+      <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/tags/containers/</link>
+      <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dockers</title>
+      <link>http://localhost:1313/tags/dockers/</link>
+      <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/dockers/</guid>
       <description></description>
     </item>
     <item>

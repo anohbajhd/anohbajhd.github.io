@@ -1,13 +1,14 @@
 
 +++
 date = '2025-07-13T12:15:56+05:00'
-title = "Modern Infrastructure – Part 1:🐳Docker"
-description = "A Deep Dive into Containerization and Development Simplicity"
+title = "Modern Infrastructure – Part 1: Docker"
+description = "A Deep Dive into Containerization and Development Simplicity 🐳"
 tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 +++
 
 
 > “Build once, run anywhere.”
+
 > That’s not a dream — that’s Docker.
 
 
@@ -15,7 +16,7 @@ tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.
 
 ## Why Docker? 
-### Traditional VMs vs Docker
+ **Traditional VMs vs Docker**
 
 | Feature               | Traditional VM              | Docker                          |
 |-----------------------|-----------------------------|----------------------------------|
@@ -148,6 +149,7 @@ docker run -v $(pwd):/app app
 ```
 ## Docker Hub and Registries 
 **Docker Hub:** Official public registry
+
 GitHub Container Registry (GHCR) and Harbor are alternatives
 
 ```bash
@@ -176,7 +178,7 @@ docker push username/myapp
 
 - `App Distribution:` **One image, many platforms**
 
-## Conclusion & Next Steps 
+## Conclusion  
 Docker is no longer optional — it's essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.
 

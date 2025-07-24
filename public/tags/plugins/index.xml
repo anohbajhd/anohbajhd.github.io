@@ -10,17 +10,6 @@
     <atom:link href="http://localhost:1313/tags/plugins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meet Jenkins: A Guide to Automation</title>
-      <link>http://localhost:1313/posts/dockers/</link>
-      <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/dockers/</guid>
-      <description>&lt;p&gt;“Build once, run anywhere.”
-That’s not a dream — that’s Docker.&lt;/p&gt;
-&lt;p&gt;In this post, we’ll break down Docker from the ground up. Whether you’re a beginner or brushing up for deployment, this is your one-stop guide to Docker and its ecosystem.&lt;/p&gt;
-&lt;h2 id=&#34;-what-is-docker&#34;&gt;🐳 What is Docker?&lt;/h2&gt;
-&lt;p&gt;Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Meet Jenkins: A Guide to Automation</title>
       <link>http://localhost:1313/posts/jenkins/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/jenkins/</guid>
