@@ -1,7 +1,7 @@
 +++
 date = '2025-07-08T12:15:56+05:00'
 title = "Meet Jenkins: A Guide to Automation"
-tags = ['jenkin', 'plugins', 'pipeline', 'shell']
+tags = ['jenkin', 'plugins', 'pipeline', 'shell','CI/CD']
 +++
 
 ---
@@ -10,10 +10,14 @@ tags = ['jenkin', 'plugins', 'pipeline', 'shell']
 
 **Jenkins** is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making **Continuous Integration (CI)** and **Continuous Delivery (CD)** possible.
 
-> **CI** Automatically building and testing code whenever changes are pushed. 
-> **CD** Automatically deploying/releasing the code to production or staging. 
+```
+CI: Continuous Integration
+Automatically building and testing code whenever changes are pushed. 
+CD: Continuous Delivery
+ Automatically deploying/releasing the code to production or staging. 
 
 Together, CI/CD makes your workflow faster, safer, and hands-free.
+```
 
 In simple terms:
 > Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.
@@ -156,7 +160,7 @@ Jenkins works best when connected to a version control system like **GitHub** or
 5. Under `Source Code Management`, choose `Git` and paste your GitLab repo URL.
 
 > Now every time you push to GitLab, Jenkins can respond automatically.
-
+---
 
 ## Useful Plugins to Explore
 
@@ -167,8 +171,6 @@ Jenkins works best when connected to a version control system like **GitHub** or
 | **Pipeline Plugin**  | Use `Jenkinsfile` for automation workflows     |
 | **Email Extension**  | Send notifications based on build status       |
 | **Docker Plugin**    | Build and run Docker containers via Jenkins    |
-
-## Final Thoughts
 ---
 
 ## Final Thoughts
@@ -186,3 +188,21 @@ Once you're comfortable with the basics, explore more advanced topics like:
 - Jenkins + GitLab CI integration
 
  Jenkins is not just a tool, it’s the **engine behind modern DevOps**.
+
+---
+
+## Jenkins Installation Commands
+```bash
+sudo apt update
+sudo apt install openjdk-17-jdk
+java -version
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+sudo apt install jenkins
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+

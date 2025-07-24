@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ubuntu on Anohba Jehad</title>
-    <link>http://localhost:36047/tags/ubuntu/</link>
+    <link>http://localhost:1313/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on Anohba Jehad</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:36047/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Architecture of the Modern Web</title>
-      <link>http://localhost:36047/posts/webdev/</link>
+      <link>http://localhost:1313/posts/webdev/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:36047/posts/webdev/</guid>
+      <guid>http://localhost:1313/posts/webdev/</guid>
       <description>Web Development Simplified: Frontend and Backend Explained</description>
     </item>
     <item>
       <title>Oh My Zsh!</title>
-      <link>http://localhost:36047/posts/zsh/</link>
+      <link>http://localhost:1313/posts/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:36047/posts/zsh/</guid>
+      <guid>http://localhost:1313/posts/zsh/</guid>
       <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
 If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
@@ -27,9 +27,9 @@ If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rs
     </item>
     <item>
       <title>Huffman Coding: The Art of Compression</title>
-      <link>http://localhost:36047/posts/huffman/</link>
+      <link>http://localhost:1313/posts/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:36047/posts/huffman/</guid>
+      <guid>http://localhost:1313/posts/huffman/</guid>
       <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;
@@ -39,18 +39,18 @@ Ever tried zipping a file to save space? That magic trick behind the scenes? Tha
     </item>
     <item>
       <title>Shell Shocked? Try Fish!</title>
-      <link>http://localhost:36047/posts/fish/</link>
+      <link>http://localhost:1313/posts/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:36047/posts/fish/</guid>
+      <guid>http://localhost:1313/posts/fish/</guid>
       <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;
 &lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
-      <link>http://localhost:36047/posts/dijkstra/</link>
+      <link>http://localhost:1313/posts/dijkstra/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:36047/posts/dijkstra/</guid>
+      <guid>http://localhost:1313/posts/dijkstra/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
 &lt;hr&gt;
@@ -59,18 +59,18 @@ Ever tried zipping a file to save space? That magic trick behind the scenes? Tha
     </item>
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
-      <link>http://localhost:36047/posts/githubcli/</link>
+      <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:36047/posts/githubcli/</guid>
+      <guid>http://localhost:1313/posts/githubcli/</guid>
       <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;
 &lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
-      <link>http://localhost:36047/posts/ssh/</link>
+      <link>http://localhost:1313/posts/ssh/</link>
       <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:36047/posts/ssh/</guid>
+      <guid>http://localhost:1313/posts/ssh/</guid>
       <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;
 &lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;
 &lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;
@@ -86,9 +86,9 @@ Ever tried zipping a file to save space? That magic trick behind the scenes? Tha
     </item>
     <item>
       <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
-      <link>http://localhost:36047/posts/vim/</link>
+      <link>http://localhost:1313/posts/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:36047/posts/vim/</guid>
+      <guid>http://localhost:1313/posts/vim/</guid>
       <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
 &lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
 &lt;hr&gt;

@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=36047&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>Meet Jenkins: A Guide to Automation | Anohba Jehad</title>
-<meta name="keywords" content="jenkin, plugins, pipeline, shell">
+<meta name="keywords" content="jenkin, plugins, pipeline, shell, CI/CD">
 <meta name="description" content="
 What is Jenkins?
 Jenkins is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making Continuous Integration (CI) and Continuous Delivery (CD) possible.
+CI: Continuous Integration
+Automatically building and testing code whenever changes are pushed. 
+CD: Continuous Delivery
+ Automatically deploying/releasing the code to production or staging. 
+
+Together, CI/CD makes your workflow faster, safer, and hands-free.
 In simple terms:
 
-Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.
-Jenkins is a server.
-It’s a program you install on a machine (your own computer, a VPS, or cloud) that:">
+Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:36047/posts/jenkins/">
+<link rel="canonical" href="http://localhost:1313/posts/jenkins/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:36047/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:36047/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:36047/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:36047/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:36047/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:36047/posts/jenkins/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/jenkins/">
 <noscript>
     <style>
         #theme-toggle,
@@ -48,7 +52,7 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:36047/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -74,12 +78,12 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:36047/archives" title="Archives">
+                <a href="http://localhost:1313/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:36047/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -90,11 +94,11 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:36047/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:36047/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Meet Jenkins: A Guide to Automation
     </h1>
-    <div class="post-meta"><span title='2025-07-08 12:15:56 +0500 PKT'>July 8, 2025</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2025-07-08 12:15:56 +0500 PKT'>July 8, 2025</span>&nbsp;·&nbsp;4 min
 
 </div>
   </header> <div class="toc">
@@ -129,9 +133,17 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
                 <li>
                     <a href="#jenkins-pipeline-scripted-automation" aria-label="Jenkins Pipeline (Scripted Automation)">Jenkins Pipeline (Scripted Automation)</a></li>
                 <li>
+                    <a href="#integrating-jenkins-with-git-or-gitlab" aria-label="Integrating Jenkins with Git (or GitLab)">Integrating Jenkins with Git (or GitLab)</a><ul>
+                        
+                <li>
+                    <a href="#example-gitlab" aria-label="Example (GitLab):">Example (GitLab):</a></li></ul>
+                </li>
+                <li>
                     <a href="#useful-plugins-to-explore" aria-label="Useful Plugins to Explore">Useful Plugins to Explore</a></li>
                 <li>
-                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
+                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a></li>
+                <li>
+                    <a href="#jenkins-installation-commands" aria-label="Jenkins Installation Commands">Jenkins Installation Commands</a>
                 </li>
             </ul>
         </div>
@@ -141,7 +153,13 @@ It’s a program you install on a machine (your own computer, a VPS, or cloud) t
   <div class="post-content"><hr>
 <h2 id="what-is-jenkins">What is Jenkins?<a hidden class="anchor" aria-hidden="true" href="#what-is-jenkins">#</a></h2>
 <p><strong>Jenkins</strong> is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making <strong>Continuous Integration (CI)</strong> and <strong>Continuous Delivery (CD)</strong> possible.</p>
-<p>In simple terms:</p>
+<pre tabindex="0"><code>CI: Continuous Integration
+Automatically building and testing code whenever changes are pushed. 
+CD: Continuous Delivery
+ Automatically deploying/releasing the code to production or staging. 
+
+Together, CI/CD makes your workflow faster, safer, and hands-free.
+</code></pre><p>In simple terms:</p>
 <blockquote>
 <p>Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.</p></blockquote>
 <p>Jenkins is a server.
@@ -269,7 +287,26 @@ it will get you to the main Jenkins page:
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="useful-plugins-to-explore">Useful Plugins to Explore<a hidden class="anchor" aria-hidden="true" href="#useful-plugins-to-explore">#</a></h2>
+</span></span></code></pre></div><hr>
+<h2 id="integrating-jenkins-with-git-or-gitlab">Integrating Jenkins with Git (or GitLab)<a hidden class="anchor" aria-hidden="true" href="#integrating-jenkins-with-git-or-gitlab">#</a></h2>
+<p>Jenkins works best when connected to a version control system like <strong>GitHub</strong> or <strong>GitLab</strong>. This allows Jenkins to:</p>
+<ul>
+<li>Watch for new code pushes</li>
+<li>Automatically trigger builds and tests</li>
+<li>Pull code into your pipeline jobs</li>
+</ul>
+<h3 id="example-gitlab">Example (GitLab):<a hidden class="anchor" aria-hidden="true" href="#example-gitlab">#</a></h3>
+<ol>
+<li>Install the <strong>Git Plugin</strong> (if not already).</li>
+<li>Create a <strong>Personal Access Token</strong> in GitLab.</li>
+<li>In Jenkins, go to <code>Credentials &gt; Add Credentials</code> and enter your GitLab token.</li>
+<li>Create a new Pipeline or Freestyle job.</li>
+<li>Under <code>Source Code Management</code>, choose <code>Git</code> and paste your GitLab repo URL.</li>
+</ol>
+<blockquote>
+<p>Now every time you push to GitLab, Jenkins can respond automatically.</p></blockquote>
+<hr>
+<h2 id="useful-plugins-to-explore">Useful Plugins to Explore<a hidden class="anchor" aria-hidden="true" href="#useful-plugins-to-explore">#</a></h2>
 <table>
   <thead>
       <tr>
@@ -300,37 +337,50 @@ it will get you to the main Jenkins page:
       </tr>
   </tbody>
 </table>
+<hr>
 <h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
 <p>Jenkins is like your project manager robot — it does the boring and repetitive tasks so you can focus on writing code.</p>
-<p>Once you&rsquo;re comfortable with the basics, you can explore advanced topics like:</p>
+<p>With its powerful CI/CD pipelines, plugin ecosystem, and integration options, Jenkins is trusted by teams all over the world to ship better software — faster.</p>
+<p>Once you&rsquo;re comfortable with the basics, explore more advanced topics like:</p>
 <ul>
-<li>
-<p>Shared libraries</p>
-</li>
-<li>
-<p>Blue Ocean UI</p>
-</li>
-<li>
-<p>Deploying with Docker, Kubernetes, or AWS</p>
-</li>
+<li>Shared Libraries (DRY pipelines)</li>
+<li>Blue Ocean (visual pipeline editor)</li>
+<li>Dockerized builds</li>
+<li>Jenkins + Kubernetes or AWS for cloud deployments</li>
+<li>Jenkins + GitLab CI integration</li>
 </ul>
-
+<p>Jenkins is not just a tool, it’s the <strong>engine behind modern DevOps</strong>.</p>
+<hr>
+<h2 id="jenkins-installation-commands">Jenkins Installation Commands<a hidden class="anchor" aria-hidden="true" href="#jenkins-installation-commands">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install openjdk-17-jdk
+</span></span><span style="display:flex;"><span>java -version
+</span></span><span style="display:flex;"><span>wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc &gt; /dev/null
+</span></span><span style="display:flex;"><span>echo deb <span style="color:#f92672">[</span>signed-by<span style="color:#f92672">=</span>/usr/share/keyrings/jenkins-keyring.asc<span style="color:#f92672">]</span> https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list &gt; /dev/null
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install jenkins
+</span></span><span style="display:flex;"><span>sudo systemctl enable jenkins
+</span></span><span style="display:flex;"><span>sudo systemctl start jenkins
+</span></span><span style="display:flex;"><span>sudo systemctl status jenkins
+</span></span><span style="display:flex;"><span>sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+</span></span></code></pre></div>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:36047/tags/jenkin/">Jenkin</a></li>
-      <li><a href="http://localhost:36047/tags/plugins/">Plugins</a></li>
-      <li><a href="http://localhost:36047/tags/pipeline/">Pipeline</a></li>
-      <li><a href="http://localhost:36047/tags/shell/">Shell</a></li>
+      <li><a href="http://localhost:1313/tags/jenkin/">Jenkin</a></li>
+      <li><a href="http://localhost:1313/tags/plugins/">Plugins</a></li>
+      <li><a href="http://localhost:1313/tags/pipeline/">Pipeline</a></li>
+      <li><a href="http://localhost:1313/tags/shell/">Shell</a></li>
+      <li><a href="http://localhost:1313/tags/ci/cd/">CI/CD</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:36047/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by
