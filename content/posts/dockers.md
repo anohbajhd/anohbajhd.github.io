@@ -1,7 +1,7 @@
 
 +++
 date = '2025-07-13T12:15:56+05:00'
-title = "Modern Infrastructure – Part 1: Docker"
+title = "Modern Infrastructure – Part 1:🐳Docker"
 description = "A Deep Dive into Containerization and Development Simplicity"
 tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 +++
@@ -11,10 +11,10 @@ tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 > That’s not a dream — that’s Docker.
 
 
-## 🐳 What is Docker? 
+##  What is Docker? 
 Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.
 
-## Why Docker? <a name="why-docker"></a>
+## Why Docker? 
 Traditional VM	Docker
 Heavy OS per VM	Shared kernel, lightweight
 Slower boot time	Fast boot/startup
@@ -27,8 +27,8 @@ Use Docker when you want to:
 - Build microservices
 - Scale easily
 
-## Docker Architecture <a name="docker-architecture"></a>
-Core Components:
+## Docker Architecture
+### Core Components:
 
 - **Docker Daemon:** Runs in the background, manages Docker objects (containers, images, networks).
 
@@ -40,12 +40,11 @@ Core Components:
 
 - **Docker Registries:** Central hubs for sharing images (like Docker Hub).
 
-plaintext
-Copy
-Edit
+```plaintext
 Developer → Docker CLI → Docker Daemon → Container → Application
-🧱 Installing Docker <a name="installing-docker"></a>
-Ubuntu:
+```
+## Installing Docker 
+### Ubuntu:
 
 ```bash
 sudo apt update
@@ -63,22 +62,22 @@ Enable running without sudo:
 ```bash
 sudo usermod -aG docker $USER
 ```
-## Docker Terminology <a name="docker-terminology"></a>
-- Image: App blueprint
+## Docker Terminology 
+- **Image:** App blueprint
 
-- Container: Running image
+- **Container:** Running image
 
-- Dockerfile: Script to create an image
+- **Dockerfile:** Script to create an image
 
-- Volume: Persistent storage
+- **Volume:** Persistent storage
 
-- Port Mapping: Linking container port to host port
+- **Port Mapping:** Linking container port to host port
 
-- Tag: Version label (myapp:1.0)
+- **Tag:** Version label (myapp:1.0)
 
-- Registry: Image storage (Docker Hub, GitHub Packages, etc.)
+- **Registry:** Image storage (Docker Hub, GitHub Packages, etc.)
 
-## Basic Docker Commands <a name="basic-commands"></a>
+## Basic Docker Commands 
 ```bash
 # Run a container
 docker run -it ubuntu
@@ -96,7 +95,7 @@ docker stop <container_id>
 docker rm <id> | docker rmi <id>
 ```
 
-## Dockerfile: Blueprint of Your App <a name="dockerfile"></a>
+## Dockerfile: Blueprint of Your App 
 ```Dockerfile
 # Sample Node.js app
 FROM node:20
@@ -114,7 +113,7 @@ docker build -t my-node-app .
 docker run -p 3000:3000 my-node-app
 ```
 
-## Docker Compose <a name="docker-compose"></a>
+## Docker Compose 
 Use Compose to run multi-container apps (e.g. app + database).
 
 docker-compose.yml:
@@ -137,17 +136,15 @@ docker-compose up
 ```
 
 ## Volumes and Bind Mounts <a name="volumes"></a>
-Volume: Docker-managed storage (docker volume create)
-
-Bind Mount: Link local path to container
+- **Volume:** Docker-managed storage (docker volume create)
+- **Bind Mount:** Link local path to container
 
 ```bash
 docker run -v myvolume:/data app
 docker run -v $(pwd):/app app
 ```
-## Docker Hub and Registries <a name="docker-hub"></a>
+## Docker Hub and Registries 
 **Docker Hub:** Official public registry
-
 GitHub Container Registry (GHCR) and Harbor are alternatives
 
 ```bash
@@ -156,8 +153,7 @@ docker tag myapp username/myapp
 docker push username/myapp
 ```
 
-## Docker vs Kubernetes <a name="docker-vs-kubernetes"></a>
-
+## Docker vs Kubernetes 
 | Feature     | Docker                   | Kubernetes                          |
 |-------------|--------------------------|--------------------------------------|
 | **Purpose** | Containerization         | Orchestration                        |
@@ -166,7 +162,7 @@ docker push username/myapp
 | **Use case** | Dev & CI/CD             | Production, large systems            |
 
 
-## Real-World Use Cases <a name="real-world"></a>
+## Real-World Use Cases 
 - `CI/CD Pipelines:` **Jenkins + Docker**
 
 - `Local Dev Environments:` **VSCode devcontainers**
@@ -180,16 +176,6 @@ docker push username/myapp
 ## Conclusion & Next Steps <a name="conclusion"></a>
 Docker is no longer optional — it's essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.
-
-Next, dive into:
-
- Docker Swarm
-
- Kubernetes
-
- Docker Security Best Practices
-
- Creating CI/CD pipelines with Docker
 
 ## Bonus: Quick Reference Sheet
 ```pgsql
