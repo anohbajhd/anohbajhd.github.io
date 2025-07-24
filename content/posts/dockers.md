@@ -15,11 +15,14 @@ tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.
 
 ## Why Docker? 
-Traditional VM	Docker
-Heavy OS per VM	Shared kernel, lightweight
-Slower boot time	Fast boot/startup
-More resources used	Less CPU/RAM needed
-Hard to move	Easy to share or deploy
+### Traditional VMs vs Docker
+
+| Feature               | Traditional VM              | Docker                          |
+|-----------------------|-----------------------------|----------------------------------|
+| OS Architecture       | Heavy OS per VM             | Shared kernel, lightweight       |
+| Boot Time             | Slower boot time            | Fast boot/startup                |
+| Resource Usage        | More resources used         | Less CPU/RAM needed              |
+| Portability           | Hard to move                | Easy to share or deploy          |
 
 Use Docker when you want to:
 - Avoid "It works on my machine"
@@ -173,7 +176,7 @@ docker push username/myapp
 
 - `App Distribution:` **One image, many platforms**
 
-## Conclusion & Next Steps <a name="conclusion"></a>
+## Conclusion & Next Steps 
 Docker is no longer optional — it's essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.
 
