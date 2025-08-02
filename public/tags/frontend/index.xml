@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontend on Anohba Jehad</title>
     <link>http://localhost:1313/tags/frontend/</link>
     <description>Recent content in Frontend on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jul 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/webdev/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/webdev/</guid>
-      <description>Web Development Simplified: Frontend and Backend Explained</description>
+      <description>&lt;p&gt;Web development is all about building digital experiences; from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, we’ll walk through the core building blocks of each side. This isn’t a tutorial, it’s a clarity-first breakdown of each element so you can understand what it does, and why it&amp;rsquo;s important.&lt;/p&gt;&#xA;&lt;h2 id=&#34;frontend-what-users-see-and-interact-with&#34;&gt;Frontend: What Users See and Interact With&lt;/h2&gt;&#xA;&lt;p&gt;The frontend is the part of a website or web application that users directly experience. It includes everything from layout and buttons to animations and form interactions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

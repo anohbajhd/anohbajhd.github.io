@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on Anohba Jehad</title>
     <link>http://localhost:1313/tags/coding/</link>
     <description>Recent content in Coding on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 May 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/coding/index.xml" rel="self" type="application/rss+xml" />
@@ -13,12 +13,7 @@
       <link>http://localhost:1313/posts/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/huffman/</guid>
-      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;
-&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;
-&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;
-Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;&#xA;&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;&#xA;&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;&#xA;Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

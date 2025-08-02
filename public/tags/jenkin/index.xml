@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jenkin on Anohba Jehad</title>
     <link>http://localhost:1313/tags/jenkin/</link>
     <description>Recent content in Jenkin on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/jenkin/index.xml" rel="self" type="application/rss+xml" />
@@ -13,18 +13,7 @@
       <link>http://localhost:1313/posts/jenkins/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/jenkins/</guid>
-      <description>&lt;hr&gt;
-&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration
-Automatically building and testing code whenever changes are pushed. 
-CD: Continuous Delivery
- Automatically deploying/releasing the code to production or staging. 
-
-Together, CI/CD makes your workflow faster, safer, and hands-free.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration&#xA;Automatically building and testing code whenever changes are pushed. &#xA;CD: Continuous Delivery&#xA; Automatically deploying/releasing the code to production or staging. &#xA;&#xA;Together, CI/CD makes your workflow faster, safer, and hands-free.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

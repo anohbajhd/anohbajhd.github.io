@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/cluster/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/container-orchestration/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kubectl/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/minikube/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/kubernetes/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-16T12:15:56+05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ci/cd/</loc>
     <lastmod>2025-07-13T12:15:56+05:00</lastmod>
   </url><url>
@@ -14,16 +41,7 @@
     <loc>http://localhost:1313/tags/dockers/</loc>
     <lastmod>2025-07-13T12:15:56+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-13T12:15:56+05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/dockers/</loc>
-    <lastmod>2025-07-13T12:15:56+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-13T12:15:56+05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-07-13T12:15:56+05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/jenkin/</loc>
