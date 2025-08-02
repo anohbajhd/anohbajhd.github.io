@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shell on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/shell/</link>
+    <link>http://localhost:34149/tags/shell/</link>
     <description>Recent content in Shell on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:34149/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meet Jenkins: A Guide to Automation</title>
-      <link>http://localhost:1313/posts/jenkins/</link>
+      <link>http://localhost:34149/posts/jenkins/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/jenkins/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration&#xA;Automatically building and testing code whenever changes are pushed. &#xA;CD: Continuous Delivery&#xA; Automatically deploying/releasing the code to production or staging. &#xA;&#xA;Together, CI/CD makes your workflow faster, safer, and hands-free.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/jenkins/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration
+Automatically building and testing code whenever changes are pushed. 
+CD: Continuous Delivery
+ Automatically deploying/releasing the code to production or staging. 
+
+Together, CI/CD makes your workflow faster, safer, and hands-free.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Behind the Prompt</title>
-      <link>http://localhost:1313/posts/posix/</link>
+      <link>http://localhost:34149/posts/posix/</link>
       <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/posix/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve ever used a Linux terminal or written a script to automate tasks on a Unix-like system, you&amp;rsquo;ve already brushed up against the world of &lt;strong&gt;shell scripting&lt;/strong&gt;. But there&amp;rsquo;s one term that often floats around with little explanation, the &lt;strong&gt;POSIX shell&lt;/strong&gt;. What is it, and why does it matter?&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-shell&#34;&gt;What Is a Shell?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;shell&lt;/strong&gt; is a program that provides a command-line interface (CLI) for users to interact with the operating system. There are many types of shells, including:&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/posix/</guid>
+      <description>A Friendly Guide to the POSIX Shell Power</description>
     </item>
     <item>
       <title>Oh My Zsh!</title>
-      <link>http://localhost:1313/posts/zsh/</link>
+      <link>http://localhost:34149/posts/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/zsh/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;&#xA;If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/zsh/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
+If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shell Shocked? Try Fish!</title>
-      <link>http://localhost:1313/posts/fish/</link>
+      <link>http://localhost:34149/posts/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/fish/</guid>
-      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;&#xA;&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/fish/</guid>
+      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;
+&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

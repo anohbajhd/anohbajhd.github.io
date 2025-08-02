@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>http://localhost:34149/tags/python/</link>
     <description>Recent content in Python on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Apr 2025 11:00:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:34149/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don’t Trust Your Code—Test It</title>
-      <link>http://localhost:1313/posts/test/</link>
+      <link>http://localhost:34149/posts/test/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;&#xA;&lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;&#xA;&lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-should-we-test&#34;&gt;Why Should We Test?&lt;/h2&gt;&#xA;&lt;p&gt;Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/test/</guid>
+      <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;
+&lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;
+&lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-should-we-test&#34;&gt;Why Should We Test?&lt;/h2&gt;
+&lt;p&gt;Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Art of Logging In Python!</title>
-      <link>http://localhost:1313/posts/pythonlog/</link>
+      <link>http://localhost:34149/posts/pythonlog/</link>
       <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/posts/pythonlog/</guid>
-      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;&#xA;&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;&#xA;&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
+      <guid>http://localhost:34149/posts/pythonlog/</guid>
+      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;
+&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;
+&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;
+&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

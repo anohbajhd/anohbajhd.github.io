@@ -1,4 +1,4 @@
-baseURL = 'https://anohbahjd.github.io/'
+baseURL = 'http://anohbajhd.github.io/'
 languageCode = 'en-us'
 title = 'Anohba Jehad'
 
@@ -56,10 +56,18 @@ theme = "hugo-PaperMod"
    name = "Search"
    url = "/search"
 
+[[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 300
+    url = "/tags/"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
 
