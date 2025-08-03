@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vim on Anohba Jehad</title>
-    <link>http://localhost:41513/tags/vim/</link>
+    <link>http://localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on Anohba Jehad</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Feb 2025 10:00:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:41513/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
-      <link>http://localhost:41513/posts/vim/</link>
+      <link>http://localhost:1313/posts/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/vim/</guid>
+      <guid>http://localhost:1313/posts/vim/</guid>
       <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
 &lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
 &lt;hr&gt;

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Git-ing It Together: Git Good with Git and GitHub | Anohba Jehad</title>
+<meta name="keywords" content="git, github, version control, ubuntu CLI">
+<meta name="description" content="Introduction
+Ever felt like your code projects are a chaotic mess, with random files named &ldquo;final_version_final_FINAL&rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&quot;
+
+What is Git
+Picture this: You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/github/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/github/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Git-ing It Together: Git Good with Git and GitHub
+    </h1>
+    <div class="post-meta"><span title='2025-01-12 12:30:56 +0500 PKT'>January 12, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#what-is-git" aria-label="What is Git">What is Git</a></li>
+                <li>
+                    <a href="#what-about-github" aria-label="What about GitHub?">What about GitHub?</a></li>
+                <li>
+                    <a href="#the-lingo-you-need-to-git-and-github" aria-label="The Lingo You Need to Git (and GitHub):">The Lingo You Need to Git (and GitHub):</a></li>
+                <li>
+                    <a href="#why-you-should-care" aria-label="Why You Should Care">Why You Should Care</a></li>
+                <li>
+                    <a href="#how-to-git-started" aria-label="How to Git Started">How to Git Started</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Ever felt like your code projects are a chaotic mess, with random files named &ldquo;final_version_final_FINAL&rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&quot;</p>
+<hr>
+<h2 id="what-is-git">What is Git<a hidden class="anchor" aria-hidden="true" href="#what-is-git">#</a></h2>
+<p><strong>Picture this:</strong> You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?</p>
+<p>Git is your fairy godparent here—a version control system that keeps track of every change you make to your files. It allows you to:</p>
+<ul>
+<li>
+<p>Save different versions (called commits) of your project.</p>
+</li>
+<li>
+<p>Compare, undo, or revisit older versions whenever you want.</p>
+</li>
+<li>
+<p>Collaborate with others without yelling, “Who overwrote my code?!”</p>
+</li>
+</ul>
+<p>In short, Git is like a magical diary for your code that says, “Don’t worry, I remember what you did last summer (or last commit).”</p>
+<h2 id="what-about-github">What about GitHub?<a hidden class="anchor" aria-hidden="true" href="#what-about-github">#</a></h2>
+<p>GitHub is where Git goes to show off. Think of it as Git’s social network—an online platform where your code can chill, collaborate, and even find fans.</p>
+<p>With GitHub, you can:</p>
+<ul>
+<li>
+<p>Store your Git-tracked projects (called repositories).</p>
+</li>
+<li>
+<p>Work with others by sharing your repo and combining your efforts.</p>
+</li>
+<li>
+<p>Show off your skills to the world (and maybe even impress recruiters).</p>
+</li>
+<li>
+<p>If Git is your private library, GitHub is the world’s biggest code expo.</p>
+</li>
+</ul>
+<hr>
+<h2 id="the-lingo-you-need-to-git-and-github">The Lingo You Need to Git (and GitHub):<a hidden class="anchor" aria-hidden="true" href="#the-lingo-you-need-to-git-and-github">#</a></h2>
+<p><em><strong>Git knows what you did last summer!</strong></em></p>
+<p>To sound like you’ve been in this game for ages, here are some key terms:</p>
+<ul>
+<li>
+<p><code>Repository (Repo):</code> The folder where your project lives. But unlike boring folders on your laptop, this one remembers everything.</p>
+</li>
+<li>
+<p><code>Commit:</code> Every time you save your work in Git, you create a commit. It’s like taking a snapshot of your project’s current state—great for time-traveling back to when things actually worked.</p>
+</li>
+<li>
+<p><code>Branch:</code> Want to try something new but don’t want to mess up your main project? Create a branch, a parallel universe for experimenting.</p>
+</li>
+<li>
+<p><code>Merge:</code> When you’re ready to bring your experiments into the main project, you merge the branch. If it works, you’re a genius. If it doesn’t, blame the branch.</p>
+</li>
+<li>
+<p><code>Push:</code> Upload your changes to GitHub. It’s like saying, “World, here’s my masterpiece&quot;.</p>
+</li>
+</ul>
+<hr>
+<h2 id="why-you-should-care">Why You Should Care<a hidden class="anchor" aria-hidden="true" href="#why-you-should-care">#</a></h2>
+<p>Still not convinced? Here’s why Git and GitHub are a big dea</p>
+<ul>
+<li>
+<p><strong>Your projects won’t vanish into the void.</strong> Accidentally deleted something? Git’s got your back.</p>
+</li>
+<li>
+<p><strong>Collaborate without chaos.</strong> No more overwriting someone else’s work or fighting over who broke the code.</p>
+</li>
+<li>
+<p><strong>Flex your skills.</strong> Your GitHub profile is like a portfolio for coders. Employers love a well-maintained repo (hint: it’s a career booster).</p>
+</li>
+<li>
+<p><strong>Work on real-world projects.</strong> GitHub is home to open-source projects. You can contribute to cool stuff and learn from the pros.</p>
+</li>
+</ul>
+<hr>
+<h2 id="how-to-git-started">How to Git Started<a hidden class="anchor" aria-hidden="true" href="#how-to-git-started">#</a></h2>
+<p>Here’s a quick cheat sheet for getting up and running:</p>
+<ol>
+<li><em>Install Git:</em> Download and install Git on your computer by running this command on terminal:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install git
+</span></span></code></pre></div><ol start="2">
+<li><strong>Create a Repo:</strong> Either on GitHub (for a public project) or locally (for secret experiments). Here is how to do it:</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/git/">Git</a></li>
+      <li><a href="http://localhost:1313/tags/github/">Github</a></li>
+      <li><a href="http://localhost:1313/tags/version-control/">Version Control</a></li>
+      <li><a href="http://localhost:1313/tags/ubuntu-cli/">Ubuntu CLI</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Github on Anohba Jehad</title>
-    <link>http://localhost:41513/tags/github/</link>
+    <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on Anohba Jehad</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Apr 2025 11:00:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:41513/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don’t Trust Your Code—Test It</title>
-      <link>http://localhost:41513/posts/test/</link>
+      <link>http://localhost:1313/posts/test/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/test/</guid>
+      <guid>http://localhost:1313/posts/test/</guid>
       <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;
 &lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;
 &lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;
@@ -22,18 +22,18 @@
     </item>
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
-      <link>http://localhost:41513/posts/githubcli/</link>
+      <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/githubcli/</guid>
+      <guid>http://localhost:1313/posts/githubcli/</guid>
       <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;
 &lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Art of Logging In Python!</title>
-      <link>http://localhost:41513/posts/pythonlog/</link>
+      <link>http://localhost:1313/posts/pythonlog/</link>
       <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/pythonlog/</guid>
+      <guid>http://localhost:1313/posts/pythonlog/</guid>
       <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;
 &lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;
 &lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;
@@ -41,9 +41,9 @@
     </item>
     <item>
       <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
-      <link>http://localhost:41513/posts/vim/</link>
+      <link>http://localhost:1313/posts/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/vim/</guid>
+      <guid>http://localhost:1313/posts/vim/</guid>
       <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
 &lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
 &lt;hr&gt;
@@ -52,18 +52,29 @@
     </item>
     <item>
       <title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title>
-      <link>http://localhost:41513/posts/hugo/</link>
+      <link>http://localhost:1313/posts/hugo/</link>
       <pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/hugo/</guid>
+      <guid>http://localhost:1313/posts/hugo/</guid>
       <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;
 &lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;
 &lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Git-ing It Together: Git Good with Git and GitHub</title>
+      <link>http://localhost:1313/posts/github/</link>
+      <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/github/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ever felt like your code projects are a chaotic mess, with random files named &amp;ldquo;final_version_final_FINAL&amp;rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&amp;quot;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-git&#34;&gt;What is Git&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Picture this:&lt;/strong&gt; You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title>
-      <link>http://localhost:41513/posts/latex/</link>
+      <link>http://localhost:1313/posts/latex/</link>
       <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:41513/posts/latex/</guid>
+      <guid>http://localhost:1313/posts/latex/</guid>
       <description>&lt;p&gt;Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p&gt;
 &lt;p&gt;But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p&gt;</description>
     </item>
