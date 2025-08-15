@@ -2,332 +2,332 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://anohbajhd.github.io/tags/</link>
     <description>Recent content in Tags on Anohba Jehad</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://anohbajhd.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cluster</title>
-      <link>http://localhost:1313/tags/cluster/</link>
+      <link>http://anohbajhd.github.io/tags/cluster/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/cluster/</guid>
+      <guid>http://anohbajhd.github.io/tags/cluster/</guid>
       <description></description>
     </item>
     <item>
       <title>Container Orchestration</title>
-      <link>http://localhost:1313/tags/container-orchestration/</link>
+      <link>http://anohbajhd.github.io/tags/container-orchestration/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/container-orchestration/</guid>
+      <guid>http://anohbajhd.github.io/tags/container-orchestration/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubectl</title>
-      <link>http://localhost:1313/tags/kubectl/</link>
+      <link>http://anohbajhd.github.io/tags/kubectl/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/kubectl/</guid>
+      <guid>http://anohbajhd.github.io/tags/kubectl/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>http://anohbajhd.github.io/tags/kubernetes/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>http://anohbajhd.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Minikube</title>
-      <link>http://localhost:1313/tags/minikube/</link>
+      <link>http://anohbajhd.github.io/tags/minikube/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/minikube/</guid>
+      <guid>http://anohbajhd.github.io/tags/minikube/</guid>
       <description></description>
     </item>
     <item>
       <title>CI/CD</title>
-      <link>http://localhost:1313/tags/ci/cd/</link>
+      <link>http://anohbajhd.github.io/tags/ci/cd/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ci/cd/</guid>
+      <guid>http://anohbajhd.github.io/tags/ci/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Containers</title>
-      <link>http://localhost:1313/tags/containers/</link>
+      <link>http://anohbajhd.github.io/tags/containers/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/containers/</guid>
+      <guid>http://anohbajhd.github.io/tags/containers/</guid>
       <description></description>
     </item>
     <item>
       <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
+      <link>http://anohbajhd.github.io/tags/devops/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
+      <guid>http://anohbajhd.github.io/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Dockers</title>
-      <link>http://localhost:1313/tags/dockers/</link>
+      <link>http://anohbajhd.github.io/tags/dockers/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/dockers/</guid>
+      <guid>http://anohbajhd.github.io/tags/dockers/</guid>
       <description></description>
     </item>
     <item>
       <title>Jenkin</title>
-      <link>http://localhost:1313/tags/jenkin/</link>
+      <link>http://anohbajhd.github.io/tags/jenkin/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/jenkin/</guid>
+      <guid>http://anohbajhd.github.io/tags/jenkin/</guid>
       <description></description>
     </item>
     <item>
       <title>Pipeline</title>
-      <link>http://localhost:1313/tags/pipeline/</link>
+      <link>http://anohbajhd.github.io/tags/pipeline/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/pipeline/</guid>
+      <guid>http://anohbajhd.github.io/tags/pipeline/</guid>
       <description></description>
     </item>
     <item>
       <title>Plugins</title>
-      <link>http://localhost:1313/tags/plugins/</link>
+      <link>http://anohbajhd.github.io/tags/plugins/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/plugins/</guid>
+      <guid>http://anohbajhd.github.io/tags/plugins/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>http://localhost:1313/tags/shell/</link>
+      <link>http://anohbajhd.github.io/tags/shell/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/shell/</guid>
+      <guid>http://anohbajhd.github.io/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Backend</title>
-      <link>http://localhost:1313/tags/backend/</link>
+      <link>http://anohbajhd.github.io/tags/backend/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/backend/</guid>
+      <guid>http://anohbajhd.github.io/tags/backend/</guid>
       <description></description>
     </item>
     <item>
       <title>Frontend</title>
-      <link>http://localhost:1313/tags/frontend/</link>
+      <link>http://anohbajhd.github.io/tags/frontend/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/frontend/</guid>
+      <guid>http://anohbajhd.github.io/tags/frontend/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
+      <link>http://anohbajhd.github.io/tags/ubuntu/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <guid>http://anohbajhd.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Webdevelopment</title>
-      <link>http://localhost:1313/tags/webdevelopment/</link>
+      <link>http://anohbajhd.github.io/tags/webdevelopment/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/webdevelopment/</guid>
+      <guid>http://anohbajhd.github.io/tags/webdevelopment/</guid>
       <description></description>
     </item>
     <item>
       <title>POSIX Shell</title>
-      <link>http://localhost:1313/tags/posix-shell/</link>
+      <link>http://anohbajhd.github.io/tags/posix-shell/</link>
       <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/posix-shell/</guid>
+      <guid>http://anohbajhd.github.io/tags/posix-shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>http://anohbajhd.github.io/tags/programming/</link>
       <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>http://anohbajhd.github.io/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Beginner</title>
-      <link>http://localhost:1313/tags/beginner/</link>
+      <link>http://anohbajhd.github.io/tags/beginner/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/beginner/</guid>
+      <guid>http://anohbajhd.github.io/tags/beginner/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>http://localhost:1313/tags/concurrency/</link>
+      <link>http://anohbajhd.github.io/tags/concurrency/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/concurrency/</guid>
+      <guid>http://anohbajhd.github.io/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Multithreading</title>
-      <link>http://localhost:1313/tags/multithreading/</link>
+      <link>http://anohbajhd.github.io/tags/multithreading/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/multithreading/</guid>
+      <guid>http://anohbajhd.github.io/tags/multithreading/</guid>
       <description></description>
     </item>
     <item>
       <title>Oh-My-Zsh</title>
-      <link>http://localhost:1313/tags/oh-my-zsh/</link>
+      <link>http://anohbajhd.github.io/tags/oh-my-zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/oh-my-zsh/</guid>
+      <guid>http://anohbajhd.github.io/tags/oh-my-zsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Zsh</title>
-      <link>http://localhost:1313/tags/zsh/</link>
+      <link>http://anohbajhd.github.io/tags/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/zsh/</guid>
+      <guid>http://anohbajhd.github.io/tags/zsh/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>http://localhost:1313/tags/algorithm/</link>
+      <link>http://anohbajhd.github.io/tags/algorithm/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/algorithm/</guid>
+      <guid>http://anohbajhd.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Coding</title>
-      <link>http://localhost:1313/tags/coding/</link>
+      <link>http://anohbajhd.github.io/tags/coding/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/coding/</guid>
+      <guid>http://anohbajhd.github.io/tags/coding/</guid>
       <description></description>
     </item>
     <item>
       <title>Greedy</title>
-      <link>http://localhost:1313/tags/greedy/</link>
+      <link>http://anohbajhd.github.io/tags/greedy/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/greedy/</guid>
+      <guid>http://anohbajhd.github.io/tags/greedy/</guid>
       <description></description>
     </item>
     <item>
       <title>Huffman</title>
-      <link>http://localhost:1313/tags/huffman/</link>
+      <link>http://anohbajhd.github.io/tags/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/huffman/</guid>
+      <guid>http://anohbajhd.github.io/tags/huffman/</guid>
       <description></description>
     </item>
     <item>
       <title>Fish</title>
-      <link>http://localhost:1313/tags/fish/</link>
+      <link>http://anohbajhd.github.io/tags/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/fish/</guid>
+      <guid>http://anohbajhd.github.io/tags/fish/</guid>
       <description></description>
     </item>
     <item>
       <title>Tide</title>
-      <link>http://localhost:1313/tags/tide/</link>
+      <link>http://anohbajhd.github.io/tags/tide/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/tide/</guid>
+      <guid>http://anohbajhd.github.io/tags/tide/</guid>
       <description></description>
     </item>
     <item>
       <title>Dijkstra</title>
-      <link>http://localhost:1313/tags/dijkstra/</link>
+      <link>http://anohbajhd.github.io/tags/dijkstra/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/dijkstra/</guid>
+      <guid>http://anohbajhd.github.io/tags/dijkstra/</guid>
       <description></description>
     </item>
     <item>
       <title>Graphs</title>
-      <link>http://localhost:1313/tags/graphs/</link>
+      <link>http://anohbajhd.github.io/tags/graphs/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/graphs/</guid>
+      <guid>http://anohbajhd.github.io/tags/graphs/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>http://anohbajhd.github.io/tags/github/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>http://anohbajhd.github.io/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>http://anohbajhd.github.io/tags/hugo/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>http://anohbajhd.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>http://anohbajhd.github.io/tags/python/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>http://anohbajhd.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
+      <link>http://anohbajhd.github.io/tags/testing/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>http://anohbajhd.github.io/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Gh</title>
-      <link>http://localhost:1313/tags/gh/</link>
+      <link>http://anohbajhd.github.io/tags/gh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/gh/</guid>
+      <guid>http://anohbajhd.github.io/tags/gh/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>http://anohbajhd.github.io/tags/git/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>http://anohbajhd.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>http://anohbajhd.github.io/tags/linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>http://anohbajhd.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>http://localhost:1313/tags/ssh/</link>
+      <link>http://anohbajhd.github.io/tags/ssh/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ssh/</guid>
+      <guid>http://anohbajhd.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/tags/vim/</link>
+      <link>http://anohbajhd.github.io/tags/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/vim/</guid>
+      <guid>http://anohbajhd.github.io/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu CLI</title>
-      <link>http://localhost:1313/tags/ubuntu-cli/</link>
+      <link>http://anohbajhd.github.io/tags/ubuntu-cli/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ubuntu-cli/</guid>
+      <guid>http://anohbajhd.github.io/tags/ubuntu-cli/</guid>
       <description></description>
     </item>
     <item>
       <title>Version Control</title>
-      <link>http://localhost:1313/tags/version-control/</link>
+      <link>http://anohbajhd.github.io/tags/version-control/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/version-control/</guid>
+      <guid>http://anohbajhd.github.io/tags/version-control/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:1313/tags/latex/</link>
+      <link>http://anohbajhd.github.io/tags/latex/</link>
       <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/latex/</guid>
+      <guid>http://anohbajhd.github.io/tags/latex/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian</title>
-      <link>http://localhost:1313/tags/debian/</link>
+      <link>http://anohbajhd.github.io/tags/debian/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/debian/</guid>
+      <guid>http://anohbajhd.github.io/tags/debian/</guid>
       <description></description>
     </item>
     <item>
       <title>Os</title>
-      <link>http://localhost:1313/tags/os/</link>
+      <link>http://anohbajhd.github.io/tags/os/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/os/</guid>
+      <guid>http://anohbajhd.github.io/tags/os/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dockers on Anohba Jehad</title>
-    <link>http://localhost:1313/tags/dockers/</link>
+    <link>http://anohbajhd.github.io/tags/dockers/</link>
     <description>Recent content in Dockers on Anohba Jehad</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/dockers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://anohbajhd.github.io/tags/dockers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modern Infrastructure – Part 1: Docker</title>
-      <link>http://localhost:1313/posts/dockers/</link>
+      <link>http://anohbajhd.github.io/posts/dockers/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/dockers/</guid>
+      <guid>http://anohbajhd.github.io/posts/dockers/</guid>
       <description>A Deep Dive into Containerization and Development Simplicity 🐳</description>
     </item>
   </channel>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Modern Infrastructure – Part 1: Docker | Anohba Jehad</title>
 <meta name="keywords" content="dockers, containers, DevOps, CI/CD">
 <meta name="description" content="A Deep Dive into Containerization and Development Simplicity 🐳">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/dockers/">
+<link rel="canonical" href="http://anohbajhd.github.io/posts/dockers/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="http://anohbajhd.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://anohbajhd.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://anohbajhd.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://anohbajhd.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://anohbajhd.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dockers/">
+<link rel="alternate" hreflang="en" href="http://anohbajhd.github.io/posts/dockers/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,7 +27,73 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="http://anohbajhd.github.io/posts/dockers/">
+  <meta property="og:site_name" content="Anohba Jehad">
+  <meta property="og:title" content="Modern Infrastructure – Part 1: Docker">
+  <meta property="og:description" content="A Deep Dive into Containerization and Development Simplicity 🐳">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-13T12:15:56+05:00">
+    <meta property="article:modified_time" content="2025-07-13T12:15:56+05:00">
+    <meta property="article:tag" content="Dockers">
+    <meta property="article:tag" content="Containers">
+    <meta property="article:tag" content="DevOps">
+    <meta property="article:tag" content="CI/CD">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Modern Infrastructure – Part 1: Docker">
+<meta name="twitter:description" content="A Deep Dive into Containerization and Development Simplicity 🐳">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://anohbajhd.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Modern Infrastructure – Part 1: Docker",
+      "item": "http://anohbajhd.github.io/posts/dockers/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Modern Infrastructure – Part 1: Docker",
+  "name": "Modern Infrastructure – Part 1: Docker",
+  "description": "A Deep Dive into Containerization and Development Simplicity 🐳",
+  "keywords": [
+    "dockers", "containers", "DevOps", "CI/CD"
+  ],
+  "articleBody": " “Build once, run anywhere.”\nThat’s not a dream — that’s Docker.\nWhat is Docker? Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.\nWhy Docker? Traditional VMs vs Docker\nFeature Traditional VM Docker OS Architecture Heavy OS per VM Shared kernel, lightweight Boot Time Slower boot time Fast boot/startup Resource Usage More resources used Less CPU/RAM needed Portability Hard to move Easy to share or deploy Use Docker when you want to:\nAvoid “It works on my machine” Speed up development and CI/CD Build microservices Scale easily Docker Architecture Core Components: Docker Daemon: Runs in the background, manages Docker objects (containers, images, networks).\nDocker CLI: The command-line interface to talk to the daemon.\nDocker Images: Read-only templates to create containers.\nDocker Containers: Running instances of images.\nDocker Registries: Central hubs for sharing images (like Docker Hub).\nDeveloper → Docker CLI → Docker Daemon → Container → Application Installing Docker Ubuntu: sudo apt update sudo apt install docker.io sudo systemctl start docker sudo systemctl enable docker Check version:\ndocker --version Enable running without sudo:\nsudo usermod -aG docker $USER Docker Terminology Image: App blueprint\nContainer: Running image\nDockerfile: Script to create an image\nVolume: Persistent storage\nPort Mapping: Linking container port to host port\nTag: Version label (myapp:1.0)\nRegistry: Image storage (Docker Hub, GitHub Packages, etc.)\nBasic Docker Commands # Run a container docker run -it ubuntu # List containers docker ps -a # Build from Dockerfile docker build -t myapp . # Stop a container docker stop # Remove container/image docker rm | docker rmi Dockerfile: Blueprint of Your App # Sample Node.js app FROM node:20 WORKDIR /app COPY . . RUN npm install EXPOSE 3000 CMD [\"node\", \"index.js\"] Build \u0026 Run:\ndocker build -t my-node-app . docker run -p 3000:3000 my-node-app Docker Compose Use Compose to run multi-container apps (e.g. app + database).\ndocker-compose.yml:\nversion: '3' services: app: build: . ports: - \"3000:3000\" db: image: mongo ports: - \"27017:27017\" docker-compose up Volumes and Bind Mounts Volume: Docker-managed storage (docker volume create) Bind Mount: Link local path to container docker run -v myvolume:/data app docker run -v $(pwd):/app app Docker Hub and Registries Docker Hub: Official public registry\nGitHub Container Registry (GHCR) and Harbor are alternatives\n# Push image docker tag myapp username/myapp docker push username/myapp Docker vs Kubernetes Feature Docker Kubernetes Purpose Containerization Orchestration Scale Manual Auto-scaling, rolling updates Networking Simple Complex but powerful Use case Dev \u0026 CI/CD Production, large systems Real-World Use Cases CI/CD Pipelines: Jenkins + Docker\nLocal Dev Environments: VSCode devcontainers\nMicroservices Architecture: API Gateway + Services + DB\nEdge Computing: IoT and Raspberry Pi deployments\nApp Distribution: One image, many platforms\nConclusion Docker is no longer optional — it’s essential for modern software development. Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.\nBonus: Quick Reference Sheet docker build -t name . docker run -p 8080:80 name docker ps -a docker exec -it container bash docker-compose up -d ",
+  "wordCount" : "526",
+  "inLanguage": "en",
+  "datePublished": "2025-07-13T12:15:56+05:00",
+  "dateModified": "2025-07-13T12:15:56+05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://anohbajhd.github.io/posts/dockers/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anohba Jehad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://anohbajhd.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -41,7 +107,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://anohbajhd.github.io/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -67,17 +133,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://anohbajhd.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives" title="Archives">
+                <a href="http://anohbajhd.github.io/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://anohbajhd.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -88,7 +154,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://anohbajhd.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://anohbajhd.github.io/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Modern Infrastructure – Part 1: Docker
     </h1>
@@ -365,17 +431,17 @@ docker-compose up -d
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/dockers/">Dockers</a></li>
-      <li><a href="http://localhost:1313/tags/containers/">Containers</a></li>
-      <li><a href="http://localhost:1313/tags/devops/">DevOps</a></li>
-      <li><a href="http://localhost:1313/tags/ci/cd/">CI/CD</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/dockers/">Dockers</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/containers/">Containers</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/devops/">DevOps</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/ci/cd/">CI/CD</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://anohbajhd.github.io/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by

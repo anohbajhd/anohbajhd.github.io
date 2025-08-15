@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Modern Infrastructure – Part 2: Kubernetes | Anohba Jehad</title>
 <meta name="keywords" content="kubernetes, kubectl, minikube, cluster, container orchestration">
 <meta name="description" content="Container Orchestration: Local Cluster Setup Using Minikube">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/kubernetes/">
+<link rel="canonical" href="http://anohbajhd.github.io/posts/kubernetes/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="http://anohbajhd.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://anohbajhd.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://anohbajhd.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://anohbajhd.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://anohbajhd.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/kubernetes/">
+<link rel="alternate" hreflang="en" href="http://anohbajhd.github.io/posts/kubernetes/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,7 +27,74 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="http://anohbajhd.github.io/posts/kubernetes/">
+  <meta property="og:site_name" content="Anohba Jehad">
+  <meta property="og:title" content="Modern Infrastructure – Part 2: Kubernetes">
+  <meta property="og:description" content="Container Orchestration: Local Cluster Setup Using Minikube">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-25T12:15:56+05:00">
+    <meta property="article:modified_time" content="2025-07-25T12:15:56+05:00">
+    <meta property="article:tag" content="Kubernetes">
+    <meta property="article:tag" content="Kubectl">
+    <meta property="article:tag" content="Minikube">
+    <meta property="article:tag" content="Cluster">
+    <meta property="article:tag" content="Container Orchestration">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Modern Infrastructure – Part 2: Kubernetes">
+<meta name="twitter:description" content="Container Orchestration: Local Cluster Setup Using Minikube">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://anohbajhd.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Modern Infrastructure – Part 2: Kubernetes",
+      "item": "http://anohbajhd.github.io/posts/kubernetes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Modern Infrastructure – Part 2: Kubernetes",
+  "name": "Modern Infrastructure – Part 2: Kubernetes",
+  "description": "Container Orchestration: Local Cluster Setup Using Minikube",
+  "keywords": [
+    "kubernetes", "kubectl", "minikube", "cluster", "container orchestration"
+  ],
+  "articleBody": "Introduction In the evolving world of cloud-native applications, containerization has revolutionized how we build, ship, and run software. But as the number of containers in a project grows, managing them becomes a challenge. That’s where Container Orchestration steps in - and Kubernetes is the undisputed leader in this space.\nWhat is Container Orchestration? Container orchestration is a way to automate the deployment, scaling, and management of many containers.\nInstead of starting and stopping each container manually, orchestration tools (like Kubernetes) handle it for you - making sure your apps run smoothly, restart if they crash, and scale when needed.\nIt’s like having a smart system that keeps all your containerized apps organized and running the way you want, across multiple machines.\nWhat Is Kubernetes? Kubernetes (K8s) is an open-source platform that automates deploying, scaling, and managing containerized applications.\nOriginally built by Google and now maintained by the Cloud Native Computing Foundation (CNCF), it enables:\nAutomatic container scheduling\nLoad balancing\nSelf-healing and auto-scaling\nService discovery\nWhy Minikube and kubectl? To run Kubernetes on your local machine, you need two key tools:\n1. kubectl - The Kubernetes Command-Line Tool kubectl is the primary way to interact with a Kubernetes cluster. You use it to:\nDeploy applications\nInspect and manage cluster resources\nView logs\nScale deployments\nExpose services\nWithout kubectl, you cannot communicate with your cluster’s API server or manage any workloads.\nThink of `kubectl` as your terminal interface to Kubernetes - just like git is to version control. 2. Minikube - Local Kubernetes Cluster Minikube is a lightweight tool that sets up a single-node Kubernetes cluster on your machine. It’s ideal for:\nLearning Kubernetes basics\nLocal development\nTesting configuration files before production\nPrerequisites Make sure you have:\nA system with virtualization enabled (Docker, VirtualBox, etc.)\nTerminal access with sudo privileges\nInternet connection\nStep-by-Step Installation Guide (Ubuntu/Linux) Step 1: Install kubectl Downlaod the latest stable version: Then make the file executable with: Move it to your system’s binary path by: Check the version if it is installed successfully: Step 2: Install minikube Downloa the minikube binary: Install it to your system path: Check version: Step 3: Start the Kubernetes Cluster Recommended: Choose a driver (Docker is common): Optional: this command automatically selects the best available driver on your system (e.g., Docker, VirtualBox, KVM): This downloads the required components and spins up a single-node cluster.\nStep 4: Verify the Cluster is Running Step 5: Interact with Your Cluster You should see one node in a Ready state.\nStep 6: Deploy a Sample App Do you have a deployment? If there’s no output, create one: Option 1: Through kubernetes CLI (kubectl):\nkubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4 Option 2: Using the Kubernetes Dashboard (Optional UI):\nLanch the minikube dashboard: If the output says somethin like:\nNo resources found in kubernetes-dashboard namespace. It means the dashboard pods haven’t been created yet - so naturally, proxy health will hang since there’s nothing to proxy to.\nHow to Fix it: Manually Enable the Dashboard Addon Minikube is supposed to auto-enable it with minikube dashboard, but sometimes it silently fails. You can force it like this: Then manually install the metrics scraper (recommended for full functionality): Wait and Watch: Then watch pods getting created: Once Running: Launch the dashboard again:\nminikube dashboard Boom! You’re in the Kubernetes Dashboard - mission accomplished! This means your entire Minikube cluster is working exactly as it should.\nWhat You Can Do From Here Now that you’re inside the dashboard UI, here are a few things worth exploring:\n1. Workloads Check out: Deployments, Pods, ReplicaSets\nTry creating a sample deployment from the UI\n2. Create a Deployment Use the “+” button (top-right) or go to:\n+ CREATE → Deploy a containerized app I did this simple yaml:\napiVersion: apps/v1 kind: Deployment metadata: name: hello-node spec: replicas: 1 selector: matchLabels: app: hello template: metadata: labels: app: hello spec: containers: - name: hello image: k8s.gcr.io/echoserver:1.10 ports: - containerPort: 8080 3. Expose a Service You can expose your deployment right from the dashboard as a NodePort -then open it in a browser using: This will:\nCreate a Service named hello-node\nExpose port 8080 of your pod\nAssign a random NodePort between 30000–32767\nTo access the app: It should open in your browser! Stopping or Cleaning Up When you’re done, you can stop the cluster: minikube stop To delete the cluster entirely: minikube delete Conclusion Kubernetes might seem complex at first, but starting with a local setup helps demystify it. By running a cluster on your own machine using Minikube, you gain the confidence to move to production environments later.\nKubernetes isn’t just a tool - it’s a platform that empowers you to build resilient, scalable, and manageable applications at scale.\n\"Learning Kubernetes is like learning how to drive a spaceship. But once you do, you're ready to explore galaxies.\"\nCommands List curl -LO \"https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl\" chmod +x kubectl sudo mv kubectl /usr/local/bin/ ____________________________________________________________________________________________________________ kubectl version --client curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 sudo install minikube-linux-amd64 /usr/local/bin/minikube minikube version minikube start --driver=docker minikube status ____________________________________________________________________________________________________________ kubectl get nodes minikube dashboard ##or minikube dashboard --url kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4 minikube addons enable dashboard minikube addons enable metrics-server ____________________________________________________________________________________________________________ kubectl get pods -n kubernetes-dashboard -w kubectl expose deployment hello-node --type=LoadBalancer --port=8080 kubectl get service hello-node minikube service hello-node ",
+  "wordCount" : "876",
+  "inLanguage": "en",
+  "datePublished": "2025-07-25T12:15:56+05:00",
+  "dateModified": "2025-07-25T12:15:56+05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://anohbajhd.github.io/posts/kubernetes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anohba Jehad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://anohbajhd.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class=" dark" id="top">
@@ -41,7 +108,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://anohbajhd.github.io/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -67,17 +134,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://anohbajhd.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives" title="Archives">
+                <a href="http://anohbajhd.github.io/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://anohbajhd.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -88,7 +155,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://anohbajhd.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://anohbajhd.github.io/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Modern Infrastructure – Part 2: Kubernetes
     </h1>
@@ -466,18 +533,18 @@ This means your entire Minikube cluster is working exactly as it should.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/kubernetes/">Kubernetes</a></li>
-      <li><a href="http://localhost:1313/tags/kubectl/">Kubectl</a></li>
-      <li><a href="http://localhost:1313/tags/minikube/">Minikube</a></li>
-      <li><a href="http://localhost:1313/tags/cluster/">Cluster</a></li>
-      <li><a href="http://localhost:1313/tags/container-orchestration/">Container Orchestration</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/kubernetes/">Kubernetes</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/kubectl/">Kubectl</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/minikube/">Minikube</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/cluster/">Cluster</a></li>
+      <li><a href="http://anohbajhd.github.io/tags/container-orchestration/">Container Orchestration</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://anohbajhd.github.io/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by
