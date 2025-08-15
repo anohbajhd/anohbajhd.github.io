@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Huffman Coding: The Art of Compression | Anohba Jehad</title>
+<meta name="keywords" content="huffman, algorithm, ubuntu, greedy, coding">
+<meta name="description" content="Cloud Computing 101: A Beginner’s Guide to the Future of Technology
+In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?
+What is Cloud Computing?
+Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/cloudcomputing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/cloudcomputing/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Huffman Coding: The Art of Compression
+    </h1>
+    <div class="post-meta"><span title='2025-05-06 00:46:56 +0500 PKT'>May 6, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-cloud-computing" aria-label="What is Cloud Computing?">What is Cloud Computing?</a></li>
+                <li>
+                    <a href="#why-is-it-called-cloud" aria-label="Why is it Called &ldquo;Cloud&rdquo;?">Why is it Called &ldquo;Cloud&rdquo;?</a></li>
+                <li>
+                    <a href="#key-characteristics" aria-label="Key Characteristics">Key Characteristics</a></li>
+                <li>
+                    <a href="#cloud-service-models" aria-label="Cloud Service Models">Cloud Service Models</a><ul>
+                        
+                <li>
+                    <a href="#1-iaas-infrastructure-as-a-service" aria-label="1. IaaS (Infrastructure as a Service)">1. IaaS (Infrastructure as a Service)</a></li>
+                <li>
+                    <a href="#2-paas-platform-as-a-service" aria-label="2. PaaS (Platform as a Service)">2. PaaS (Platform as a Service)</a></li>
+                <li>
+                    <a href="#3-saas-software-as-a-service" aria-label="3. SaaS (Software as a Service)">3. SaaS (Software as a Service)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#types-of-cloud-environments" aria-label="Types of Cloud Environments">Types of Cloud Environments</a><ul>
+                        
+                <li>
+                    <a href="#public-cloud" aria-label="Public Cloud">Public Cloud</a></li>
+                <li>
+                    <a href="#private-cloud" aria-label="Private Cloud">Private Cloud</a></li>
+                <li>
+                    <a href="#hybrid-cloud" aria-label="Hybrid Cloud">Hybrid Cloud</a></li></ul>
+                </li>
+                <li>
+                    <a href="#benefits-of-cloud-computing" aria-label="Benefits of Cloud Computing">Benefits of Cloud Computing</a></li>
+                <li>
+                    <a href="#is-cloud-computing-safe" aria-label="Is Cloud Computing Safe?">Is Cloud Computing Safe?</a></li>
+                <li>
+                    <a href="#the-future-of-cloud" aria-label="The Future of Cloud">The Future of Cloud</a></li>
+                <li>
+                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Cloud Computing 101: A Beginner’s Guide to the Future of Technology</p>
+<p>In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?</p>
+<h2 id="what-is-cloud-computing">What is Cloud Computing?<a hidden class="anchor" aria-hidden="true" href="#what-is-cloud-computing">#</a></h2>
+<p>Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.</p>
+<p>Instead of owning the hardware or infrastructure, you rent or subscribe to it from cloud providers like Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and others.</p>
+<h2 id="why-is-it-called-cloud">Why is it Called &ldquo;Cloud&rdquo;?<a hidden class="anchor" aria-hidden="true" href="#why-is-it-called-cloud">#</a></h2>
+<p>The term &ldquo;cloud&rdquo; comes from the cloud symbol used to represent the internet in diagrams. It’s a metaphor for computing resources existing somewhere remotely—accessible but not seen.</p>
+<h2 id="key-characteristics">Key Characteristics<a hidden class="anchor" aria-hidden="true" href="#key-characteristics">#</a></h2>
+<p>Here are the defining traits of cloud computing:
+Characteristic	Description
+On-demand self-service	Users can provision resources like storage or servers without human interaction.
+Broad network access	Accessible from anywhere via the internet.
+Resource pooling	Shared resources serve multiple customers using multi-tenant models.
+Rapid elasticity	Instantly scale up or down based on need.
+Measured service	You pay only for what you use (like utilities).</p>
+<h2 id="cloud-service-models">Cloud Service Models<a hidden class="anchor" aria-hidden="true" href="#cloud-service-models">#</a></h2>
+<p>There are three major service models in cloud computing:</p>
+<h3 id="1-iaas-infrastructure-as-a-service">1. IaaS (Infrastructure as a Service)<a hidden class="anchor" aria-hidden="true" href="#1-iaas-infrastructure-as-a-service">#</a></h3>
+<p>You rent IT infrastructure—servers, virtual machines, storage, and networking—on a pay-as-you-go basis.</p>
+<pre><code>Example: AWS EC2, Google Compute Engine
+
+Ideal for: Developers who want control over servers
+</code></pre>
+<h3 id="2-paas-platform-as-a-service">2. PaaS (Platform as a Service)<a hidden class="anchor" aria-hidden="true" href="#2-paas-platform-as-a-service">#</a></h3>
+<p>You get a platform with tools to develop, test, and deploy apps—without managing the underlying infrastructure.</p>
+<pre><code>Example: Heroku, Google App Engine
+
+Ideal for: Developers focused on app development, not server setup
+</code></pre>
+<h3 id="3-saas-software-as-a-service">3. SaaS (Software as a Service)<a hidden class="anchor" aria-hidden="true" href="#3-saas-software-as-a-service">#</a></h3>
+<p>You use fully developed software via the internet—no installations or maintenance required.</p>
+<pre><code>Example: Gmail, Microsoft 365, Dropbox
+
+Ideal for: End-users who just need functionality
+</code></pre>
+<hr>
+<h2 id="types-of-cloud-environments">Types of Cloud Environments<a hidden class="anchor" aria-hidden="true" href="#types-of-cloud-environments">#</a></h2>
+<p>Clouds can be deployed in different ways depending on control, security, and scale needs:</p>
+<h3 id="public-cloud">Public Cloud<a hidden class="anchor" aria-hidden="true" href="#public-cloud">#</a></h3>
+<p>Owned by third-party providers; resources shared among users.</p>
+<pre><code>Example: AWS, Azure, GCP
+
+Pros: Scalable, affordable
+
+Cons: Less control, potential compliance concerns
+</code></pre>
+<h3 id="private-cloud">Private Cloud<a hidden class="anchor" aria-hidden="true" href="#private-cloud">#</a></h3>
+<p>Used exclusively by a single organization. Can be on-premises or hosted externally.</p>
+<pre><code>Example: VMware Private Cloud
+
+Pros: High security, control
+
+Cons: More costly, maintenance-heavy
+</code></pre>
+<h3 id="hybrid-cloud">Hybrid Cloud<a hidden class="anchor" aria-hidden="true" href="#hybrid-cloud">#</a></h3>
+<p>Combines public and private clouds, allowing data and applications to move between them.</p>
+<pre><code>Example: AWS Outposts, Azure Stack
+</code></pre>
+<ul>
+<li>
+<p>Pros: Flexibility, cost-efficiency</p>
+</li>
+<li>
+<p>Cons: More complex setup</p>
+</li>
+</ul>
+<hr>
+<h2 id="benefits-of-cloud-computing">Benefits of Cloud Computing<a hidden class="anchor" aria-hidden="true" href="#benefits-of-cloud-computing">#</a></h2>
+<ul>
+<li>Cost Efficiency – No upfront hardware costs</li>
+<li>Scalability – Instantly scale resources as your demand grows</li>
+<li>Accessibility – Work from anywhere in the world</li>
+<li>Disaster Recovery – Built-in backup and recovery tools</li>
+<li>Automatic Updates – Systems update automatically with the latest features</li>
+</ul>
+<hr>
+<h2 id="is-cloud-computing-safe">Is Cloud Computing Safe?<a hidden class="anchor" aria-hidden="true" href="#is-cloud-computing-safe">#</a></h2>
+<p>Security is a shared responsibility. While cloud providers offer strong protections (encryption, firewalls, compliance), users must also configure and use services securely.</p>
+<p>Look for:</p>
+<ul>
+<li>
+<p>Multi-factor authentication (MFA)</p>
+</li>
+<li>
+<p>Identity and access management (IAM)</p>
+</li>
+<li>
+<p>Data encryption (at rest and in transit)</p>
+</li>
+</ul>
+<hr>
+<h2 id="the-future-of-cloud">The Future of Cloud<a hidden class="anchor" aria-hidden="true" href="#the-future-of-cloud">#</a></h2>
+<p>Cloud computing is evolving rapidly:</p>
+<ul>
+<li>
+<p>Edge Computing: Bringing computing closer to the source (IoT, autonomous vehicles)</p>
+</li>
+<li>
+<p>Serverless Architecture: No need to manage servers at all</p>
+</li>
+<li>
+<p>AI &amp; ML Integration: Cloud is now the go-to platform for running large-scale AI models</p>
+</li>
+</ul>
+<hr>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Cloud computing is no longer just a tech buzzword—it’s the foundation of modern digital infrastructure. Whether you’re an aspiring developer, business owner, or tech explorer, understanding the cloud is essential.</p>
+<p><strong>The cloud isn’t the future—it’s already here. And it’s changing everything.</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/huffman/">Huffman</a></li>
+      <li><a href="http://localhost:1313/tags/algorithm/">Algorithm</a></li>
+      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="http://localhost:1313/tags/greedy/">Greedy</a></li>
+      <li><a href="http://localhost:1313/tags/coding/">Coding</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -19,5 +19,14 @@
 &lt;h2 id=&#34;what-is-git&#34;&gt;What is Git&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Picture this:&lt;/strong&gt; You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>GitHub&#39;s Personal Access Token: Your Key to Secure Access</title>
+      <link>http://localhost:1313/posts/pat/</link>
+      <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/pat/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-personal-access-token&#34;&gt;What Is a Personal Access Token?&lt;/h2&gt;
+&lt;p&gt;Think of a Personal Access Token as a secret key or a VIP pass that gives you access to your GitHub account. Unlike passwords, which are meant for logging into the GitHub website, PATs are used for command-line operations (like pushing code) and integrations.&lt;/p&gt;
+&lt;p&gt;Why use them? Because PATs are more secure! Even if someone gets hold of your token, you can easily revoke it without changing your GitHub password.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
