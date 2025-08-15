@@ -1,6 +1,6 @@
 +++
 date = '2025-05-06T00:46:56+05:00'
-title = "Huffman Coding: The Art of Compression"
+title = "Basics of Cloud Computing"
 tags = ['huffman', 'algorithm', 'ubuntu', 'greedy', 'coding']
 +++
 
