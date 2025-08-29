@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=46223&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Threaded Realities: Beyond the Loop | Anohba Jehad</title>
 <meta name="keywords" content="multithreading, concurrency, programming, beginner">
 <meta name="description" content="A beginner-friendly guide to understanding and implementing multithreading effectively.">
 <meta name="author" content="Anohba Jehad (zenarchh)">
-<link rel="canonical" href="http://anohbajhd.github.io/posts/multithread/">
+<link rel="canonical" href="http://localhost:46223/posts/multithread/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://anohbajhd.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://anohbajhd.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://anohbajhd.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://anohbajhd.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="http://anohbajhd.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:46223/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:46223/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:46223/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:46223/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:46223/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://anohbajhd.github.io/posts/multithread/">
+<link rel="alternate" hreflang="en" href="http://localhost:46223/posts/multithread/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,77 +27,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="http://anohbajhd.github.io/posts/multithread/">
-  <meta property="og:site_name" content="Anohba Jehad">
-  <meta property="og:title" content="Threaded Realities: Beyond the Loop">
-  <meta property="og:description" content="A beginner-friendly guide to understanding and implementing multithreading effectively.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-10T23:45:00+05:00">
-    <meta property="article:modified_time" content="2025-05-10T23:45:00+05:00">
-    <meta property="article:tag" content="Multithreading">
-    <meta property="article:tag" content="Concurrency">
-    <meta property="article:tag" content="Programming">
-    <meta property="article:tag" content="Beginner">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Threaded Realities: Beyond the Loop">
-<meta name="twitter:description" content="A beginner-friendly guide to understanding and implementing multithreading effectively.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://anohbajhd.github.io/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Threaded Realities: Beyond the Loop",
-      "item": "http://anohbajhd.github.io/posts/multithread/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Threaded Realities: Beyond the Loop",
-  "name": "Threaded Realities: Beyond the Loop",
-  "description": "A beginner-friendly guide to understanding and implementing multithreading effectively.",
-  "keywords": [
-    "multithreading", "concurrency", "programming", "beginner"
-  ],
-  "articleBody": " “Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.”\nWhat is Multithreading? Imagine your program is a big task. Wouldn’t it be more efficient if multiple parts of it could run at the same time instead of waiting for one to finish before the next begins? That’s exactly what multithreading allows.\nMultithreading is a technique where a single process can perform multiple tasks concurrently using threads. Think of threads as lightweight mini-programs that live inside a main program, sharing the same memory and resources.\nWhy Use Multithreading? Faster Performance: Multiple tasks run in parallel, reducing total execution time. Smarter Resource Use: Threads share the same memory space, avoiding the overhead of separate processes. Better Responsiveness: Your app’s UI remains responsive even when doing heavy background work. Threading vs Multiprocessing? Feature Multithreading Multiprocessing Memory Usage Low (shared memory) High (separate memory) Suitable for I/O-bound tasks CPU-bound tasks GIL Affected Not affected Complexity Simple Slightly complex How Does It All Work? Each thread has:\nIts own program counter (tells it what to do next) Its own stack (for storing variables and function calls) Access to the shared heap memory (common data area) The system’s thread scheduler decides how and when threads run, sometimes switching between them rapidly, this is called context switching.\nWhere Do We Use Multithreading? Games: Audio, rendering, physics, all handled by separate threads. Web servers: Manage thousands of user requests at once. Image editors: Apply filters to different image parts in parallel. Downloaders: Download file segments simultaneously. Writing Threads in Different Languages Python import threading def task(): print(\"Running in thread\") thread = threading.Thread(target=task) thread.start() What’s Happening Here? threading.Thread() creates a thread object.\n.start() begins execution in a new thread.\n.join() tells the main program to wait until the thread is done.\nBest Practices Keep threads short-lived and task-specific Use .join() to avoid premature exits Avoid sharing mutable data unless protected Consider threading.Lock() when using shared resources What Makes Multithreading Hard? Multithreading brings speed, but also complexity:\nRace Conditions: Threads compete to access shared data, leading to unpredictable results. Deadlocks: Two threads wait on each other forever. Starvation: One thread never gets a turn. Hard to Debug: Bugs can appear only in specific timings or conditions. Tips for Writing Thread-Safe Code Use mutexes/locks to protect shared resources.\nPrefer immutable objects where possible.\nMinimize shared state.\nUse thread-safe libraries or higher-level concurrency tools like:\nconcurrent.futures (Python)\nExecutorService (Java)\nstd::async (C++) NOTE: I haven’t Explored this part though these are the possible solutions I found on Google.\nSummary Multithreading in Python is a powerful tool, especially when working with I/O-bound operations. While the GIL (Global Interpreter Lock) limits its use for CPU-intensive work, multithreading is still a go-to choice for network calls, UI responsiveness, and parallel I/O.\n“Concurrency is not parallelism, but it’s a good place to start.” – Rob Pike\n",
-  "wordCount" : "481",
-  "inLanguage": "en",
-  "datePublished": "2025-05-10T23:45:00+05:00",
-  "dateModified": "2025-05-10T23:45:00+05:00",
-  "author":{
-    "@type": "Person",
-    "name": "Anohba Jehad (zenarchh)"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://anohbajhd.github.io/posts/multithread/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Anohba Jehad",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://anohbajhd.github.io/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class=" dark" id="top">
@@ -111,7 +41,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://anohbajhd.github.io/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://localhost:46223/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -137,17 +67,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://anohbajhd.github.io/tags/" title="Tags">
+                <a href="http://localhost:46223/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://anohbajhd.github.io/archives" title="Archives">
+                <a href="http://localhost:46223/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://anohbajhd.github.io/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:46223/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -158,7 +88,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://anohbajhd.github.io/">Home</a>&nbsp;»&nbsp;<a href="http://anohbajhd.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:46223/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:46223/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Threaded Realities: Beyond the Loop
     </h1>
@@ -347,17 +277,17 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://anohbajhd.github.io/tags/multithreading/">Multithreading</a></li>
-      <li><a href="http://anohbajhd.github.io/tags/concurrency/">Concurrency</a></li>
-      <li><a href="http://anohbajhd.github.io/tags/programming/">Programming</a></li>
-      <li><a href="http://anohbajhd.github.io/tags/beginner/">Beginner</a></li>
+      <li><a href="http://localhost:46223/tags/multithreading/">Multithreading</a></li>
+      <li><a href="http://localhost:46223/tags/concurrency/">Concurrency</a></li>
+      <li><a href="http://localhost:46223/tags/programming/">Programming</a></li>
+      <li><a href="http://localhost:46223/tags/beginner/">Beginner</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://anohbajhd.github.io/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:46223/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by

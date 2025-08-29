@@ -9,11 +9,11 @@ tags = ['dockers', 'containers', 'DevOps', 'CI/CD']
 
 > “Build once, run anywhere.”
 
-> That’s not a dream — that’s Docker.
+> That’s not a dream - that’s Docker.
 
 
 ##  What is Docker? 
-Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools — making them portable, lightweight, and consistent across all platforms.
+**Docker** is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools - making them portable, lightweight, and consistent across all platforms.
 
 ## Why Docker? 
  **Traditional VMs vs Docker**
@@ -31,22 +31,31 @@ Use Docker when you want to:
 - Build microservices
 - Scale easily
 
+---
+
 ## Docker Architecture
 ### Core Components:
 
-- **Docker Daemon:** Runs in the background, manages Docker objects (containers, images, networks).
+- `Docker Host:` Docker Host or Docker Engine is the brain of docker. It conatians docker daemon that runs in the background, manages Docker objects (containers, images, networks).
 
-- **Docker CLI:** The command-line interface to talk to the daemon.
+- `Docker Client:` The command-line interface to talk to the daemon.
 
-- **Docker Images:** Read-only templates to create containers.
+- `Docker Objects:` It includes:
+  - **Images:** Blueprint for containers/app
+  - **Containers:** running instances of app
+  - **Volumns:** Storing persistent data into host system
+  - **Network:**
 
-- **Docker Containers:** Running instances of images.
+- `Docker Registries:` Central hubs for sharing /storing images (like Docker Hub, GitHub etc).
 
-- **Docker Registries:** Central hubs for sharing images (like Docker Hub).
+![command screenshot](/docker/da.png)
 
 ```plaintext
 Developer → Docker CLI → Docker Daemon → Container → Application
 ```
+
+---
+
 ## Installing Docker 
 ### Ubuntu:
 
@@ -56,8 +65,8 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-Check version:
 
+Check version:
 ```bash
 docker --version
 ```
@@ -66,97 +75,78 @@ Enable running without sudo:
 ```bash
 sudo usermod -aG docker $USER
 ```
-## Docker Terminology 
-- **Image:** App blueprint
+---
 
-- **Container:** Running image
+### Manjaro KDE:
+1. Update your system and install docker:
+![command screenshot](/docker/s1.png)
 
-- **Dockerfile:** Script to create an image
+2. Enable docker and check version:
+![command screenshot](/docker/s2.png)
 
-- **Volume:** Persistent storage
+---
 
-- **Port Mapping:** Linking container port to host port
+## Basic Docker Commands
+### Working with Images
+1. Create a **Dockerfile** (Script to create an image):
 
-- **Tag:** Version label (myapp:1.0)
+![command screenshot](/docker/s18.png)
 
-- **Registry:** Image storage (Docker Hub, GitHub Packages, etc.)
+2. Build an image from dockerfile:
+![command screenshot](/docker/s4.png)
+![command screenshot](/docker/s5.png)
 
-## Basic Docker Commands 
-```bash
-# Run a container
-docker run -it ubuntu
+3. Delete an image:
+![command screenshot](/docker/s9.png)
 
-# List containers
-docker ps -a
+### Working with Containers
+1. Run a container from an image:
+![command screenshot](/docker/s16.png)
+`Note:` You cannot create two containers with same name.
 
-# Build from Dockerfile
-docker build -t myapp .
+Visit https://localhost:8080 , you'll see:
+![command screenshot](/docker/s6.png)
 
-# Stop a container
-docker stop <container_id>
 
-# Remove container/image
-docker rm <id> | docker rmi <id>
-```
+2. List active containers: 
+![command screenshot](/docker/s7.png)
 
-## Dockerfile: Blueprint of Your App 
-```Dockerfile
-# Sample Node.js app
-FROM node:20
-WORKDIR /app
-COPY . .
-RUN npm install
-EXPOSE 3000
-CMD ["node", "index.js"]
-```
+3. List all containers (including stopped ones):
+![command screenshot](/docker/sb.png)
 
-Build & Run:
+4. Stop a running container or remove a container:
+![command screenshot](/docker/db.png)
 
-```bash
-docker build -t my-node-app .
-docker run -p 3000:3000 my-node-app
-```
 
-## Docker Compose 
-Use Compose to run multi-container apps (e.g. app + database).
+6. Delete all containers at once:
+![command screenshot](/docker/s15.png)
 
-docker-compose.yml:
+---
 
-```yaml
-version: '3'
-services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-  db:
-    image: mongo
-    ports:
-      - "27017:27017"
-```
+## Introduction to Docker Compose
+### What is Docker Compose?
 
-```bash
-docker-compose up
-```
+**Docker Compose** is a tool to define and manage multi-container applications.
 
-## Volumes and Bind Mounts <a name="volumes"></a>
-- **Volume:** Docker-managed storage (docker volume create)
-- **Bind Mount:** Link local path to container
+Instead of running containers manually one by one, you define them in a docker-compose.yml file and start them all with a single command.
 
-```bash
-docker run -v myvolume:/data app
-docker run -v $(pwd):/app app
-```
-## Docker Hub and Registries 
-**Docker Hub:** Official public registry
+![command screenshot](/docker/sd.png)
 
-GitHub Container Registry (GHCR) and Harbor are alternatives
+---
 
-```bash
-# Push image
-docker tag myapp username/myapp
-docker push username/myapp
-```
+## Installation of Docker Compose 
+1. Install docker compose:
+![command screenshot](/docker/s10.png)
+2. Verify if installation is successful:
+![command screenshot](/docker/sa.png)
+3. Build the whole app or site by running one simple command:
+![command screenshot](/docker/x.png)
+
+4. Stop containers:
+![command screenshot](/docker/sa.png)
+
+---
+
 
 ## Docker vs Kubernetes 
 | Feature     | Docker                   | Kubernetes                          |
@@ -166,6 +156,7 @@ docker push username/myapp
 | **Networking** | Simple                | Complex but powerful                 |
 | **Use case** | Dev & CI/CD             | Production, large systems            |
 
+---
 
 ## Real-World Use Cases 
 - `CI/CD Pipelines:` **Jenkins + Docker**
@@ -178,15 +169,25 @@ docker push username/myapp
 
 - `App Distribution:` **One image, many platforms**
 
+---
+
 ## Conclusion  
-Docker is no longer optional — it's essential for modern software development.
+Docker is no longer optional - it's essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.
+
+---
 
 ## Bonus: Quick Reference Sheet
 ```pgsql
 docker build -t name .
+
 docker run -p 8080:80 name
 docker ps -a
 docker exec -it container bash
-docker-compose up -d
+dockercompose up
+docker compose up -d
+docker stop <container_id>
+docker rm <id> | docker rmi <id>
+docker build -t my-node-app .
+docker run -p 3000:3000 my-node-app
 ```
