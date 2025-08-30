@@ -104,7 +104,7 @@ sudo usermod -aG docker $USER
 ![command screenshot](/docker/s16.png)
 `Note:` You cannot create two containers with same name.
 
-Visit https://localhost:8080 , you'll see:
+Open browser http://localhost:8080 , you'll see:
 ![command screenshot](/docker/s6.png)
 
 
@@ -130,6 +130,7 @@ Visit https://localhost:8080 , you'll see:
 
 Instead of running containers manually one by one, you define them in a docker-compose.yml file and start them all with a single command.
 
+A sample docker compose.yml file:
 ![command screenshot](/docker/sd.png)
 
 ---
@@ -139,10 +140,23 @@ Instead of running containers manually one by one, you define them in a docker-c
 ![command screenshot](/docker/s10.png)
 2. Verify if installation is successful:
 ![command screenshot](/docker/sa.png)
-3. Build the whole app or site by running one simple command:
+
+3. Rebuild images and start containers in background:
 ![command screenshot](/docker/x.png)
 
-4. Stop containers:
+4. Lists the containers (services) that are running (or have been created) using your docker-compose.yml file:
+```bash
+docker compose ps
+```
+5. Stops all running containers defined in your Compose file, but does not remove them:
+```bash
+docker compose stop
+```
+6. Starts containers that were previously stopped using:
+```bash
+docker compose start
+```
+7. Stops and removes all the containers, networks, and by default also volumes that were created by:
 ![command screenshot](/docker/sa.png)
 
 ---
@@ -179,15 +193,35 @@ Whether you’re building a Node.js app, a Python API, or a full-stack microserv
 
 ## Bonus: Quick Reference Sheet
 ```pgsql
-docker build -t name .
 
-docker run -p 8080:80 name
-docker ps -a
-docker exec -it container bash
-dockercompose up
-docker compose up -d
-docker stop <container_id>
-docker rm <id> | docker rmi <id>
-docker build -t my-node-app .
-docker run -p 3000:3000 my-node-app
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+
+docker build -t docker-hello .
+docker run -d -p 8080:80 docker-hello
+
+docker ps                     # See running containers
+docker ps -a                  # See all containers (even stopped ones)
+docker stop hello-container   # Stop a running container 
+docker start hello-container  # Start it again
+docker rm hello-container     # Remove a container 
+docker images                 # List all images 
+docker rmi docker-hello       # Remove an image
+
+sudo pacman -S docker-compose
+
+v2 → docker compose up -d
+v1 → docker-compose up -d
+
+
+docker compose ps         # Show running services
+Open browser http://localhost:8080
+docker compose stop       # Stop all services
+docker compose start      # Start them again
+docker compose down       # Stop & remove everything
+
+
+
 ```

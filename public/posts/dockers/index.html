@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=46223&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="dockers, containers, DevOps, CI/CD">
 <meta name="description" content="A Deep Dive into Containerization and Development Simplicity 🐳">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:46223/posts/dockers/">
+<link rel="canonical" href="http://localhost:1313/posts/dockers/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:46223/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:46223/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:46223/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:46223/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:46223/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:46223/posts/dockers/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dockers/">
 <noscript>
     <style>
         #theme-toggle,
@@ -41,7 +41,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:46223/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -67,17 +67,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:46223/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:46223/archives" title="Archives">
+                <a href="http://localhost:1313/archives" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:46223/search" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -88,7 +88,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:46223/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:46223/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Modern Infrastructure – Part 1: Docker
     </h1>
@@ -146,11 +146,7 @@
                 <li>
                     <a href="#conclusion" aria-label="Conclusion">Conclusion</a></li>
                 <li>
-                    <a href="#bonus-quick-reference-sheet" aria-label="Bonus: Quick Reference Sheet">Bonus: Quick Reference Sheet</a></li>
-                <li>
-                    <a href="#basic-docker-commands-1" aria-label="Basic Docker Commands">Basic Docker Commands</a></li>
-                <li>
-                    <a href="#dockerfile-blueprint-of-your-app" aria-label="Dockerfile: Blueprint of Your App">Dockerfile: Blueprint of Your App</a>
+                    <a href="#bonus-quick-reference-sheet" aria-label="Bonus: Quick Reference Sheet">Bonus: Quick Reference Sheet</a>
                 </li>
             </ul>
         </div>
@@ -303,11 +299,24 @@
 <p><img alt="command screenshot" loading="lazy" src="/docker/sd.png"></p>
 <hr>
 <h2 id="installation-of-docker-compose">Installation of Docker Compose<a hidden class="anchor" aria-hidden="true" href="#installation-of-docker-compose">#</a></h2>
-<p><img alt="command screenshot" loading="lazy" src="/docker/s10.png">
-Verify if installation is successful:
-<img alt="command screenshot" loading="lazy" src="/docker/sa.png">
-stopping many containers:
+<ol>
+<li>
+<p>Install docker compose:
+<img alt="command screenshot" loading="lazy" src="/docker/s10.png"></p>
+</li>
+<li>
+<p>Verify if installation is successful:
 <img alt="command screenshot" loading="lazy" src="/docker/sa.png"></p>
+</li>
+<li>
+<p>Build the whole app or site by running one simple command:
+<img alt="command screenshot" loading="lazy" src="/docker/x.png"></p>
+</li>
+<li>
+<p>Stop containers:
+<img alt="command screenshot" loading="lazy" src="/docker/sa.png"></p>
+</li>
+</ol>
 <hr>
 <h2 id="docker-vs-kubernetes">Docker vs Kubernetes<a hidden class="anchor" aria-hidden="true" href="#docker-vs-kubernetes">#</a></h2>
 <table>
@@ -364,67 +373,36 @@ stopping many containers:
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>Docker is no longer optional - it&rsquo;s essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.</p>
+<hr>
 <h2 id="bonus-quick-reference-sheet">Bonus: Quick Reference Sheet<a hidden class="anchor" aria-hidden="true" href="#bonus-quick-reference-sheet">#</a></h2>
 <pre tabindex="0"><code class="language-pgsql" data-lang="pgsql">docker build -t name .
+
 docker run -p 8080:80 name
 docker ps -a
 docker exec -it container bash
-docker-compose up -d
-</code></pre><h2 id="basic-docker-commands-1">Basic Docker Commands<a hidden class="anchor" aria-hidden="true" href="#basic-docker-commands-1">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Run a container</span>
-</span></span><span style="display:flex;"><span>docker run -it ubuntu
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># List containers</span>
-</span></span><span style="display:flex;"><span>docker ps -a
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build from Dockerfile</span>
-</span></span><span style="display:flex;"><span>docker build -t myapp .
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Stop a container</span>
-</span></span><span style="display:flex;"><span>docker stop &lt;container_id&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove container/image</span>
-</span></span><span style="display:flex;"><span>docker rm &lt;id&gt; | docker rmi &lt;id&gt;
-</span></span></code></pre></div><p>docker-compose.yml:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">app</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;3000:3000&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mongo</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;27017:27017&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose up
-</span></span></code></pre></div><h2 id="dockerfile-blueprint-of-your-app">Dockerfile: Blueprint of Your App<a hidden class="anchor" aria-hidden="true" href="#dockerfile-blueprint-of-your-app">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Sample Node.js app</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> node:20</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> npm install<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 3000</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;node&#34;</span>, <span style="color:#e6db74">&#34;index.js&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>Build &amp; Run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t my-node-app .
-</span></span><span style="display:flex;"><span>docker run -p 3000:3000 my-node-app
-</span></span></code></pre></div>
+dockercompose up
+docker compose up -d
+docker stop &lt;container_id&gt;
+docker rm &lt;id&gt; | docker rmi &lt;id&gt;
+docker build -t my-node-app .
+docker run -p 3000:3000 my-node-app
+</code></pre>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:46223/tags/dockers/">Dockers</a></li>
-      <li><a href="http://localhost:46223/tags/containers/">Containers</a></li>
-      <li><a href="http://localhost:46223/tags/devops/">DevOps</a></li>
-      <li><a href="http://localhost:46223/tags/ci/cd/">CI/CD</a></li>
+      <li><a href="http://localhost:1313/tags/dockers/">Dockers</a></li>
+      <li><a href="http://localhost:1313/tags/containers/">Containers</a></li>
+      <li><a href="http://localhost:1313/tags/devops/">DevOps</a></li>
+      <li><a href="http://localhost:1313/tags/ci/cd/">CI/CD</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:46223/">Anohba Jehad</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
     <span>
         Powered by
