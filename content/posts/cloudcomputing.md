@@ -1,5 +1,5 @@
 +++
-date = '2025-05-06T00:46:56+05:00'
+date = '2025-07-30T00:46:56+05:00'
 title = "Basics of Cloud Computing"
 tags = ['huffman', 'algorithm', 'ubuntu', 'greedy', 'coding']
 +++
