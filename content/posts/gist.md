@@ -2,7 +2,7 @@
 date = '2025-10-21T00:46:56+05:00'
 title = "Just a Gist"
 description = "The Mini-Repo You Didn't Know You Needed"
-tags: ["Gist", "GitHub", "Dev Tools", "Workflow", "Hugo", "Productivity"]
+tags= ["Gist", "GitHub", "Dev Tools", "Workflow", "Hugo", "Productivity"]
 +++
 
 # The Gist of It
