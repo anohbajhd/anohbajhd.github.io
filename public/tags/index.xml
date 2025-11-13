@@ -1,13 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Anohba Jehad</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 12:15:56 +0500</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev Tools</title>
+      <link>http://localhost:1313/tags/dev-tools/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/dev-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gist</title>
+      <link>http://localhost:1313/tags/gist/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/gist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>http://localhost:1313/tags/productivity/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workflow</title>
+      <link>http://localhost:1313/tags/workflow/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/workflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/tags/algorithm/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding</title>
+      <link>http://localhost:1313/tags/coding/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Greedy</title>
+      <link>http://localhost:1313/tags/greedy/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/greedy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Huffman</title>
+      <link>http://localhost:1313/tags/huffman/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/huffman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>http://localhost:1313/tags/ubuntu/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cluster</title>
       <link>http://localhost:1313/tags/cluster/</link>
@@ -114,13 +191,6 @@
       <description></description>
     </item>
     <item>
-      <title>Ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
-      <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Webdevelopment</title>
       <link>http://localhost:1313/tags/webdevelopment/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
@@ -177,34 +247,6 @@
       <description></description>
     </item>
     <item>
-      <title>Algorithm</title>
-      <link>http://localhost:1313/tags/algorithm/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/algorithm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coding</title>
-      <link>http://localhost:1313/tags/coding/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/coding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Greedy</title>
-      <link>http://localhost:1313/tags/greedy/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/greedy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Huffman</title>
-      <link>http://localhost:1313/tags/huffman/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/tags/huffman/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fish</title>
       <link>http://localhost:1313/tags/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
@@ -230,20 +272,6 @@
       <link>http://localhost:1313/tags/graphs/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/tags/graphs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
-      <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
-      <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>

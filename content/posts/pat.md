@@ -22,13 +22,12 @@ Password-Free Future: GitHub is encouraging modern authentication methods like S
 
 Follow these easy steps to create your PAT:
 
-1. Log in to GitHub: Go to GitHub and log in.
+**1. Log in to GitHub:** Go to GitHub and log in.
 
-2. Go to Settings:
+**2. Go to Settings:**
+- Click on your profile picture (top-right corner).
+- Select **Settings** from the dropdown menu.
 
-3. Click on your profile picture (top-right corner).
-
-4. Select Settings from the dropdown menu.
 
 
 

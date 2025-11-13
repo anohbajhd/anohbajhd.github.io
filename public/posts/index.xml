@@ -1,186 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Anohba Jehad</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Anohba Jehad</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 12:15:56 +0500</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Just a Gist</title>
+      <link>http://localhost:1313/posts/gist/</link>
+      <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/gist/</guid>
+      <description>&lt;h1 id=&#34;the-gist-of-it&#34;&gt;The Gist of It&lt;/h1&gt;&#xA;&lt;p&gt;There are moments when you write a small piece of code that solves something neat, maybe a Python function you’re proud of, a command you don’t want to forget, or a quick experiment that doesn’t need a full repo.&lt;/p&gt;&#xA;&lt;p&gt;That’s where &lt;strong&gt;GitHub Gist&lt;/strong&gt; comes in. A &lt;em&gt;mini-repository&lt;/em&gt; for your ideas.&lt;/p&gt;&#xA;&lt;p&gt;It’s the perfect middle ground between a full GitHub repo and a random code file lost in your local folder. Think of it as your personal snippet vault: lightweight, version-controlled, and shareable with a single link&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of Cloud Computing</title>
+      <link>http://localhost:1313/posts/cloudcomputing/</link>
+      <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
+      <guid>http://localhost:1313/posts/cloudcomputing/</guid>
+      <description>&lt;p&gt;Cloud Computing 101: A Beginner’s Guide to the Future of Technology&lt;/p&gt;&#xA;&lt;p&gt;In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-cloud-computing&#34;&gt;What is Cloud Computing?&lt;/h2&gt;&#xA;&lt;p&gt;Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Modern Infrastructure – Part 2: Kubernetes</title>
       <link>http://localhost:1313/posts/kubernetes/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/kubernetes/</guid>
-      <description>Container Orchestration: Local Cluster Setup Using Minikube</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the evolving world of cloud-native applications, containerization has revolutionized how we build, ship, and run software. But as the number of containers in a project grows, managing them becomes a challenge. That’s where Container Orchestration steps in - and Kubernetes is the undisputed leader in this space.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-container-orchestration&#34;&gt;What is Container Orchestration?&lt;/h2&gt;&#xA;&lt;p&gt;Container orchestration is a way to automate the deployment, scaling, and management of many containers.&lt;/p&gt;&#xA;&lt;p&gt;Instead of starting and stopping each container manually, orchestration tools (like Kubernetes) handle it for you - making sure your apps run smoothly, restart if they crash, and scale when needed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modern Infrastructure – Part 1: Docker</title>
       <link>http://localhost:1313/posts/dockers/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/dockers/</guid>
-      <description>A Deep Dive into Containerization and Development Simplicity 🐳</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“Build once, run anywhere.”&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;That’s not a dream - that’s Docker.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;what-is-docker&#34;&gt;What is Docker?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Docker&lt;/strong&gt; is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools - making them portable, lightweight, and consistent across all platforms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-docker&#34;&gt;Why Docker?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Traditional VMs vs Docker&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Feature&lt;/th&gt;&#xA;          &lt;th&gt;Traditional VM&lt;/th&gt;&#xA;          &lt;th&gt;Docker&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;OS Architecture&lt;/td&gt;&#xA;          &lt;td&gt;Heavy OS per VM&lt;/td&gt;&#xA;          &lt;td&gt;Shared kernel, lightweight&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Boot Time&lt;/td&gt;&#xA;          &lt;td&gt;Slower boot time&lt;/td&gt;&#xA;          &lt;td&gt;Fast boot/startup&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Resource Usage&lt;/td&gt;&#xA;          &lt;td&gt;More resources used&lt;/td&gt;&#xA;          &lt;td&gt;Less CPU/RAM needed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Portability&lt;/td&gt;&#xA;          &lt;td&gt;Hard to move&lt;/td&gt;&#xA;          &lt;td&gt;Easy to share or deploy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Use Docker when you want to:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Meet Jenkins: A Guide to Automation</title>
       <link>http://localhost:1313/posts/jenkins/</link>
       <pubDate>Tue, 08 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/jenkins/</guid>
-      <description>&lt;hr&gt;
-&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration
-Automatically building and testing code whenever changes are pushed. 
-CD: Continuous Delivery
- Automatically deploying/releasing the code to production or staging. 
-
-Together, CI/CD makes your workflow faster, safer, and hands-free.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-jenkins&#34;&gt;What is Jenkins?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; is an open-source automation tool written in Java. It helps developers build, test, and deploy their software automatically, making &lt;strong&gt;Continuous Integration (CI)&lt;/strong&gt; and &lt;strong&gt;Continuous Delivery (CD)&lt;/strong&gt; possible.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CI: Continuous Integration&#xA;Automatically building and testing code whenever changes are pushed. &#xA;CD: Continuous Delivery&#xA; Automatically deploying/releasing the code to production or staging. &#xA;&#xA;Together, CI/CD makes your workflow faster, safer, and hands-free.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In simple terms:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Jenkins watches your code and runs jobs (like building or testing) whenever you push changes — saving you tons of manual work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Architecture of the Modern Web</title>
       <link>http://localhost:1313/posts/webdev/</link>
       <pubDate>Sat, 05 Jul 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/webdev/</guid>
-      <description>Web Development Simplified: Frontend and Backend Explained</description>
+      <description>&lt;p&gt;Web development is all about building digital experiences; from simple websites to complex applications. But behind every site you visit lies a combination of two powerful sides: the frontend and the backend.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, we’ll walk through the core building blocks of each side. This isn’t a tutorial, it’s a clarity-first breakdown of each element so you can understand what it does, and why it&amp;rsquo;s important.&lt;/p&gt;&#xA;&lt;h2 id=&#34;frontend-what-users-see-and-interact-with&#34;&gt;Frontend: What Users See and Interact With&lt;/h2&gt;&#xA;&lt;p&gt;The frontend is the part of a website or web application that users directly experience. It includes everything from layout and buttons to animations and form interactions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Behind the Prompt</title>
       <link>http://localhost:1313/posts/posix/</link>
       <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/posix/</guid>
-      <description>A Friendly Guide to the POSIX Shell Power</description>
+      <description>&lt;p&gt;If you&amp;rsquo;ve ever used a Linux terminal or written a script to automate tasks on a Unix-like system, you&amp;rsquo;ve already brushed up against the world of &lt;strong&gt;shell scripting&lt;/strong&gt;. But there&amp;rsquo;s one term that often floats around with little explanation, the &lt;strong&gt;POSIX shell&lt;/strong&gt;. What is it, and why does it matter?&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-shell&#34;&gt;What Is a Shell?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;shell&lt;/strong&gt; is a program that provides a command-line interface (CLI) for users to interact with the operating system. There are many types of shells, including:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Threaded Realities: Beyond the Loop</title>
       <link>http://localhost:1313/posts/multithread/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/multithread/</guid>
-      <description>A beginner-friendly guide to understanding and implementing multithreading effectively.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-multithreading&#34;&gt;What is Multithreading?&lt;/h2&gt;&#xA;&lt;p&gt;Imagine your program is a big task. Wouldn’t it be more efficient if multiple parts of it could run at the same time instead of waiting for one to finish before the next begins? That’s exactly what &lt;strong&gt;multithreading&lt;/strong&gt; allows.&lt;/p&gt;&#xA;&lt;p&gt;Multithreading is a technique where a single process can perform multiple tasks concurrently using threads. Think of threads as lightweight mini-programs that live inside a main program, sharing the same memory and resources.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oh My Zsh!</title>
       <link>http://localhost:1313/posts/zsh/</link>
       <pubDate>Thu, 08 May 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/zsh/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;
-If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Basics of Cloud Computing</title>
-      <link>http://localhost:1313/posts/cloudcomputing/</link>
-      <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
-      <guid>http://localhost:1313/posts/cloudcomputing/</guid>
-      <description>&lt;p&gt;Cloud Computing 101: A Beginner’s Guide to the Future of Technology&lt;/p&gt;
-&lt;p&gt;In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?&lt;/p&gt;
-&lt;h2 id=&#34;what-is-cloud-computing&#34;&gt;What is Cloud Computing?&lt;/h2&gt;
-&lt;p&gt;Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&amp;ldquo;Zsh isn’t just a shell—it’s your terminal’s upgrade to first class.&amp;rdquo;&#xA;If you&amp;rsquo;re someone who spends time in the terminal—whether you&amp;rsquo;re a developer, a student learning CLI, or a curious explorer—your shell environment is more than just text on black. It&amp;rsquo;s your workspace, your command center, your vibe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-zsh&#34;&gt;What is Zsh?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Zsh (Z Shell)&lt;/strong&gt; is a powerful, interactive shell and scripting language for Unix-like systems. It’s like Bash’s cooler, more customizable sibling—think of it as Bash after a glow-up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Huffman Coding: The Art of Compression</title>
       <link>http://localhost:1313/posts/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/huffman/</guid>
-      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;
-&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;
-&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;
-Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;&#xA;&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;&#xA;&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;&#xA;Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shell Shocked? Try Fish!</title>
       <link>http://localhost:1313/posts/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/fish/</guid>
-      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;
-&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-fish-shell&#34;&gt;What is Fish Shell?&lt;/h2&gt;&#xA;&lt;p&gt;Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency. It’s often regarded as one of the most modern shells for Linux and macOS systems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dijkstra&#39;s Algorithm: Your GPS for the World of Graphs</title>
       <link>http://localhost:1313/posts/dijkstra/</link>
       <pubDate>Thu, 01 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/dijkstra/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-dijkstras-algorithm&#34;&gt;What Is Dijkstra’s Algorithm?&lt;/h2&gt;
-&lt;p&gt;Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong&gt;non-negative edge weights&lt;/strong&gt;. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Dijkstra’s Algorithm is a popular and efficient algorithm used for finding the shortest path from a single source node to all other nodes in a weighted graph. It is widely used in network routing, mapping applications, and many areas of computer science.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-dijkstras-algorithm&#34;&gt;What Is Dijkstra’s Algorithm?&lt;/h2&gt;&#xA;&lt;p&gt;Dijkstra’s Algorithm solves the single-source shortest path problem in a graph with &lt;strong&gt;non-negative edge weights&lt;/strong&gt;. It finds the shortest path from a starting node (source) to every other node in the graph.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Don’t Trust Your Code—Test It</title>
       <link>http://localhost:1313/posts/test/</link>
       <pubDate>Wed, 23 Apr 2025 11:00:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;
-&lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;
-&lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;why-should-we-test&#34;&gt;Why Should We Test?&lt;/h2&gt;
-&lt;p&gt;Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;why-testing-your-code-matters&#34;&gt;Why Testing Your Code Matters&lt;/h1&gt;&#xA;&lt;p&gt;When we write code, we want it to work. But sometimes, it doesn’t. That’s where &lt;strong&gt;testing&lt;/strong&gt; comes in.&lt;/p&gt;&#xA;&lt;p&gt;Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-should-we-test&#34;&gt;Why Should We Test?&lt;/h2&gt;&#xA;&lt;p&gt;Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
       <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;
-&lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;
-&lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
+      <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
       <link>http://localhost:1313/posts/ssh/</link>
       <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/ssh/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;
-&lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;
-&lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Secure Communication – Encrypts data, preventing eavesdropping and attacks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Remote Access – Manage servers and systems from anywhere.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Key-Based Authentication – Enables password-free and more secure logins.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;&#xA;&lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Secure Communication – Encrypts data, preventing eavesdropping and attacks.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Remote Access – Manage servers and systems from anywhere.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Key-Based Authentication – Enables password-free and more secure logins.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Art of Logging In Python!</title>
       <link>http://localhost:1313/posts/pythonlog/</link>
       <pubDate>Wed, 05 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/pythonlog/</guid>
-      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;
-&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;
-&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;
-&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.&lt;/p&gt;&#xA;&lt;p&gt;Python provides a built-in logging module that makes it easy to track events and errors in your code&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-logging&#34;&gt;Why Use Logging?&lt;/h2&gt;&#xA;&lt;p&gt;Many beginners use print() statements for debugging, logging provides a better way to record messages, debug issues, and monitor applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mastering Vim: A Developer`s Swiss Army Knife</title>
       <link>http://localhost:1313/posts/vim/</link>
       <pubDate>Wed, 12 Feb 2025 10:00:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/vim/</guid>
-      <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;
-&lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;1-installing-vim&#34;&gt;1. Installing Vim&lt;/h1&gt;
-&lt;p&gt;Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Vim is more than just a text editor; it&amp;rsquo;s a powerful, lightweight, and highly customizable tool that can significantly enhance your productivity. Whether you&amp;rsquo;re a developer, system administrator, or just a curious enthusiast, learning Vim can be a game-changer.&lt;/p&gt;&#xA;&lt;p&gt;This guide will introduce you to Vim, covering its basic commands, modes, customization options, installation, and essential plugins to optimize your workflow.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;1-installing-vim&#34;&gt;1. Installing Vim&lt;/h1&gt;&#xA;&lt;p&gt;Before we dive in, let&amp;rsquo;s install Vim on your system:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Crafting with Hugo: a Lightning-Fast Site Generator🔧!</title>
       <link>http://localhost:1313/posts/hugo/</link>
       <pubDate>Fri, 07 Feb 2025 12:00:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/hugo/</guid>
-      <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;
-&lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;
-&lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to crafting ultra-fast and secure static websites, Hugo emerges as a top contender. Its blend of speed, simplicity, and powerful features allows users to build exceptional websites without the complexity of traditional web development workflows. In this guide, we&amp;rsquo;ll dive into Hugo&amp;rsquo;s core benefits and walk you through deploying your site seamlessly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-hugo-is-a-game-changer&#34;&gt;Why Hugo is a Game-Changer&lt;/h2&gt;&#xA;&lt;p&gt;If you’re wondering why Hugo stands out, here are some key reasons:&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
@@ -194,38 +146,28 @@ Ever tried zipping a file to save space? That magic trick behind the scenes? Tha
       <link>http://localhost:1313/posts/github/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/github/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Ever felt like your code projects are a chaotic mess, with random files named &amp;ldquo;final_version_final_FINAL&amp;rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&amp;quot;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-is-git&#34;&gt;What is Git&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Picture this:&lt;/strong&gt; You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Ever felt like your code projects are a chaotic mess, with random files named &amp;ldquo;final_version_final_FINAL&amp;rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&amp;quot;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-git&#34;&gt;What is Git&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Picture this:&lt;/strong&gt; You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version. What if your brilliant idea turns out to be total garbage?&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub&#39;s Personal Access Token: Your Key to Secure Access</title>
       <link>http://localhost:1313/posts/pat/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/pat/</guid>
-      <description>&lt;h2 id=&#34;what-is-a-personal-access-token&#34;&gt;What Is a Personal Access Token?&lt;/h2&gt;
-&lt;p&gt;Think of a Personal Access Token as a secret key or a VIP pass that gives you access to your GitHub account. Unlike passwords, which are meant for logging into the GitHub website, PATs are used for command-line operations (like pushing code) and integrations.&lt;/p&gt;
-&lt;p&gt;Why use them? Because PATs are more secure! Even if someone gets hold of your token, you can easily revoke it without changing your GitHub password.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;what-is-a-personal-access-token&#34;&gt;What Is a Personal Access Token?&lt;/h2&gt;&#xA;&lt;p&gt;Think of a Personal Access Token as a secret key or a VIP pass that gives you access to your GitHub account. Unlike passwords, which are meant for logging into the GitHub website, PATs are used for command-line operations (like pushing code) and integrations.&lt;/p&gt;&#xA;&lt;p&gt;Why use them? Because PATs are more secure! Even if someone gets hold of your token, you can easily revoke it without changing your GitHub password.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LaTeX: Your Guide to Fancy Documents (and Surviving the Chaos)</title>
       <link>http://localhost:1313/posts/latex/</link>
       <pubDate>Sun, 12 Jan 2025 10:00:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/latex/</guid>
-      <description>&lt;p&gt;Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p&gt;
-&lt;p&gt;But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Welcome to the mystical world of LaTeX! It’s not a type of rubber, but rather the holy grail of document creation for nerds, academics, and anyone tired of Word’s unpredictable formatting tantrums. If you’ve ever wondered how professors produce those intimidatingly perfect papers, here’s the secret: LaTeX.&lt;/p&gt;&#xA;&lt;p&gt;But beware: LaTeX is a bit like taming a dragon. Powerful, majestic, and occasionally a total nightmare. Let’s explore this magical tool together—complete with humor, tips, and (imagined) visuals to keep you smiling through the frustration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Avoid the Gates of Hell. Install Linux. </title>
       <link>http://localhost:1313/posts/ubuntu/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/ubuntu/</guid>
-      <description>&lt;h2 id=&#34;linux&#34;&gt;LINUX&lt;/h2&gt;
-&lt;p&gt;Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&lt;/p&gt;
-&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;
-&lt;p&gt;Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server. It is  free of cost and comes with a built-in firewall system and user-friendly interface. With Ubuntu, you do not need to worry about hackers.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;linux&#34;&gt;LINUX&lt;/h2&gt;&#xA;&lt;p&gt;Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;&#xA;&lt;p&gt;Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server. It is  free of cost and comes with a built-in firewall system and user-friendly interface. With Ubuntu, you do not need to worry about hackers.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
