@@ -4,7 +4,7 @@
     <title>Greedy on Anohba Jehad</title>
     <link>http://localhost:1313/tags/greedy/</link>
     <description>Recent content in Greedy on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Jul 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://localhost:1313/posts/cloudcomputing/</link>
       <pubDate>Wed, 30 Jul 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/cloudcomputing/</guid>
-      <description>&lt;p&gt;Cloud Computing 101: A Beginner’s Guide to the Future of Technology&lt;/p&gt;&#xA;&lt;p&gt;In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-cloud-computing&#34;&gt;What is Cloud Computing?&lt;/h2&gt;&#xA;&lt;p&gt;Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.&lt;/p&gt;</description>
+      <description>Cloud Computing 101: A Beginner’s Guide to the Future of Technology&#xA;In today’s digital world, where data rules and remote access is the norm, cloud computing is the backbone of modern innovation. But what exactly is cloud computing, and why is it such a game-changer?&#xA;What is Cloud Computing? Cloud computing refers to the delivery of computing services—like servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”) instead of your local computer or private data center.</description>
     </item>
     <item>
       <title>Huffman Coding: The Art of Compression</title>
       <link>http://localhost:1313/posts/huffman/</link>
       <pubDate>Tue, 06 May 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/huffman/</guid>
-      <description>&lt;p&gt;In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in &lt;em&gt;Huffman Coding&lt;/em&gt; — a beautifully simple yet powerful algorithm used for &lt;strong&gt;lossless data compression&lt;/strong&gt;. It&amp;rsquo;s been a cornerstone since it was introduced.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-huffman-coding&#34;&gt;What Is Huffman Coding?&lt;/h2&gt;&#xA;&lt;p&gt;Huffman Coding is a &lt;strong&gt;greedy algorithm&lt;/strong&gt; used to compress data without losing any information. The idea is simple:&lt;br&gt;&#xA;&lt;strong&gt;Assign shorter codes to more frequent characters and longer codes to less frequent ones.&lt;/strong&gt;&#xA;Ever tried zipping a file to save space? That magic trick behind the scenes? That’s compression — and Huffman Coding is one of the smartest ways to pull it off.&lt;/p&gt;</description>
+      <description>In a world drowning in data, how do we store and transmit information more efficiently? The answer lies in Huffman Coding — a beautifully simple yet powerful algorithm used for lossless data compression. It&amp;rsquo;s been a cornerstone since it was introduced.&#xA;What Is Huffman Coding? Huffman Coding is a greedy algorithm used to compress data without losing any information. The idea is simple:&#xA;Assign shorter codes to more frequent characters and longer codes to less frequent ones.</description>
     </item>
   </channel>
 </rss>

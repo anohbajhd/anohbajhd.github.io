@@ -1,209 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Don’t Trust Your Code—Test It | Anohba Jehad</title>
-<meta name="keywords" content="hugo, github, python, testing">
-<meta name="description" content="Why Testing Your Code Matters
-When we write code, we want it to work. But sometimes, it doesn’t. That’s where testing comes in.
-Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.
-
-Why Should We Test?
-Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/test/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/test/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Don’t Trust Your Code—Test It</title>
 </head>
-
-<body class=" dark" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
-                    <span>Tags</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Don’t Trust Your Code—Test It
-    </h1>
-    <div class="post-meta"><span title='2025-04-23 11:00:00 +0500 PKT'>April 23, 2025</span>&nbsp;·&nbsp;2 min
-
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#why-testing-your-code-matters" aria-label="Why Testing Your Code Matters">Why Testing Your Code Matters</a><ul>
-                        
-                <li>
-                    <a href="#why-should-we-test" aria-label="Why Should We Test?">Why Should We Test?</a></li>
-                <li>
-                    <a href="#types-of-testing-the-basics" aria-label="Types of Testing (The Basics)">Types of Testing (The Basics)</a></li>
-                <li>
-                    <a href="#tools-we-use-pytest" aria-label="Tools We Use: pytest">Tools We Use: pytest</a><ul>
-                        
-                <li>
-                    <a href="#-install-pytest" aria-label="🔧 Install pytest:">🔧 Install pytest:</a></li></ul>
-                </li>
-                <li>
-                    <a href="#a-simple-way-to-test-pytest" aria-label="A Simple Way to Test: pytest">A Simple Way to Test: pytest</a><ul>
-                        
-                <li>
-                    <a href="#you-write-a-function" aria-label="You write a function:">You write a function:</a><ul>
-                        
-                <li>
-                    <a href="#def--define-a-function" aria-label="def — Define a Function">def — Define a Function</a></li>
-                <li>
-                    <a href="#assert--check-if-something-is-true" aria-label="assert — Check if Something is True">assert — Check if Something is True</a></li></ul>
-                </li></ul>
-                </li>
-                <li>
-                    <a href="#testing-with-pytest" aria-label="Testing with pytest">Testing with pytest</a></li>
-                <li>
-                    <a href="#why-use-pytest" aria-label="Why Use pytest?">Why Use pytest?</a></li>
-                <li>
-                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
-                </li>
-            </ul>
-            </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><h1 id="why-testing-your-code-matters">Why Testing Your Code Matters<a hidden class="anchor" aria-hidden="true" href="#why-testing-your-code-matters">#</a></h1>
+<body>
+  
+<h1>Don’t Trust Your Code—Test It</h1>
+<article>
+  <h1 id="why-testing-your-code-matters">Why Testing Your Code Matters</h1>
 <p>When we write code, we want it to work. But sometimes, it doesn’t. That’s where <strong>testing</strong> comes in.</p>
 <p>Testing helps us check if our code is doing what we want. It tells us if something is broken, so we can fix it early — before it becomes a big problem.</p>
 <hr>
-<h2 id="why-should-we-test">Why Should We Test?<a hidden class="anchor" aria-hidden="true" href="#why-should-we-test">#</a></h2>
+<h2 id="why-should-we-test">Why Should We Test?</h2>
 <p>Let’s say you make a function that adds two numbers. You think it works. But what if it doesn’t? You don’t want to find out later, when everything depends on it.</p>
 <blockquote>
 <p>Testing is like asking your code:<br>
-<strong>“Hey, are you really doing your job?”</strong></p></blockquote>
+<strong>“Hey, are you really doing your job?”</strong></p>
+</blockquote>
 <hr>
-<h2 id="types-of-testing-the-basics">Types of Testing (The Basics)<a hidden class="anchor" aria-hidden="true" href="#types-of-testing-the-basics">#</a></h2>
+<h2 id="types-of-testing-the-basics">Types of Testing (The Basics)</h2>
 <p>Here are the basic ones you’ll encounter:</p>
 <table>
-  <thead>
-      <tr>
-          <th><strong>Type</strong></th>
-          <th><strong>What it Tests</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Unit Testing</strong></td>
-          <td>Small pieces of code, like functions</td>
-      </tr>
-      <tr>
-          <td><strong>Integration</strong></td>
-          <td>How different parts of code work together</td>
-      </tr>
-      <tr>
-          <td><strong>Functional</strong></td>
-          <td>Whole features from a user perspective</td>
-      </tr>
-      <tr>
-          <td><strong>Regression</strong></td>
-          <td>Makes sure old features still work after changes</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>What it Tests</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unit Testing</strong></td>
+<td>Small pieces of code, like functions</td>
+</tr>
+<tr>
+<td><strong>Integration</strong></td>
+<td>How different parts of code work together</td>
+</tr>
+<tr>
+<td><strong>Functional</strong></td>
+<td>Whole features from a user perspective</td>
+</tr>
+<tr>
+<td><strong>Regression</strong></td>
+<td>Makes sure old features still work after changes</td>
+</tr>
+</tbody>
 </table>
 <blockquote>
-<p>As a beginner, we’ll mostly be doing <strong>unit testing</strong>.</p></blockquote>
-<h2 id="tools-we-use-pytest">Tools We Use: <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#tools-we-use-pytest">#</a></h2>
+<p>As a beginner, we’ll mostly be doing <strong>unit testing</strong>.</p>
+</blockquote>
+<h2 id="tools-we-use-pytest">Tools We Use: <code>pytest</code></h2>
 <p>We&rsquo;ll use <strong><code>pytest</code></strong>, which is a powerful and easy-to-use testing tool in Python.</p>
-<h3 id="-install-pytest">🔧 Install <code>pytest</code>:<a hidden class="anchor" aria-hidden="true" href="#-install-pytest">#</a></h3>
+<h3 id="-install-pytest">🔧 Install <code>pytest</code>:</h3>
 <p>If you don’t have it yet, run this command:</p>
-<p><img alt="command screenshot" loading="lazy" src="/python/sa1.png"></p>
-<h2 id="a-simple-way-to-test-pytest">A Simple Way to Test: <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#a-simple-way-to-test-pytest">#</a></h2>
+<p><img src="/python/sa1.png" alt="command screenshot"></p>
+<h2 id="a-simple-way-to-test-pytest">A Simple Way to Test: <code>pytest</code></h2>
 <p>In Python, there’s a tool called <strong>pytest</strong>. It helps you test your code easily.</p>
 <p>For example:</p>
-<p><img alt="code screenshot" loading="lazy" src="/python/sa.png"></p>
+<p><img src="/python/sa.png" alt="code screenshot"></p>
 <hr>
-<h3 id="you-write-a-function">You write a function:<a hidden class="anchor" aria-hidden="true" href="#you-write-a-function">#</a></h3>
-<h4 id="def--define-a-function"><code>def</code> — Define a Function<a hidden class="anchor" aria-hidden="true" href="#def--define-a-function">#</a></h4>
+<h3 id="you-write-a-function">You write a function:</h3>
+<h4 id="def--define-a-function"><code>def</code> — Define a Function</h4>
 <ul>
 <li><code>def</code> is short for <strong>define</strong>.</li>
 <li>It&rsquo;s used to <strong>create a function</strong> in Python.</li>
 </ul>
-<p><img alt="code screenshot" loading="lazy" src="/python/sb.png"></p>
-<h4 id="assert--check-if-something-is-true"><code>assert</code> — Check if Something is True<a hidden class="anchor" aria-hidden="true" href="#assert--check-if-something-is-true">#</a></h4>
+<p><img src="/python/sb.png" alt="code screenshot"></p>
+<h4 id="assert--check-if-something-is-true"><code>assert</code> — Check if Something is True</h4>
 <ul>
 <li><code>assert</code> is used to check if a condition is true.</li>
 <li>If it <strong>is true</strong>, Python does nothing and continues.</li>
@@ -216,158 +80,30 @@ Let’s say you make a function that adds two numbers. You think it works. But w
 <li>And so on.</li>
 </ul>
 <hr>
-<h2 id="testing-with-pytest">Testing with <code>pytest</code><a hidden class="anchor" aria-hidden="true" href="#testing-with-pytest">#</a></h2>
+<h2 id="testing-with-pytest">Testing with <code>pytest</code></h2>
 <p>Put this in a file called <code>test_add.py</code>, then run this in your terminal:</p>
-<p><img alt="code screenshot" loading="lazy" src="/python/sc.png"></p>
+<p><img src="/python/sc.png" alt="code screenshot"></p>
 <p>If all is good, you’ll see a <strong>green message</strong>.<br>
 If something is wrong, <code>pytest</code> will show you <strong>what failed</strong>.</p>
 <hr>
-<h2 id="why-use-pytest">Why Use <code>pytest</code>?<a hidden class="anchor" aria-hidden="true" href="#why-use-pytest">#</a></h2>
+<h2 id="why-use-pytest">Why Use <code>pytest</code>?</h2>
 <ul>
 <li>It’s simple to use</li>
 <li>The code is easy to read</li>
 <li>You get clear messages when something fails</li>
 </ul>
 <hr>
-<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Testing might feel boring at first.<br>
 But it <strong>saves you time and trouble later</strong>.</p>
 <p>Start small — test just one function.<br>
 It’s a good habit to build.</p>
 <blockquote>
 <p>Your code will thank you.<br>
-And so will your future self.</p></blockquote>
+And so will your future self.</p>
+</blockquote>
 
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/github/">Github</a></li>
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/tags/testing/">Testing</a></li>
-    </ul>
-  </footer>
 </article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
 </body>
-
 </html>

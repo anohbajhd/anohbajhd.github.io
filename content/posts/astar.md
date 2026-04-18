@@ -133,3 +133,5 @@ A* thinks a bit too much for live systems, slower when quick decisions matter.
 
 # Summary
 What sets `A*` apart from other algorithms is that it combines features of `Dijkstra’s algorithm` and `Greedy Best-First Search` by using a heuristic to estimate the cost to the goal. This balance of actual traveled cost (g-cost) and heuristic cost (h-cost) allows A* to explore fewer paths, making it both efficient and guaranteed to find the shortest path if the heuristic is admissible and consistent. Unlike uninformed search algorithms, A* uses problem-specific knowledge for faster solutions. Unlike purely greedy algorithms, it ensures optimality.
+
+---

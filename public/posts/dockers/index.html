@@ -1,196 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Modern Infrastructure – Part 1: Docker | Anohba Jehad</title>
-<meta name="keywords" content="dockers, containers, DevOps, CI/CD">
-<meta name="description" content="A Deep Dive into Containerization and Development Simplicity 🐳">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/dockers/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dockers/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Modern Infrastructure – Part 1: Docker</title>
 </head>
-
-<body class=" dark" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Anohba Jehad (Alt + H)">Anohba Jehad</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
-                    <span>Tags</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Modern Infrastructure – Part 1: Docker
-    </h1>
-    <div class="post-description">
-      A Deep Dive into Containerization and Development Simplicity 🐳
-    </div>
-    <div class="post-meta"><span title='2025-07-13 12:15:56 +0500 PKT'>July 13, 2025</span>&nbsp;·&nbsp;3 min
-
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#what-is-docker" aria-label="What is Docker?">What is Docker?</a></li>
-                <li>
-                    <a href="#why-docker" aria-label="Why Docker?">Why Docker?</a></li>
-                <li>
-                    <a href="#docker-architecture" aria-label="Docker Architecture">Docker Architecture</a><ul>
-                        
-                <li>
-                    <a href="#core-components" aria-label="Core Components:">Core Components:</a></li></ul>
-                </li>
-                <li>
-                    <a href="#installing-docker" aria-label="Installing Docker">Installing Docker</a><ul>
-                        
-                <li>
-                    <a href="#ubuntu" aria-label="Ubuntu:">Ubuntu:</a></li>
-                <li>
-                    <a href="#manjaro-kde" aria-label="Manjaro KDE:">Manjaro KDE:</a></li></ul>
-                </li>
-                <li>
-                    <a href="#basic-docker-commands" aria-label="Basic Docker Commands">Basic Docker Commands</a><ul>
-                        
-                <li>
-                    <a href="#working-with-images" aria-label="Working with Images">Working with Images</a></li>
-                <li>
-                    <a href="#working-with-containers" aria-label="Working with Containers">Working with Containers</a></li></ul>
-                </li>
-                <li>
-                    <a href="#introduction-to-docker-compose" aria-label="Introduction to Docker Compose">Introduction to Docker Compose</a><ul>
-                        
-                <li>
-                    <a href="#what-is-docker-compose" aria-label="What is Docker Compose?">What is Docker Compose?</a></li></ul>
-                </li>
-                <li>
-                    <a href="#installation-of-docker-compose" aria-label="Installation of Docker Compose">Installation of Docker Compose</a></li>
-                <li>
-                    <a href="#docker-vs-kubernetes" aria-label="Docker vs Kubernetes">Docker vs Kubernetes</a></li>
-                <li>
-                    <a href="#real-world-use-cases" aria-label="Real-World Use Cases">Real-World Use Cases</a></li>
-                <li>
-                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a></li>
-                <li>
-                    <a href="#bonus-quick-reference-sheet" aria-label="Bonus: Quick Reference Sheet">Bonus: Quick Reference Sheet</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><blockquote>
-<p>“Build once, run anywhere.”</p></blockquote>
+<body>
+  
+<h1>Modern Infrastructure – Part 1: Docker</h1>
+<article>
+  <blockquote>
+<p>“Build once, run anywhere.”</p>
+</blockquote>
 <blockquote>
-<p>That’s not a dream - that’s Docker.</p></blockquote>
-<h2 id="what-is-docker">What is Docker?<a hidden class="anchor" aria-hidden="true" href="#what-is-docker">#</a></h2>
+<p>That’s not a dream - that’s Docker.</p>
+</blockquote>
+<h2 id="what-is-docker">What is Docker?</h2>
 <p><strong>Docker</strong> is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools - making them portable, lightweight, and consistent across all platforms.</p>
-<h2 id="why-docker">Why Docker?<a hidden class="anchor" aria-hidden="true" href="#why-docker">#</a></h2>
+<h2 id="why-docker">Why Docker?</h2>
 <p><strong>Traditional VMs vs Docker</strong></p>
 <table>
-  <thead>
-      <tr>
-          <th>Feature</th>
-          <th>Traditional VM</th>
-          <th>Docker</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>OS Architecture</td>
-          <td>Heavy OS per VM</td>
-          <td>Shared kernel, lightweight</td>
-      </tr>
-      <tr>
-          <td>Boot Time</td>
-          <td>Slower boot time</td>
-          <td>Fast boot/startup</td>
-      </tr>
-      <tr>
-          <td>Resource Usage</td>
-          <td>More resources used</td>
-          <td>Less CPU/RAM needed</td>
-      </tr>
-      <tr>
-          <td>Portability</td>
-          <td>Hard to move</td>
-          <td>Easy to share or deploy</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Traditional VM</th>
+<th>Docker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS Architecture</td>
+<td>Heavy OS per VM</td>
+<td>Shared kernel, lightweight</td>
+</tr>
+<tr>
+<td>Boot Time</td>
+<td>Slower boot time</td>
+<td>Fast boot/startup</td>
+</tr>
+<tr>
+<td>Resource Usage</td>
+<td>More resources used</td>
+<td>Less CPU/RAM needed</td>
+</tr>
+<tr>
+<td>Portability</td>
+<td>Hard to move</td>
+<td>Easy to share or deploy</td>
+</tr>
+</tbody>
 </table>
 <p>Use Docker when you want to:</p>
 <ul>
@@ -200,8 +57,8 @@
 <li>Scale easily</li>
 </ul>
 <hr>
-<h2 id="docker-architecture">Docker Architecture<a hidden class="anchor" aria-hidden="true" href="#docker-architecture">#</a></h2>
-<h3 id="core-components">Core Components:<a hidden class="anchor" aria-hidden="true" href="#core-components">#</a></h3>
+<h2 id="docker-architecture">Docker Architecture</h2>
+<h3 id="core-components">Core Components:</h3>
 <ul>
 <li>
 <p><code>Docker Host:</code> Docker Host or Docker Engine is the brain of docker. It conatians docker daemon that runs in the background, manages Docker objects (containers, images, networks).</p>
@@ -222,11 +79,11 @@
 <p><code>Docker Registries:</code> Central hubs for sharing /storing images (like Docker Hub, GitHub etc).</p>
 </li>
 </ul>
-<p><img alt="command screenshot" loading="lazy" src="/docker/da.png"></p>
+<p><img src="/docker/da.png" alt="command screenshot"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Developer → Docker CLI → Docker Daemon → Container → Application
 </span></span></code></pre></div><hr>
-<h2 id="installing-docker">Installing Docker<a hidden class="anchor" aria-hidden="true" href="#installing-docker">#</a></h2>
-<h3 id="ubuntu">Ubuntu:<a hidden class="anchor" aria-hidden="true" href="#ubuntu">#</a></h3>
+<h2 id="installing-docker">Installing Docker</h2>
+<h3 id="ubuntu">Ubuntu:</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
 </span></span><span style="display:flex;"><span>sudo apt install docker.io
 </span></span><span style="display:flex;"><span>sudo systemctl start docker
@@ -236,122 +93,135 @@
 </span></span></code></pre></div><p>Enable running without sudo:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo usermod -aG docker $USER
 </span></span></code></pre></div><hr>
-<h3 id="manjaro-kde">Manjaro KDE:<a hidden class="anchor" aria-hidden="true" href="#manjaro-kde">#</a></h3>
+<h3 id="manjaro-kde">Manjaro KDE:</h3>
 <ol>
 <li>
 <p>Update your system and install docker:
-<img alt="command screenshot" loading="lazy" src="/docker/s1.png"></p>
+<img src="/docker/s1.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>Enable docker and check version:
-<img alt="command screenshot" loading="lazy" src="/docker/s2.png"></p>
+<img src="/docker/s2.png" alt="command screenshot"></p>
 </li>
 </ol>
 <hr>
-<h2 id="basic-docker-commands">Basic Docker Commands<a hidden class="anchor" aria-hidden="true" href="#basic-docker-commands">#</a></h2>
-<h3 id="working-with-images">Working with Images<a hidden class="anchor" aria-hidden="true" href="#working-with-images">#</a></h3>
+<h2 id="basic-docker-commands">Basic Docker Commands</h2>
+<h3 id="working-with-images">Working with Images</h3>
 <ol>
 <li>Create a <strong>Dockerfile</strong> (Script to create an image):</li>
 </ol>
-<p><img alt="command screenshot" loading="lazy" src="/docker/s18.png"></p>
+<p><img src="/docker/s18.png" alt="command screenshot"></p>
 <ol start="2">
 <li>
 <p>Build an image from dockerfile:
-<img alt="command screenshot" loading="lazy" src="/docker/s4.png">
-<img alt="command screenshot" loading="lazy" src="/docker/s5.png"></p>
+<img src="/docker/s4.png" alt="command screenshot">
+<img src="/docker/s5.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>Delete an image:
-<img alt="command screenshot" loading="lazy" src="/docker/s9.png"></p>
+<img src="/docker/s9.png" alt="command screenshot"></p>
 </li>
 </ol>
-<h3 id="working-with-containers">Working with Containers<a hidden class="anchor" aria-hidden="true" href="#working-with-containers">#</a></h3>
+<h3 id="working-with-containers">Working with Containers</h3>
 <ol>
 <li>Run a container from an image:
-<img alt="command screenshot" loading="lazy" src="/docker/s16.png">
+<img src="/docker/s16.png" alt="command screenshot">
 <code>Note:</code> You cannot create two containers with same name.</li>
 </ol>
-<p>Visit https://localhost:8080 , you&rsquo;ll see:
-<img alt="command screenshot" loading="lazy" src="/docker/s6.png"></p>
+<p>Open browser http://localhost:8080 , you&rsquo;ll see:
+<img src="/docker/s6.png" alt="command screenshot"></p>
 <ol start="2">
 <li>
 <p>List active containers:
-<img alt="command screenshot" loading="lazy" src="/docker/s7.png"></p>
+<img src="/docker/s7.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>List all containers (including stopped ones):
-<img alt="command screenshot" loading="lazy" src="/docker/sb.png"></p>
+<img src="/docker/sb.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>Stop a running container or remove a container:
-<img alt="command screenshot" loading="lazy" src="/docker/db.png"></p>
+<img src="/docker/db.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>Delete all containers at once:
-<img alt="command screenshot" loading="lazy" src="/docker/s15.png"></p>
+<img src="/docker/s15.png" alt="command screenshot"></p>
 </li>
 </ol>
 <hr>
-<h2 id="introduction-to-docker-compose">Introduction to Docker Compose<a hidden class="anchor" aria-hidden="true" href="#introduction-to-docker-compose">#</a></h2>
-<h3 id="what-is-docker-compose">What is Docker Compose?<a hidden class="anchor" aria-hidden="true" href="#what-is-docker-compose">#</a></h3>
+<h2 id="introduction-to-docker-compose">Introduction to Docker Compose</h2>
+<h3 id="what-is-docker-compose">What is Docker Compose?</h3>
 <p><strong>Docker Compose</strong> is a tool to define and manage multi-container applications.</p>
 <p>Instead of running containers manually one by one, you define them in a docker-compose.yml file and start them all with a single command.</p>
-<p><img alt="command screenshot" loading="lazy" src="/docker/sd.png"></p>
+<p>A sample docker compose.yml file:
+<img src="/docker/sd.png" alt="command screenshot"></p>
 <hr>
-<h2 id="installation-of-docker-compose">Installation of Docker Compose<a hidden class="anchor" aria-hidden="true" href="#installation-of-docker-compose">#</a></h2>
+<h2 id="installation-of-docker-compose">Installation of Docker Compose</h2>
 <ol>
 <li>
 <p>Install docker compose:
-<img alt="command screenshot" loading="lazy" src="/docker/s10.png"></p>
+<img src="/docker/s10.png" alt="command screenshot"></p>
 </li>
 <li>
 <p>Verify if installation is successful:
-<img alt="command screenshot" loading="lazy" src="/docker/sa.png"></p>
+<img src="/docker/sa.png" alt="command screenshot"></p>
 </li>
 <li>
-<p>Build the whole app or site by running one simple command:
-<img alt="command screenshot" loading="lazy" src="/docker/x.png"></p>
+<p>Rebuild images and start containers in background:
+<img src="/docker/x.png" alt="command screenshot"></p>
 </li>
 <li>
-<p>Stop containers:
-<img alt="command screenshot" loading="lazy" src="/docker/sa.png"></p>
+<p>Lists the containers (services) that are running (or have been created) using your docker-compose.yml file:</p>
 </li>
 </ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose ps
+</span></span></code></pre></div><ol start="5">
+<li>Stops all running containers defined in your Compose file, but does not remove them:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose stop
+</span></span></code></pre></div><ol start="6">
+<li>Starts containers that were previously stopped using:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose start
+</span></span></code></pre></div><ol start="7">
+<li>Stops and removes all the containers, networks, and by default also volumes that were created by:
+<img src="/docker/sa.png" alt="command screenshot"></li>
+</ol>
 <hr>
-<h2 id="docker-vs-kubernetes">Docker vs Kubernetes<a hidden class="anchor" aria-hidden="true" href="#docker-vs-kubernetes">#</a></h2>
+<h2 id="docker-vs-kubernetes">Docker vs Kubernetes</h2>
 <table>
-  <thead>
-      <tr>
-          <th>Feature</th>
-          <th>Docker</th>
-          <th>Kubernetes</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Purpose</strong></td>
-          <td>Containerization</td>
-          <td>Orchestration</td>
-      </tr>
-      <tr>
-          <td><strong>Scale</strong></td>
-          <td>Manual</td>
-          <td>Auto-scaling, rolling updates</td>
-      </tr>
-      <tr>
-          <td><strong>Networking</strong></td>
-          <td>Simple</td>
-          <td>Complex but powerful</td>
-      </tr>
-      <tr>
-          <td><strong>Use case</strong></td>
-          <td>Dev &amp; CI/CD</td>
-          <td>Production, large systems</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Docker</th>
+<th>Kubernetes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Containerization</td>
+<td>Orchestration</td>
+</tr>
+<tr>
+<td><strong>Scale</strong></td>
+<td>Manual</td>
+<td>Auto-scaling, rolling updates</td>
+</tr>
+<tr>
+<td><strong>Networking</strong></td>
+<td>Simple</td>
+<td>Complex but powerful</td>
+</tr>
+<tr>
+<td><strong>Use case</strong></td>
+<td>Dev &amp; CI/CD</td>
+<td>Production, large systems</td>
+</tr>
+</tbody>
 </table>
 <hr>
-<h2 id="real-world-use-cases">Real-World Use Cases<a hidden class="anchor" aria-hidden="true" href="#real-world-use-cases">#</a></h2>
+<h2 id="real-world-use-cases">Real-World Use Cases</h2>
 <ul>
 <li>
 <p><code>CI/CD Pipelines:</code> <strong>Jenkins + Docker</strong></p>
@@ -370,153 +240,41 @@
 </li>
 </ul>
 <hr>
-<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>Docker is no longer optional - it&rsquo;s essential for modern software development.
 Whether you’re building a Node.js app, a Python API, or a full-stack microservice, Docker gives you consistency, speed, and portability.</p>
 <hr>
-<h2 id="bonus-quick-reference-sheet">Bonus: Quick Reference Sheet<a hidden class="anchor" aria-hidden="true" href="#bonus-quick-reference-sheet">#</a></h2>
-<pre tabindex="0"><code class="language-pgsql" data-lang="pgsql">docker build -t name .
+<h2 id="bonus-quick-reference-sheet">Bonus: Quick Reference Sheet</h2>
+<pre tabindex="0"><code class="language-pgsql" data-lang="pgsql">
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+newgrp docker
 
-docker run -p 8080:80 name
-docker ps -a
-docker exec -it container bash
-dockercompose up
-docker compose up -d
-docker stop &lt;container_id&gt;
-docker rm &lt;id&gt; | docker rmi &lt;id&gt;
-docker build -t my-node-app .
-docker run -p 3000:3000 my-node-app
+
+docker build -t docker-hello .
+docker run -d -p 8080:80 docker-hello
+
+docker ps                     # See running containers
+docker ps -a                  # See all containers (even stopped ones)
+docker stop hello-container   # Stop a running container 
+docker start hello-container  # Start it again
+docker rm hello-container     # Remove a container 
+docker images                 # List all images 
+docker rmi docker-hello       # Remove an image
+
+sudo pacman -S docker-compose
+
+v2 → docker compose up -d
+v1 → docker-compose up -d
+
+
+docker compose ps         # Show running services
+Open browser http://localhost:8080
+docker compose stop       # Stop all services
+docker compose start      # Start them again
+docker compose down       # Stop &amp; remove everything
 </code></pre>
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/dockers/">Dockers</a></li>
-      <li><a href="http://localhost:1313/tags/containers/">Containers</a></li>
-      <li><a href="http://localhost:1313/tags/devops/">DevOps</a></li>
-      <li><a href="http://localhost:1313/tags/ci/cd/">CI/CD</a></li>
-    </ul>
-  </footer>
 </article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Anohba Jehad</a></span> · 
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
 </body>
-
 </html>

@@ -4,7 +4,7 @@
     <title>Dev Tools on Anohba Jehad</title>
     <link>http://localhost:1313/tags/dev-tools/</link>
     <description>Recent content in Dev Tools on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Oct 2025 00:46:56 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dev-tools/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/gist/</link>
       <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/gist/</guid>
-      <description>&lt;h1 id=&#34;the-gist-of-it&#34;&gt;The Gist of It&lt;/h1&gt;&#xA;&lt;p&gt;There are moments when you write a small piece of code that solves something neat, maybe a Python function you’re proud of, a command you don’t want to forget, or a quick experiment that doesn’t need a full repo.&lt;/p&gt;&#xA;&lt;p&gt;That’s where &lt;strong&gt;GitHub Gist&lt;/strong&gt; comes in. A &lt;em&gt;mini-repository&lt;/em&gt; for your ideas.&lt;/p&gt;&#xA;&lt;p&gt;It’s the perfect middle ground between a full GitHub repo and a random code file lost in your local folder. Think of it as your personal snippet vault: lightweight, version-controlled, and shareable with a single link&lt;/p&gt;</description>
+      <description>The Gist of It There are moments when you write a small piece of code that solves something neat, maybe a Python function you’re proud of, a command you don’t want to forget, or a quick experiment that doesn’t need a full repo.&#xA;That’s where GitHub Gist comes in. A mini-repository for your ideas.&#xA;It’s the perfect middle ground between a full GitHub repo and a random code file lost in your local folder.</description>
     </item>
   </channel>
 </rss>

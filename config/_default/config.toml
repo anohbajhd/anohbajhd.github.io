@@ -1,0 +1,12 @@
+baseURL = 'http://anohbajhd.github.io/'
+title = 'Anohba Jehad'
+theme = ""   # empty for now
+languageCode = "en-us"
+
+
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.141.0"
+max = "0.152.2"

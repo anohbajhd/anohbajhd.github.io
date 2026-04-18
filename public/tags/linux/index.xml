@@ -4,7 +4,7 @@
     <title>Linux on Anohba Jehad</title>
     <link>http://localhost:1313/tags/linux/</link>
     <description>Recent content in Linux on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
+      <description>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&#xA;Why Use GitHub CLI? If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive.</description>
     </item>
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
       <link>http://localhost:1313/posts/ssh/</link>
       <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/ssh/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-ssh&#34;&gt;Introduction to SSH&lt;/h2&gt;&#xA;&lt;p&gt;SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;advantages-of-ssh&#34;&gt;Advantages of SSH&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Secure Communication – Encrypts data, preventing eavesdropping and attacks.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Remote Access – Manage servers and systems from anywhere.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Key-Based Authentication – Enables password-free and more secure logins.&lt;/p&gt;</description>
+      <description>Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&#xA;Advantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.&#xA;Remote Access – Manage servers and systems from anywhere.&#xA;Key-Based Authentication – Enables password-free and more secure logins.</description>
     </item>
     <item>
       <title>Avoid the Gates of Hell. Install Linux. </title>
       <link>http://localhost:1313/posts/ubuntu/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
       <guid>http://localhost:1313/posts/ubuntu/</guid>
-      <description>&lt;h2 id=&#34;linux&#34;&gt;LINUX&lt;/h2&gt;&#xA;&lt;p&gt;Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;&#xA;&lt;p&gt;Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server. It is  free of cost and comes with a built-in firewall system and user-friendly interface. With Ubuntu, you do not need to worry about hackers.&lt;/p&gt;</description>
+      <description>LINUX Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&#xA;Ubuntu Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server.</description>
     </item>
   </channel>
 </rss>

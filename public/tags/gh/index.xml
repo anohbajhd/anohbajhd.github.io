@@ -4,7 +4,7 @@
     <title>Gh on Anohba Jehad</title>
     <link>http://localhost:1313/tags/gh/</link>
     <description>Recent content in Gh on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/gh/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>&lt;p&gt;GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-github-cli&#34;&gt;Why Use GitHub CLI?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive. Some benefits include:&lt;/p&gt;</description>
+      <description>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&#xA;Why Use GitHub CLI? If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive.</description>
     </item>
   </channel>
 </rss>

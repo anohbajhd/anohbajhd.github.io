@@ -4,16 +4,23 @@
     <title>Multithreading on Anohba Jehad</title>
     <link>http://localhost:1313/tags/multithreading/</link>
     <description>Recent content in Multithreading on Anohba Jehad</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 May 2025 23:45:00 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/multithreading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Threaded Realities: Beyond the Loop</title>
+      <link>http://localhost:1313/posts/astar/</link>
+      <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
+      <guid>http://localhost:1313/posts/astar/</guid>
+      <description>A* Algorithm Made Easy When we want a computer, robot, or game character to move from one place to another, the biggest challenge is: how to find the shortest and best path?&#xA;The A* (A-Star) algorithm helps us do exactly that, in a smart and efficient way.&#xA;What is A* (A-Star)? The A* algorithm is a popular and efficient pathfinding and graph traversal algorithm used to find the shortest path between a start node and a goal node.</description>
+    </item>
+    <item>
+      <title>Threaded Realities: Beyond the Loop</title>
       <link>http://localhost:1313/posts/multithread/</link>
       <pubDate>Sat, 10 May 2025 23:45:00 +0500</pubDate>
       <guid>http://localhost:1313/posts/multithread/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-multithreading&#34;&gt;What is Multithreading?&lt;/h2&gt;&#xA;&lt;p&gt;Imagine your program is a big task. Wouldn’t it be more efficient if multiple parts of it could run at the same time instead of waiting for one to finish before the next begins? That’s exactly what &lt;strong&gt;multithreading&lt;/strong&gt; allows.&lt;/p&gt;&#xA;&lt;p&gt;Multithreading is a technique where a single process can perform multiple tasks concurrently using threads. Think of threads as lightweight mini-programs that live inside a main program, sharing the same memory and resources.&lt;/p&gt;</description>
+      <description>&amp;ldquo;Threads are like tiny workers inside your program — when they cooperate well, your application becomes faster, smoother, and more responsive.&amp;rdquo;&#xA;What is Multithreading? Imagine your program is a big task. Wouldn’t it be more efficient if multiple parts of it could run at the same time instead of waiting for one to finish before the next begins? That’s exactly what multithreading allows.&#xA;Multithreading is a technique where a single process can perform multiple tasks concurrently using threads.</description>
     </item>
   </channel>
 </rss>
