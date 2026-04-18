@@ -1,0 +1,20 @@
+disabled = false
+locale = "en"
+weight = 1
+title = "Anohba Jehad"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "AI student at FAST NUCES · Quiet builder of systems"
+
+[params.author]
+  name = "Anohba Jehad"
+  image = "pf.jpeg"
+  headline = "AI Student · System Builder"
+  bio = "I build quietly. I learn relentlessly. You'll find no noise here — just presence, and purpose."
+  links = [
+    { github = "https://github.com/anohbajhd" },
+  ]

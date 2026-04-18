@@ -1,7 +1,7 @@
 +++
 date = '2025-07-08T12:15:56+05:00'
 title = "Meet Jenkins: A Guide to Automation"
-tags = ['jenkin', 'plugins', 'pipeline', 'shell','CI/CD']
+tags = ['jenkins', 'plugins', 'pipeline', 'shell','CI/CD']
 +++
 
 ---

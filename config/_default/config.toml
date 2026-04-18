@@ -1,12 +1,29 @@
-baseURL = 'http://anohbajhd.github.io/'
+baseURL = 'https://anohbajhd.github.io/'
 title = 'Anohba Jehad'
-theme = ""   # empty for now
+theme = "blowfish"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
 
+buildDrafts = false
+buildFuture = false
+
+[pagination]
+  pagerSize = 100
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [module]
-[module.hugoVersion]
-extended = true
-min = "0.141.0"
-max = "0.152.2"
+  [module.hugoVersion]
+    extended = true
+    min = "0.141.0"

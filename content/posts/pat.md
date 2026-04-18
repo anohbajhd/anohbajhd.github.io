@@ -27,61 +27,39 @@ Follow these easy steps to create your PAT:
 **2. Go to Settings:**
 - Click on your profile picture (top-right corner).
 - Select **Settings** from the dropdown menu.
+- Navigate to **Developer Settings > Personal Access Tokens**.
+- Click **Generate new token**.
+- Select the scopes (permissions) you need.
+- Click **Generate token** and copy it immediately.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ## Using Your Token in Git
 
-Replace Your Password: When Git prompts you for your GitHub username and password:Enter your username as usual.Paste your token instead of your password.Example:git push origin main Username: your-username Password: paste-your-token-here
+**Replace Your Password:** When Git prompts you for your GitHub username and password:
+- Enter your username as usual.
+- Paste your token instead of your password.
 
-Store It for Convenience: To avoid entering your token every time, you can cache it:git config --global credential.helper storeThe next time you push code, Git will remember your credentials.
+Example:
+```bash
+git push origin main
+# Username: your-username
+# Password: paste-your-token-here
+```
+
+**Store It for Convenience:** To avoid entering your token every time, you can cache it:
+```bash
+git config --global credential.helper store
+```
+The next time you push code, Git will remember your credentials.
 
 ---
 
 ## Pro Tips for Managing Your Token
 
-Use Fine-Grained Tokens: They’re safer because you can set specific permissions and even limit access to certain repositories.
+Use Fine-Grained Tokens: They're safer because you can set specific permissions and even limit access to certain repositories.
 
-Revoke Old Tokens: If you no longer need a token or think it’s compromised, delete it from the GitHub settings.
+Revoke Old Tokens: If you no longer need a token or think it's compromised, delete it from the GitHub settings.
 
 Set Expiry Dates: Tokens can have expiration dates to reduce security risks. Create a new one when it expires.
 
@@ -91,15 +69,15 @@ Set Expiry Dates: Tokens can have expiration dates to reduce security risks. Cre
 
 Losing Your Token: Always save it in a secure place. Use a password manager if possible.
 
-Wrong Permissions: If your token doesn’t work, double-check the permissions you selected.
+Wrong Permissions: If your token doesn't work, double-check the permissions you selected.
 
-Token Not Accepted: Ensure you’re using the token where a password is required, not your GitHub password.
+Token Not Accepted: Ensure you're using the token where a password is required, not your GitHub password.
 
 ---
 
 ## Final Thoughts
 
-Switching to Personal Access Tokens might feel like an extra step, but it’s a step towards better security and modern practices. Once you get the hang of it, it’ll feel as natural as typing your password—but way cooler!
+Switching to Personal Access Tokens might feel like an extra step, but it's a step towards better security and modern practices. Once you get the hang of it, it'll feel as natural as typing your password—but way cooler!
 
 So, go ahead and generate your first PAT. Trust me, your future self will thank you when your projects are secure and running smoothly.
 

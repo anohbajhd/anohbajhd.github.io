@@ -1,9 +1,9 @@
 ---
 date: 2025-05-10T23:45:00+05:00
-title: "Threaded Realities: Beyond the Loop"
-description: "A beginner-friendly guide to understanding and implementing multithreading effectively."
+title: "A* Algorithm Made Easy"
+description: "A beginner-friendly guide to understanding and implementing the A* pathfinding algorithm."
 author: "Anohba Jehad (zenarchh)"
-tags: [multithreading, concurrency, programming, beginner]
+tags: [algorithm, pathfinding, A-star, graphs, beginner]
 ---
 
 # A* Algorithm Made Easy
@@ -13,7 +13,7 @@ how to find the shortest and best path?
 
 The `A* (A-Star)` algorithm helps us do exactly that, in a smart and efficient way.
 
-![command screenshot](/a*algo/b.png)
+![command screenshot](/a*algo/b.jpg)
 
 # What is A* (A-Star)?
 

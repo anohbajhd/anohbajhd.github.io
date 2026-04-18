@@ -1,9 +1,6 @@
 ---
 title: "About Me"
-layout: "about"
-url: "/about/"
-summary: about
-ShowToc: false
+layout: "simple"
 ---
 
 # Anohba | Zenarch

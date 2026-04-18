@@ -1,4 +1,3 @@
-
 +++
 date = '2025-07-13T12:15:56+05:00'
 title = "Modern Infrastructure – Part 1: Docker"

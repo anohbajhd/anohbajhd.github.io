@@ -1,7 +1,7 @@
 +++
 date = '2025-07-30T00:46:56+05:00'
 title = "Basics of Cloud Computing"
-tags = ['huffman', 'algorithm', 'ubuntu', 'greedy', 'coding']
+tags = ['cloud computing', 'IaaS', 'PaaS', 'SaaS', 'technology']
 +++
 
 Cloud Computing 101: A Beginner’s Guide to the Future of Technology

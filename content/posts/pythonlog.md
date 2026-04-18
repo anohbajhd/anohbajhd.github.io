@@ -1,7 +1,7 @@
 +++
 date = '2025-03-05T12:30:00+05:00'
 title = 'The Art of Logging In Python!'
-tags = ['python', 'github', 'hugo']
+tags = ['python', 'logging', 'debugging']
 +++
 
 Logging is a means of tracking events that happen when some software runs. It is an essential aspect of software development that helps in debugging, monitoring, and maintaining applications.
