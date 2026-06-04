@@ -1,0 +1,49 @@
+{{/*
+  Dynamic Background Image Injection
+  -----------------------------------
+  Priority:
+    1. Page-level: .Params.background (path or URL)
+    2. Fallback:   assets/images/default-bg.jpg
+    3. None:       no background applied (graceful no-op)
+*/}}
+
+{{ $bg := "" }}
+
+{{/* 1. Check page-level background parameter */}}
+{{ with .Params.background }}
+  {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+    {{ $bg = . }}
+  {{ else }}
+    {{/* Try as a page bundle resource first */}}
+    {{ $res := $.Resources.GetMatch . }}
+    {{ if $res }}
+      {{ $bg = $res.RelPermalink }}
+    {{ else }}
+      {{/* Try as a global resource */}}
+      {{ $globalRes := resources.Get . }}
+      {{ if $globalRes }}
+        {{ $bg = $globalRes.RelPermalink }}
+      {{ else }}
+        {{/* Use as a static path */}}
+        {{ $bg = . | relURL }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 2. Fallback to default background */}}
+{{ if not $bg }}
+  {{ with resources.Get "images/default-bg.jpg" }}
+    {{ $bg = .RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{/* 3. Inject styles + activate body class */}}
+{{ if $bg }}
+<style>
+  body.has-bg {
+    background-image: url('{{ $bg }}');
+  }
+</style>
+<script>document.body.classList.add('has-bg');</script>
+{{ end }}

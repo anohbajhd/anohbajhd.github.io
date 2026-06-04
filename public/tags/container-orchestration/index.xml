@@ -6,14 +6,18 @@
     <description>Recent content in Container Orchestration on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/container-orchestration/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Fri, 25 Jul 2025 12:15:56 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/container-orchestration/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Modern Infrastructure – Part 2: Kubernetes</title>
       <link>http://localhost:1313/posts/kubernetes/</link>
       <pubDate>Fri, 25 Jul 2025 12:15:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/kubernetes/</guid>
-      <description>Introduction In the evolving world of cloud-native applications, containerization has revolutionized how we build, ship, and run software. But as the number of containers in a project grows, managing them becomes a challenge. That’s where Container Orchestration steps in - and Kubernetes is the undisputed leader in this space.&#xA;What is Container Orchestration? Container orchestration is a way to automate the deployment, scaling, and management of many containers.&#xA;Instead of starting and stopping each container manually, orchestration tools (like Kubernetes) handle it for you - making sure your apps run smoothly, restart if they crash, and scale when needed.</description>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/kubernetes/featured.png" />
     </item>
+    
   </channel>
 </rss>

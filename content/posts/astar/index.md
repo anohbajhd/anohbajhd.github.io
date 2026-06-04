@@ -4,6 +4,7 @@ title: "A* Algorithm Made Easy"
 description: "A beginner-friendly guide to understanding and implementing the A* pathfinding algorithm."
 author: "Anohba Jehad (zenarchh)"
 tags: [algorithm, pathfinding, A-star, graphs, beginner]
+background: "featured.png"
 ---
 
 # A* Algorithm Made Easy

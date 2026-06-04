@@ -6,14 +6,18 @@
     <description>Recent content in DevOps on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jul 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Sun, 13 Jul 2025 12:15:56 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Modern Infrastructure – Part 1: Docker</title>
       <link>http://localhost:1313/posts/dockers/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/dockers/</guid>
-      <description>“Build once, run anywhere.”&#xA;That’s not a dream - that’s Docker.&#xA;What is Docker? Docker is an open-source platform that allows you to develop, ship, and run applications inside containers. Containers package your app along with its environment, dependencies, and tools - making them portable, lightweight, and consistent across all platforms.&#xA;Why Docker? Traditional VMs vs Docker&#xA;Feature Traditional VM Docker OS Architecture Heavy OS per VM Shared kernel, lightweight Boot Time Slower boot time Fast boot/startup Resource Usage More resources used Less CPU/RAM needed Portability Hard to move Easy to share or deploy Use Docker when you want to:</description>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/dockers/featured.png" />
     </item>
+    
   </channel>
 </rss>

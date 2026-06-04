@@ -6,28 +6,38 @@
     <description>Recent content in Linux on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
       <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&#xA;Why Use GitHub CLI? If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive.</description>
+      <description></description>
+      
     </item>
+    
     <item>
       <title>Install and Configure SSH on Ubuntu</title>
       <link>http://localhost:1313/posts/ssh/</link>
       <pubDate>Fri, 07 Mar 2025 12:30:00 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/ssh/</guid>
-      <description>Introduction to SSH SSH (Secure Shell) is a tool used to safely connect to remote computers and servers. It encrypts data, keeping your connection secure from hackers. Developers and system administrators use SSH for tasks like remote access, file transfers, and running commands on distant systems.&#xA;Advantages of SSH Secure Communication – Encrypts data, preventing eavesdropping and attacks.&#xA;Remote Access – Manage servers and systems from anywhere.&#xA;Key-Based Authentication – Enables password-free and more secure logins.</description>
+      <description></description>
+      
     </item>
+    
     <item>
       <title>Avoid the Gates of Hell. Install Linux. </title>
       <link>http://localhost:1313/posts/ubuntu/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/ubuntu/</guid>
-      <description>LINUX Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&#xA;Ubuntu Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

@@ -6,14 +6,18 @@
     <description>Recent content in Os on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2024 12:55:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Sun, 27 Oct 2024 12:55:56 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Avoid the Gates of Hell. Install Linux. </title>
       <link>http://localhost:1313/posts/ubuntu/</link>
       <pubDate>Sun, 27 Oct 2024 12:55:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/ubuntu/</guid>
-      <description>LINUX Linux is a best-known, versatile and most used open-source operating system initially developed by Linus Torvalds in 1991 as a &amp;lsquo;hobby&amp;rsquo;. There are many distributions or distros (different organizations and communities create their own versions e.g Ubuntu, Debian, Fedora etc.) of Linux, which include different software options. This means that Linux is incredibly customizable.&#xA;Ubuntu Ubuntu was used after the African philosopher translated it to “Humanity to Other”. Ubuntu has been derived from Debian’s architecture and the Linux server.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

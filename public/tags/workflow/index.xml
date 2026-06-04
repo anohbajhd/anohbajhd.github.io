@@ -6,14 +6,18 @@
     <description>Recent content in Workflow on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Oct 2025 00:46:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Tue, 21 Oct 2025 00:46:56 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Just a Gist</title>
       <link>http://localhost:1313/posts/gist/</link>
       <pubDate>Tue, 21 Oct 2025 00:46:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/gist/</guid>
-      <description>The Gist of It There are moments when you write a small piece of code that solves something neat, maybe a Python function you’re proud of, a command you don’t want to forget, or a quick experiment that doesn’t need a full repo.&#xA;That’s where GitHub Gist comes in. A mini-repository for your ideas.&#xA;It’s the perfect middle ground between a full GitHub repo and a random code file lost in your local folder.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

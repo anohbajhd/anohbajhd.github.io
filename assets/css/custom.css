@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Custom Blowfish Enhancements
+   - Full-screen dynamic backgrounds with dark overlay
+   - Glassmorphism card styling
+   - Hover lift effects
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Full-Screen Background Image (activated via body.has-bg)
+   -------------------------------------------------------------------------- */
+body.has-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Dark overlay for readability */
+body.has-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* Ensure all content sits above the overlay */
+body.has-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------------------
+   2. Glassmorphism Cards
+   -------------------------------------------------------------------------- */
+body.has-bg .article-link--card {
+  background: rgba(30, 30, 30, 0.55) !important;
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    background 0.3s ease;
+}
+
+/* Light mode glassmorphism */
+[data-appearance="light"] body.has-bg .article-link--card,
+html:not(.dark) body.has-bg .article-link--card {
+  background: rgba(255, 255, 255, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   3. Card Hover Effects — Lift + Enhanced Shadow
+   -------------------------------------------------------------------------- */
+.article-link--card {
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.article-link--card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Light mode hover shadow */
+[data-appearance="light"] .article-link--card:hover,
+html:not(.dark) .article-link--card:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Subtle scale on thumbnail image */
+.article-link--card .thumbnail_card img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.article-link--card:hover .thumbnail_card img {
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Adjustments
+   -------------------------------------------------------------------------- */
+
+/* Disable fixed attachment on touch/mobile (causes jank on iOS/Android) */
+@media (max-width: 768px), (hover: none) {
+  body.has-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Reduce blur intensity on low-power devices */
+@media (max-width: 640px) {
+  body.has-bg .article-link--card {
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Article content area glassmorphism on bg pages
+   -------------------------------------------------------------------------- */
+body.has-bg article {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-appearance="light"] body.has-bg article,
+html:not(.dark) body.has-bg article {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}

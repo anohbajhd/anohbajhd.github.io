@@ -6,28 +6,38 @@
     <description>Recent content in Git on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Sun, 23 Mar 2025 12:30:00 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Master GitHub: A Beginner’s Guide to GitHub CLI</title>
       <link>http://localhost:1313/posts/githubcli/</link>
       <pubDate>Sun, 23 Mar 2025 12:30:00 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/githubcli/</guid>
-      <description>GitHub CLI (Command Line Interface) is a powerful tool that allows developers to interact with GitHub directly from the terminal. Whether you want to create repositories, manage pull requests, or handle issues, GitHub CLI makes the process seamless and efficient.&#xA;Why Use GitHub CLI? If you&amp;rsquo;re comfortable with the command line, GitHub CLI eliminates the need to switch between your browser and terminal. It integrates well with Git, making repository management faster and more intuitive.</description>
+      <description></description>
+      
     </item>
+    
     <item>
       <title>Git-ing It Together: Git Good with Git and GitHub</title>
       <link>http://localhost:1313/posts/github/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/github/</guid>
-      <description>Introduction Ever felt like your code projects are a chaotic mess, with random files named &amp;ldquo;final_version_final_FINAL&amp;rdquo;? Don’t worry, you’re not alone! Enter Git and GitHub, the dynamic duo that’s here to save your projects from utter disarray. Let’s break them down in the simplest way possible, so you can join the cool kids and say things like, “I’ll just push it to GitHub.&amp;quot;&#xA;What is Git Picture this: You’re writing a novel, and every time you make changes, you wish you had a backup of the previous version.</description>
+      <description></description>
+      
     </item>
+    
     <item>
       <title>GitHub&#39;s Personal Access Token: Your Key to Secure Access</title>
       <link>http://localhost:1313/posts/pat/</link>
       <pubDate>Sun, 12 Jan 2025 12:30:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/pat/</guid>
-      <description>What Is a Personal Access Token? Think of a Personal Access Token as a secret key or a VIP pass that gives you access to your GitHub account. Unlike passwords, which are meant for logging into the GitHub website, PATs are used for command-line operations (like pushing code) and integrations.&#xA;Why use them? Because PATs are more secure! Even if someone gets hold of your token, you can easily revoke it without changing your GitHub password.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

@@ -6,14 +6,18 @@
     <description>Recent content in Tide on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 12:15:56 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tide/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Sun, 04 May 2025 12:15:56 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/tide/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Shell Shocked? Try Fish!</title>
       <link>http://localhost:1313/posts/fish/</link>
       <pubDate>Sun, 04 May 2025 12:15:56 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/fish/</guid>
-      <description>When it comes to shells, most of us are familiar with Bash, the default shell in many Linux distributions. However, for those looking for a more user-friendly, modern experience, Fish Shell is a great alternative.&#xA;What is Fish Shell? Fish, which stands for Friendly Interactive Shell, is a user-friendly shell designed to be easy to use and understand for both beginners and advanced users. Unlike other shells like Bash, Zsh, or Tcsh, Fish prioritizes simplicity, intuitive features, and efficiency.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

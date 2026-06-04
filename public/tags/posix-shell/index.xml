@@ -6,14 +6,18 @@
     <description>Recent content in POSIX Shell on Anohba Jehad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 May 2025 23:45:00 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/posix-shell/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Anohba Jehad</copyright>
+    <lastBuildDate>Tue, 13 May 2025 23:45:00 +0500</lastBuildDate><atom:link href="http://localhost:1313/tags/posix-shell/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Behind the Prompt</title>
       <link>http://localhost:1313/posts/posix/</link>
       <pubDate>Tue, 13 May 2025 23:45:00 +0500</pubDate>
+      
       <guid>http://localhost:1313/posts/posix/</guid>
-      <description>If you&amp;rsquo;ve ever used a Linux terminal or written a script to automate tasks on a Unix-like system, you&amp;rsquo;ve already brushed up against the world of shell scripting. But there&amp;rsquo;s one term that often floats around with little explanation, the POSIX shell. What is it, and why does it matter?&#xA;What Is a Shell? A shell is a program that provides a command-line interface (CLI) for users to interact with the operating system.</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>
