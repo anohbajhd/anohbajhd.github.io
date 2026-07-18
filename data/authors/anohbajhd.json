@@ -1,0 +1,13 @@
+{
+    "name": "Anohba Jehad",
+    "image" : "images/background_image.jpeg",
+    "bio": "",
+    "social": [
+        { "email": "mailto:anohbajehad@gmail.com" },
+        { "linkedin": "" },
+        { "x-twitter": "" },
+        { "github": "" },
+        { "instagram": "" },
+        { "goodreads": "" }
+    ]
+}
