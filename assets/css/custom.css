@@ -1,147 +1,129 @@
-/* ==========================================================================
-   Custom Blowfish Enhancements
-   ========================================================================== */
+@media screen and (min-width: 0px) {
+    .customthumb {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.6);
+    }
 
-/* --------------------------------------------------------------------------
-   1. Full Screen Background
-   -------------------------------------------------------------------------- */
 
-html,
-body {
-  background: transparent !important;
-}
+    .customEntitityLogo {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
 
-body {
-  background-image: url("/images/background_image.jpeg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    .customEntitityAlbum {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
 
-/* Remove Blowfish's default background */
-.bg-neutral,
-.dark .bg-neutral-800 {
-  background: transparent !important;
-}
-
-/* Dark overlay for readability */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Keep everything above overlay */
-body > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* --------------------------------------------------------------------------
-   2. Glassmorphism Cards
-   -------------------------------------------------------------------------- */
-
-.article-link--card {
-  background: rgba(30, 30, 30, 0.55) !important;
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.25),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-
-  transition:
-    transform .3s ease,
-    box-shadow .3s ease,
-    background .3s ease;
-}
-
-/* Light Mode */
-html:not(.dark) .article-link--card,
-[data-appearance="light"] .article-link--card {
-  background: rgba(255,255,255,.45) !important;
-  border: 1px solid rgba(255,255,255,.25) !important;
-
-  box-shadow:
-    0 4px 24px rgba(0,0,0,.10),
-    inset 0 0 0 1px rgba(255,255,255,.15);
-}
-
-/* --------------------------------------------------------------------------
-   3. Hover Effects
-   -------------------------------------------------------------------------- */
-
-.article-link--card:hover {
-  transform: translateY(-6px);
-
-  box-shadow:
-    0 12px 40px rgba(0,0,0,.30),
-    0 4px 12px rgba(0,0,0,.15);
-}
-
-html:not(.dark) .article-link--card:hover,
-[data-appearance="light"] .article-link--card:hover {
-
-  box-shadow:
-    0 12px 40px rgba(0,0,0,.12),
-    0 4px 12px rgba(0,0,0,.06);
-}
-
-/* Thumbnail Zoom */
-
-.article-link--card .thumbnail_card img {
-  transition: transform .4s ease;
-}
-
-.article-link--card:hover .thumbnail_card img {
-  transform: scale(1.05);
-}
-
-/* --------------------------------------------------------------------------
-   4. Article Glass Effect
-   -------------------------------------------------------------------------- */
-
-article {
-  background: rgba(20,20,20,.60);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-radius: 12px;
-
-  border: 1px solid rgba(255,255,255,.06);
-
-  padding: 2rem;
-  margin-top: 1rem;
-}
-
-html:not(.dark) article,
-[data-appearance="light"] article {
-  background: rgba(255,255,255,.60);
-  border: 1px solid rgba(0,0,0,.08);
-}
-
-/* --------------------------------------------------------------------------
-   5. Mobile
-   -------------------------------------------------------------------------- */
-
-@media (max-width:768px), (hover:none) {
-
-  body {
-    background-attachment: scroll;
-  }
+    .customPlay {
+        position: relative;
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        padding: 0px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
 }
 
-@media (max-width:640px) {
+@media screen and (min-width: 700px) {
+    .customEntitityLogo {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 8px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
 
-  .article-link--card {
-    backdrop-filter: blur(8px) saturate(140%);
-    -webkit-backdrop-filter: blur(8px) saturate(140%);
-  }
+    .customEntitityAlbum {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
 
+}
+
+@media screen and (min-width: 1250px) {
+    .customthumb {
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+        box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.6);
+        margin-right: 30px;
+    }
+
+    .customEntitityLogo {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 8px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
+
+    .customEntitityAlbum {
+        background-color: aliceblue;
+        position: relative;
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        object-fit: contain;
+        border-radius: 4%;
+    }
+
+}
+
+td {
+    vertical-align: middle !important;
 }
