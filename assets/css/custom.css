@@ -1,14 +1,17 @@
 /* ==========================================================================
    Custom Blowfish Enhancements
-   - Full-screen dynamic backgrounds with dark overlay
-   - Glassmorphism card styling
-   - Hover lift effects
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Full-Screen Background Image (activated via body.has-bg)
+   1. Full Screen Background
    -------------------------------------------------------------------------- */
-body.has-bg {
+
+html,
+body {
+  background: transparent !important;
+}
+
+body {
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center center;
@@ -16,18 +19,24 @@ body.has-bg {
   background-attachment: fixed;
 }
 
+/* Remove Blowfish's default background */
+.bg-neutral,
+.dark .bg-neutral-800 {
+  background: transparent !important;
+}
+
 /* Dark overlay for readability */
-body.has-bg::before {
+body::before {
   content: "";
   position: fixed;
   inset: 0;
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
-  background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
-/* Ensure all content sits above the overlay */
-body.has-bg > * {
+/* Keep everything above overlay */
+body > * {
   position: relative;
   z-index: 1;
 }
@@ -35,57 +44,58 @@ body.has-bg > * {
 /* --------------------------------------------------------------------------
    2. Glassmorphism Cards
    -------------------------------------------------------------------------- */
-body.has-bg .article-link--card {
+
+.article-link--card {
   background: rgba(30, 30, 30, 0.55) !important;
   backdrop-filter: blur(14px) saturate(160%);
   -webkit-backdrop-filter: blur(14px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
   box-shadow:
     0 4px 24px rgba(0, 0, 0, 0.25),
     inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+
   transition:
-    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background 0.3s ease;
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
 }
 
-/* Light mode glassmorphism */
-[data-appearance="light"] body.has-bg .article-link--card,
-html:not(.dark) body.has-bg .article-link--card {
-  background: rgba(255, 255, 255, 0.45) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+/* Light Mode */
+html:not(.dark) .article-link--card,
+[data-appearance="light"] .article-link--card {
+  background: rgba(255,255,255,.45) !important;
+  border: 1px solid rgba(255,255,255,.25) !important;
+
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    0 4px 24px rgba(0,0,0,.10),
+    inset 0 0 0 1px rgba(255,255,255,.15);
 }
 
 /* --------------------------------------------------------------------------
-   3. Card Hover Effects — Lift + Enhanced Shadow
+   3. Hover Effects
    -------------------------------------------------------------------------- */
-.article-link--card {
-  transition:
-    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
 
 .article-link--card:hover {
   transform: translateY(-6px);
+
   box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.3),
-    0 4px 12px rgba(0, 0, 0, 0.15);
+    0 12px 40px rgba(0,0,0,.30),
+    0 4px 12px rgba(0,0,0,.15);
 }
 
-/* Light mode hover shadow */
-[data-appearance="light"] .article-link--card:hover,
-html:not(.dark) .article-link--card:hover {
+html:not(.dark) .article-link--card:hover,
+[data-appearance="light"] .article-link--card:hover {
+
   box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.12),
-    0 4px 12px rgba(0, 0, 0, 0.06);
+    0 12px 40px rgba(0,0,0,.12),
+    0 4px 12px rgba(0,0,0,.06);
 }
 
-/* Subtle scale on thumbnail image */
+/* Thumbnail Zoom */
+
 .article-link--card .thumbnail_card img {
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform .4s ease;
 }
 
 .article-link--card:hover .thumbnail_card img {
@@ -93,40 +103,45 @@ html:not(.dark) .article-link--card:hover {
 }
 
 /* --------------------------------------------------------------------------
-   4. Responsive Adjustments
+   4. Article Glass Effect
    -------------------------------------------------------------------------- */
 
-/* Disable fixed attachment on touch/mobile (causes jank on iOS/Android) */
-@media (max-width: 768px), (hover: none) {
-  body.has-bg {
-    background-attachment: scroll;
-  }
+article {
+  background: rgba(20,20,20,.60);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,.06);
+
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
-/* Reduce blur intensity on low-power devices */
-@media (max-width: 640px) {
-  body.has-bg .article-link--card {
-    backdrop-filter: blur(8px) saturate(140%);
-    -webkit-backdrop-filter: blur(8px) saturate(140%);
-  }
+html:not(.dark) article,
+[data-appearance="light"] article {
+  background: rgba(255,255,255,.60);
+  border: 1px solid rgba(0,0,0,.08);
 }
 
 /* --------------------------------------------------------------------------
-   5. Article content area glassmorphism on bg pages
+   5. Mobile
    -------------------------------------------------------------------------- */
-body.has-bg article {
-  background-image: url("/images/background.jpg");
-  background: rgba(20, 20, 20, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-top: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+
+@media (max-width:768px), (hover:none) {
+
+  body {
+    background-attachment: scroll;
+  }
+
 }
 
-[data-appearance="light"] body.has-bg article,
-html:not(.dark) body.has-bg article {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+@media (max-width:640px) {
+
+  .article-link--card {
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+  }
+
 }
