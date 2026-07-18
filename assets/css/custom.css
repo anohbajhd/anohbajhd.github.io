@@ -9,6 +9,7 @@
    1. Full-Screen Background Image (activated via body.has-bg)
    -------------------------------------------------------------------------- */
 body.has-bg {
+  background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -114,6 +115,7 @@ html:not(.dark) .article-link--card:hover {
    5. Article content area glassmorphism on bg pages
    -------------------------------------------------------------------------- */
 body.has-bg article {
+  background-image: url("/images/background.jpg");
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
